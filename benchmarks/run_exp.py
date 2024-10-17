@@ -133,6 +133,7 @@ async def benchmark(
                                                 req.req_id, req.model_dir, req.adapter_dir, req.prompt,
                                                 req.prompt_len, req.output_len, debug))
         tasks.append(task)
+    # TODO: Response payload is not completed
     latency = await asyncio.gather(*tasks)
     return latency
 
@@ -265,6 +266,7 @@ def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug
 
     # benchmark
     benchmark_start_time = time.time()
+    # TODO: Response payload is not completed
     per_req_latency = asyncio.run(benchmark(backend, server, requests, debug))
     benchmark_end_time = time.time()
     benchmark_time = benchmark_end_time - benchmark_start_time
