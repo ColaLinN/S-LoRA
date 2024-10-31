@@ -31,7 +31,6 @@ BenchmarkConfig = namedtuple(
     ]
 )
 
-
 paper_suite = {
     "ablation-no-mem": BenchmarkConfig(
         num_adapters = [1, 10, 25, 50, 100, 200],

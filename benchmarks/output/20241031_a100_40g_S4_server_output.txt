@@ -1,0 +1,36 @@
+For some LLaMA-based models, initializing the fast tokenizer may take a long time. To eliminate the initialization time, consider using 'hf-internal-testing/llama-tokenizer' instead of the original tokenizer.
+llama-13b: 23.63 GB
+peak working mem for (bs=20, seqlen=512): 0.88 GB
+peak working mem for (bs=100, seqlen=512): 4.39 GB
+all adapters (201) estimated size: 22.90 GB
+avg adapter estimated size: 116.67 MB
+INFO:     127.0.0.1:47476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47508 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47536 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47540 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47544 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47548 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47552 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47556 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47560 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47564 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47568 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47572 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47576 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47580 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47584 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47588 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47592 - "POST /generate_stream HTTP/1.1" 200 OK

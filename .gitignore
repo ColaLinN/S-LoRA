@@ -8,5 +8,5 @@ dist
 *.so
 .DS_Store
 *.json
-*.jsonl
+# *.jsonl
 *.pdf
