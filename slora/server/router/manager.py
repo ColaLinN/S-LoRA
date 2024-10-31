@@ -128,7 +128,8 @@ class RouterManager:
         self.alpha_model = AlphaModel(results[0])
         self.beta_model = BetaModel(results[0])
         # check if the path exists else create it
-        cache_dir = os.path.expanduser("~/.cache/slora")
+        # cache_dir = os.path.expanduser("~/.cache/slora")
+        cache_dir = os.getenv("SLORA_CACHE_DIR")
         if not os.path.exists(cache_dir):
             os.makedirs(cache_dir)
         with open(cache_dir+"/profile_results.pkl", "wb") as f:
@@ -426,7 +427,8 @@ def start_router_process(args, router_port, detokenization_port, model_rpc_ports
             router.req_queue.beta = router.beta_model
         elif input_params.scheduler == "pets":
             # loading from file
-            cache_dir = os.path.expanduser("~/.cache/slora")
+            # cache_dir = os.path.expanduser("~/.cache/slora")
+            cache_dir = os.getenv("SLORA_CACHE_DIR")
             router.req_queue.alpha = AlphaModel.from_file(cache_dir+"/profile_results.pkl")
             router.req_queue.beta = BetaModel.from_file(cache_dir+"/profile_results.pkl")
     

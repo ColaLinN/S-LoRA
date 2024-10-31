@@ -1,0 +1,608 @@
+For some LLaMA-based models, initializing the fast tokenizer may take a long time. To eliminate the initialization time, consider using 'hf-internal-testing/llama-tokenizer' instead of the original tokenizer.
+llama-13b: 23.63 GB
+peak working mem for (bs=20, seqlen=512): 0.88 GB
+peak working mem for (bs=100, seqlen=512): 4.39 GB
+all adapters (201) estimated size: 22.90 GB
+avg adapter estimated size: 116.67 MB
+INFO:     127.0.0.1:50814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50946 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50954 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50958 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50962 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50966 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50974 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50978 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50982 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50986 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50990 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50994 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50998 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51002 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51006 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51010 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51014 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51018 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51022 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51026 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51030 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51034 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51038 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51042 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51046 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51050 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51054 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51058 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51062 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51066 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51070 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51074 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51078 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51082 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51094 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51112 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51128 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51136 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51140 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51144 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51152 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51160 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51164 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51168 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51172 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51176 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51180 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51184 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51188 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51192 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51202 - "POST /generate_stream HTTP/1.1" 200 OK
+load 0 adapters, 0 in total
+Avg tokens(prompt+generate) throughput:    5.271 tokens/s
+Avg prompt tokens throughput:              5.271 tokens/s
+Avg generate tokens throughput:            0.000 tokens/s
+offload 0 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 6 token used ratio: 0.10442857142857143
+current batch size: 5 token used ratio: 0.11878571428571429
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 6 token used ratio: 0.1367857142857143
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 10 token used ratio: 0.23
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 11 token used ratio: 0.2749285714285714
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 15 token used ratio: 0.4145
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+Avg tokens(prompt+generate) throughput:  876.519 tokens/s
+Avg prompt tokens throughput:            607.842 tokens/s
+Avg generate tokens throughput:          268.677 tokens/s
+load 0 adapters, 0 in total
+current batch size: 19 token used ratio: 0.5532142857142858
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 18 token used ratio: 0.5612857142857143
+load 0 adapters, 0 in total
+load 0 adapters, 0 in total
+current batch size: 19 token used ratio: 0.6092857142857143
+current batch size: 19 token used ratio: 0.6771428571428572
+current batch size: 15 token used ratio: 0.5810714285714286
+current batch size: 10 token used ratio: 0.39985714285714286
+current batch size: 6 token used ratio: 0.29235714285714287
+Avg tokens(prompt+generate) throughput:  662.517 tokens/s
+Avg prompt tokens throughput:            155.505 tokens/s
+Avg generate tokens throughput:          507.012 tokens/s
+current batch size: 5 token used ratio: 0.2757142857142857
+current batch size: 3 token used ratio: 0.17871428571428571
+offload 0 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+current batch size: 1 token used ratio: 0.01107142857142857
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+Avg tokens(prompt+generate) throughput:  152.776 tokens/s
+Avg prompt tokens throughput:             94.334 tokens/s
+Avg generate tokens throughput:           58.442 tokens/s
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+current batch size: 13 token used ratio: 0.22385714285714287
+load 0 adapters, 1 in total
+offload 0 adapters, 1 remains
+load 0 adapters, 1 in total
+offload 0 adapters, 1 remains
+load 0 adapters, 1 in total
+current batch size: 16 token used ratio: 0.36378571428571427
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+offload 0 adapters, 1 remains
+load 0 adapters, 1 in total
+current batch size: 21 token used ratio: 0.5273571428571429
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+load 0 adapters, 1 in total
+current batch size: 25 token used ratio: 0.6699285714285714
+offload 0 adapters, 1 remains
+load 0 adapters, 1 in total
+offload 0 adapters, 1 remains
+current batch size: 24 token used ratio: 0.7312857142857143
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+Avg tokens(prompt+generate) throughput: 1171.640 tokens/s
+Avg prompt tokens throughput:            694.028 tokens/s
+Avg generate tokens throughput:          477.612 tokens/s
+offload 0 adapters, 1 remains
+current batch size: 21 token used ratio: 0.7206428571428571
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+current batch size: 19 token used ratio: 0.7417142857142857
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+current batch size: 13 token used ratio: 0.5377857142857143
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+current batch size: 7 token used ratio: 0.3470714285714286
+current batch size: 7 token used ratio: 0.37207142857142855
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+current batch size: 4 token used ratio: 0.24064285714285713
+offload 0 adapters, 1 remains
+offload 0 adapters, 1 remains
+Avg tokens(prompt+generate) throughput:  351.337 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:          351.337 tokens/s
+offload 0 adapters, 1 remains
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+current batch size: 1 token used ratio: 0.010928571428571428
+load 1 adapters, 2 in total
+load 2 adapters, 4 in total
+load 0 adapters, 4 in total
+load 1 adapters, 5 in total
+current batch size: 6 token used ratio: 0.111
+offload 1 adapters, 4 remains
+current batch size: 5 token used ratio: 0.1235
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+load 1 adapters, 5 in total
+load 2 adapters, 7 in total
+current batch size: 8 token used ratio: 0.16235714285714287
+load 0 adapters, 7 in total
+load 1 adapters, 8 in total
+offload 1 adapters, 7 remains
+load 1 adapters, 8 in total
+current batch size: 10 token used ratio: 0.22128571428571428
+load 0 adapters, 8 in total
+load 2 adapters, 10 in total
+Avg tokens(prompt+generate) throughput:  603.129 tokens/s
+Avg prompt tokens throughput:            428.681 tokens/s
+Avg generate tokens throughput:          174.448 tokens/s
+current batch size: 14 token used ratio: 0.3492142857142857
+load 1 adapters, 11 in total
+load 1 adapters, 12 in total
+load 1 adapters, 13 in total
+load 1 adapters, 14 in total
+offload 0 adapters, 14 remains
+current batch size: 19 token used ratio: 0.5245
+load 1 adapters, 15 in total
+load 1 adapters, 16 in total
+offload 1 adapters, 15 remains
+offload 0 adapters, 15 remains
+load 0 adapters, 15 in total
+current batch size: 20 token used ratio: 0.5913571428571428
+load 1 adapters, 16 in total
+load 1 adapters, 17 in total
+offload 0 adapters, 17 remains
+offload 1 adapters, 16 remains
+offload 1 adapters, 15 remains
+current batch size: 20 token used ratio: 0.623
+offload 1 adapters, 14 remains
+current batch size: 19 token used ratio: 0.6528571428571428
+offload 1 adapters, 13 remains
+current batch size: 18 token used ratio: 0.7028571428571428
+offload 1 adapters, 12 remains
+offload 0 adapters, 12 remains
+Avg tokens(prompt+generate) throughput:  866.246 tokens/s
+Avg prompt tokens throughput:            366.638 tokens/s
+Avg generate tokens throughput:          499.607 tokens/s
+offload 1 adapters, 11 remains
+offload 1 adapters, 10 remains
+offload 0 adapters, 10 remains
+offload 1 adapters, 9 remains
+offload 0 adapters, 9 remains
+current batch size: 11 token used ratio: 0.4427857142857143
+offload 0 adapters, 9 remains
+offload 0 adapters, 9 remains
+offload 1 adapters, 8 remains
+offload 1 adapters, 7 remains
+current batch size: 7 token used ratio: 0.32271428571428573
+offload 1 adapters, 6 remains
+current batch size: 6 token used ratio: 0.30764285714285716
+offload 1 adapters, 5 remains
+offload 1 adapters, 4 remains
+current batch size: 4 token used ratio: 0.23842857142857143
+offload 1 adapters, 3 remains
+offload 1 adapters, 2 remains
+offload 1 adapters, 1 remains
+current batch size: 1 token used ratio: 0.0645
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+current batch size: 1 token used ratio: 0.010857142857142857
+load 1 adapters, 2 in total
+Avg tokens(prompt+generate) throughput:  213.899 tokens/s
+Avg prompt tokens throughput:             48.977 tokens/s
+Avg generate tokens throughput:          164.922 tokens/s
+load 2 adapters, 4 in total
+load 0 adapters, 4 in total
+load 1 adapters, 5 in total
+current batch size: 6 token used ratio: 0.11085714285714286
+INFO:     127.0.0.1:51206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51250 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51262 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51266 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51274 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51278 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51282 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51286 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51290 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51298 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51306 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51310 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51318 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51326 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51334 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51338 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51342 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51346 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51354 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51358 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51362 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51424 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51428 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51432 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51436 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51440 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51444 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51456 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51462 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51464 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51468 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51472 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51508 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51536 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51540 - "POST /generate_stream HTTP/1.1" 200 OK
+offload 1 adapters, 4 remains
+current batch size: 5 token used ratio: 0.12342857142857143
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+load 1 adapters, 5 in total
+load 2 adapters, 7 in total
+current batch size: 8 token used ratio: 0.16207142857142856
+load 1 adapters, 8 in total
+load 1 adapters, 9 in total
+offload 1 adapters, 8 remains
+load 1 adapters, 9 in total
+current batch size: 10 token used ratio: 0.22092857142857142
+load 1 adapters, 10 in total
+load 2 adapters, 12 in total
+current batch size: 14 token used ratio: 0.3485714285714286
+load 1 adapters, 13 in total
+load 1 adapters, 14 in total
+load 1 adapters, 15 in total
+load 1 adapters, 16 in total
+offload 0 adapters, 16 remains
+load 1 adapters, 17 in total
+current batch size: 20 token used ratio: 0.5383571428571429
+Avg tokens(prompt+generate) throughput:  860.757 tokens/s
+Avg prompt tokens throughput:            612.869 tokens/s
+Avg generate tokens throughput:          247.888 tokens/s
+load 1 adapters, 18 in total
+offload 1 adapters, 17 remains
+offload 1 adapters, 16 remains
+load 0 adapters, 16 in total
+current batch size: 20 token used ratio: 0.5916428571428571
+load 2 adapters, 18 in total
+load 0 adapters, 18 in total
+offload 1 adapters, 17 remains
+offload 1 adapters, 16 remains
+offload 1 adapters, 15 remains
+current batch size: 20 token used ratio: 0.6237142857142857
+offload 1 adapters, 14 remains
+current batch size: 19 token used ratio: 0.6536428571428572
+offload 1 adapters, 13 remains
+current batch size: 18 token used ratio: 0.7035714285714286
+offload 1 adapters, 12 remains
+offload 0 adapters, 12 remains
+offload 1 adapters, 11 remains
+offload 1 adapters, 10 remains
+offload 0 adapters, 10 remains
+offload 0 adapters, 10 remains
+current batch size: 12 token used ratio: 0.49228571428571427
+offload 1 adapters, 9 remains
+offload 0 adapters, 9 remains
+offload 0 adapters, 9 remains
+Avg tokens(prompt+generate) throughput:  630.148 tokens/s
+Avg prompt tokens throughput:            134.070 tokens/s
+Avg generate tokens throughput:          496.078 tokens/s
+offload 1 adapters, 8 remains
+offload 1 adapters, 7 remains
+current batch size: 7 token used ratio: 0.32307142857142856
+offload 1 adapters, 6 remains
+current batch size: 6 token used ratio: 0.30792857142857144
+offload 1 adapters, 5 remains
+offload 1 adapters, 4 remains
+current batch size: 4 token used ratio: 0.23864285714285716
+offload 1 adapters, 3 remains
+offload 1 adapters, 2 remains
+offload 1 adapters, 1 remains
+current batch size: 1 token used ratio: 0.06457142857142857
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+current batch size: 1 token used ratio: 0.0105
+load 1 adapters, 2 in total
+load 2 adapters, 4 in total
+load 0 adapters, 4 in total
+current batch size: 5 token used ratio: 0.08057142857142857
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+current batch size: 5 token used ratio: 0.12121428571428572
+Avg tokens(prompt+generate) throughput:  305.411 tokens/s
+Avg prompt tokens throughput:            168.296 tokens/s
+Avg generate tokens throughput:          137.115 tokens/s
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+load 1 adapters, 5 in total
+current batch size: 6 token used ratio: 0.13864285714285715
+load 2 adapters, 7 in total
+load 1 adapters, 8 in total
+load 1 adapters, 9 in total
+current batch size: 10 token used ratio: 0.23357142857142857
+offload 1 adapters, 8 remains
+load 1 adapters, 9 in total
+load 1 adapters, 10 in total
+load 2 adapters, 12 in total
+current batch size: 14 token used ratio: 0.3414285714285714
+load 1 adapters, 13 in total
+load 1 adapters, 14 in total
+load 2 adapters, 16 in total
+load 1 adapters, 17 in total
+offload 0 adapters, 17 remains
+current batch size: 19 token used ratio: 0.5145
+load 1 adapters, 18 in total
+load 1 adapters, 19 in total
+offload 1 adapters, 18 remains
+offload 1 adapters, 17 remains
+load 1 adapters, 18 in total
+current batch size: 20 token used ratio: 0.5815714285714285
+load 2 adapters, 20 in total
+load 1 adapters, 21 in total
+offload 1 adapters, 20 remains
+Avg tokens(prompt+generate) throughput:  984.603 tokens/s
+Avg prompt tokens throughput:            625.931 tokens/s
+Avg generate tokens throughput:          358.672 tokens/s
+offload 1 adapters, 19 remains
+current batch size: 21 token used ratio: 0.6542142857142857
+offload 1 adapters, 18 remains
+offload 1 adapters, 17 remains
+current batch size: 19 token used ratio: 0.6445714285714286
+offload 1 adapters, 16 remains
+current batch size: 18 token used ratio: 0.695
+offload 1 adapters, 15 remains
+offload 0 adapters, 15 remains
+offload 1 adapters, 14 remains
+offload 1 adapters, 13 remains
+offload 0 adapters, 13 remains
+current batch size: 13 token used ratio: 0.5493571428571429
+offload 1 adapters, 12 remains
+offload 1 adapters, 11 remains
+offload 2 adapters, 9 remains
+current batch size: 9 token used ratio: 0.37385714285714283
+offload 1 adapters, 8 remains
+offload 1 adapters, 7 remains
+offload 1 adapters, 6 remains
+current batch size: 6 token used ratio: 0.30528571428571427
+offload 1 adapters, 5 remains
+Avg tokens(prompt+generate) throughput:  399.158 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:          399.158 tokens/s
+current batch size: 5 token used ratio: 0.2875714285714286
+offload 1 adapters, 4 remains
+offload 1 adapters, 3 remains
+offload 1 adapters, 2 remains
+offload 1 adapters, 1 remains
+current batch size: 1 token used ratio: 0.06407142857142857
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+current batch size: 1 token used ratio: 0.022785714285714284
+offload 1 adapters, 0 remains
+offload 0 adapters, 0 remains
+load 1 adapters, 1 in total
+load 1 adapters, 2 in total
+load 2 adapters, 4 in total
+current batch size: 4 token used ratio: 0.05757142857142857
+load 0 adapters, 4 in total
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+current batch size: 5 token used ratio: 0.118
+load 1 adapters, 5 in total
+offload 1 adapters, 4 remains
+current batch size: 5 token used ratio: 0.11157142857142857
+load 1 adapters, 5 in total
+load 2 adapters, 7 in total
+load 1 adapters, 8 in total
+load 1 adapters, 9 in total
+current batch size: 10 token used ratio: 0.22578571428571428
+offload 1 adapters, 8 remains
+Avg tokens(prompt+generate) throughput:  442.884 tokens/s
+Avg prompt tokens throughput:            300.718 tokens/s
+Avg generate tokens throughput:          142.167 tokens/s
+load 1 adapters, 9 in total
+load 1 adapters, 10 in total
+current batch size: 11 token used ratio: 0.272
+load 2 adapters, 12 in total
+load 1 adapters, 13 in total
+load 1 adapters, 14 in total
+load 2 adapters, 16 in total
+current batch size: 19 token used ratio: 0.5282142857142857
+offload 0 adapters, 16 remains
+load 1 adapters, 17 in total
+load 1 adapters, 18 in total
+load 1 adapters, 19 in total
+offload 1 adapters, 18 remains
+current batch size: 20 token used ratio: 0.5668571428571428
+offload 1 adapters, 17 remains
+load 1 adapters, 18 in total
+load 2 adapters, 20 in total
+load 1 adapters, 21 in total
+offload 1 adapters, 20 remains
+current batch size: 22 token used ratio: 0.6529285714285714
+offload 1 adapters, 19 remains
+offload 1 adapters, 18 remains
+offload 1 adapters, 17 remains
+current batch size: 19 token used ratio: 0.6272142857142857
+Avg tokens(prompt+generate) throughput:  949.180 tokens/s
+Avg prompt tokens throughput:            494.976 tokens/s
+Avg generate tokens throughput:          454.203 tokens/s
+current batch size: 19 token used ratio: 0.6950714285714286
+offload 1 adapters, 16 remains
+offload 1 adapters, 15 remains
+offload 0 adapters, 15 remains
+current batch size: 16 token used ratio: 0.66
+offload 1 adapters, 14 remains
+offload 1 adapters, 13 remains
+offload 0 adapters, 13 remains
+offload 1 adapters, 12 remains
+offload 1 adapters, 11 remains
+offload 1 adapters, 10 remains
+offload 1 adapters, 9 remains
+current batch size: 9 token used ratio: 0.3653571428571429
+offload 2 adapters, 7 remains
+offload 1 adapters, 6 remains
+current batch size: 6 token used ratio: 0.29964285714285716
