@@ -87,10 +87,15 @@ async def send_request(
 
     first_token_latency = None
     timeout = aiohttp.ClientTimeout(total=3 * 3600)
+    # 创建了一个异步客户端会话，在该会话下进行 HTTP 请求.
     async with aiohttp.ClientSession(timeout=timeout, trust_env=True) as session:
         while True:
+            # 发送一个异步 HTTP POST 请求。此时，程序挂起并等待服务器响应，不会继续执行下一行代码，直到收到响应并成功进入 with 代码块。
+            # 向 url 发送一个异步 POST 请求，await 内部被隐含在 async with 上下文中，因此 会等待服务器的响应。
+            # 在服务器还没响应之前，协程会挂起，让出控制权，允许事件循环调度其他任务。
             async with session.post(url, headers=headers, json=data) as response:
                 chunks = []
+                # 会在块到达时异步读取响应内容。
                 async for chunk, _ in response.content.iter_chunks():
                     if first_token_latency is None:
                         first_token_latency = time.time() - request_start_time
@@ -115,7 +120,6 @@ async def send_request(
     REQUEST_LATENCY.append((prompt_len, output_len, request_latency, first_token_latency))
     return (prompt_len, output_len, request_latency, first_token_latency)
 
-
 async def benchmark(
     backend: str,
     server: str,
@@ -125,14 +129,18 @@ async def benchmark(
     start = time.time()
     tasks: List[asyncio.Task] = []
     for req in input_requests:
-        await asyncio.sleep(start + req.req_time - time.time())
+        # 计算的是当前时间到目标时间的剩余时间，使得请求能够尽量按照 req.req_time 的时间点启动。
+        # asyncio.sleep(...) 并不保证精确的时间点启动，尤其是在高并发的情况下，实际执行时间可能略有偏差。
+        await asyncio.sleep(start + req.req_time - time.time()) #TODO: 
         if debug:
             print(f"{req.req_id} {req.req_time:.5f} wait {start + req.req_time - time.time():.5f} "
                   f"{req.adapter_dir}")
+        #使用 asyncio.create_task 将 send_request 函数包装为一个协程任务，并将任务添加到 tasks 列表中。
         task = asyncio.create_task(send_request(backend, server,
                                                 req.req_id, req.model_dir, req.adapter_dir, req.prompt,
                                                 req.prompt_len, req.output_len, debug))
         tasks.append(task)
+    # asyncio.gather(*tasks) 并发执行所有任务，并等待所有任务完成。这里的 await 会挂起 benchmark 函数，直到所有请求完成。
     latency = await asyncio.gather(*tasks)
     return latency
 
@@ -265,7 +273,7 @@ def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug
 
     # benchmark
     benchmark_start_time = time.time()
-    per_req_latency = asyncio.run(benchmark(backend, server, requests, debug))
+    per_req_latency = asyncio.run(benchmark(backend, server, requests, debug)) #TODO
     benchmark_end_time = time.time()
     benchmark_time = benchmark_end_time - benchmark_start_time
 

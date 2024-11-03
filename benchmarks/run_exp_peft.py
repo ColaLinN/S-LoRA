@@ -287,6 +287,7 @@ def run_exp(model_setting, backend, server, config, output, num_gpus, mode, seed
     else:
         # first generate your data using real_trace/clean_chat_data.py
         from launch_server import adapter_dirs
+        # 一些文件没有公开
         adapter_dirs, requests = get_real_requests(trace_file="real_trace/clean_chat_conv_20231016.json", req_rate=req_rate, duration=duration,
                                       adapter_dirs=adapter_dirs, input_range=input_range, output_range=output_range, seed=seed)
         print(requests)

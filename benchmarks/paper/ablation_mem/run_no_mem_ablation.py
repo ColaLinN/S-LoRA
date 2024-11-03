@@ -94,7 +94,7 @@ if __name__ == "__main__":
             run_cmd += ["--mode", "synthetic"]
             run_cmd += ["--output", f"{filename}"]
             run_cmd += ["--debug"]
-            print(run_cmd)
+            print(run_cmd)  
             run_exp = subprocess.Popen(run_cmd)
 
             while run_exp.poll() is None:
