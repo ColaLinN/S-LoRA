@@ -128,7 +128,10 @@ class RouterManager:
         self.alpha_model = AlphaModel(results[0])
         self.beta_model = BetaModel(results[0])
         # check if the path exists else create it
-        cache_dir = os.path.expanduser("~/.cache/slora")
+        # cache_dir = os.path.expanduser("~/.cache/slora")
+        cache_dir = os.getenv("SLORA_CACHE_DIR")
+        if cache_dir is None:
+            raise ValueError("env variable 'SLORA_CACHE_DIR' is mandatory, pls set it to a valid path")
         if not os.path.exists(cache_dir):
             os.makedirs(cache_dir)
         with open(cache_dir+"/profile_results.pkl", "wb") as f:

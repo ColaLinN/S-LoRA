@@ -173,6 +173,7 @@ async def generate_stream(request: Request) -> Response:
     # Abort the request if the client disconnects.
     background_tasks.add_task(abort_request)
 
+    #TODO: what's this?
     return StreamingResponse(
         stream_results(), media_type="text/event-stream", background=background_tasks
     )
@@ -457,6 +458,7 @@ def main():
 
     print_mem_stats(args)
 
+    #TODO: what's this?
     uvicorn.run(
         app,
         host=args.host,

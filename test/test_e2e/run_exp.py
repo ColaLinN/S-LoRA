@@ -59,8 +59,10 @@ async def send_request(
 
     first_token_latency = None
     timeout = aiohttp.ClientTimeout(total=3 * 3600)
+    #TODO: async keyword
     async with aiohttp.ClientSession(timeout=timeout) as session:
         while True:
+            #TODO: understand how does the request work
             async with session.post(url, headers=headers, json=data) as response:
                 chunks = []
                 async for chunk, _ in response.content.iter_chunks():
@@ -83,7 +85,6 @@ async def send_request(
             if "bactrian-x-llama-7b-lora" in data["lora_dir"] and id==1:
                 output_ref = 'France and is one of the most visited cities in the world. It is known for its iconic landmarks such as the Eiffel Tower, the Louvre Museum, and the Notre-Dame Cathedral. It is also a hub for fashion, art, and culture, and is home to some of the world’s best restaurants and cafes.\nThe city is divided into 20 arrondissements, each with its own unique character'.encode()
                 assert output['generated_text'][0].encode() == output_ref
-            
             break
 
     request_end_time = time.time()

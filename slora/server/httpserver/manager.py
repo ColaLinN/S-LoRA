@@ -70,6 +70,7 @@ class HttpServerManager:
             except asyncio.TimeoutError:
                 pass
             event.clear()
+            # TODO:
             # request_id is aborted by the backend system for traffic control
             if request_id not in self.req_id_to_out_inf:
                 yield "", {}, -1

@@ -24,7 +24,6 @@ breakdown_suite = {
     #     input_range = [[8, 512]],
     #     output_range = [[95, 96]],
     # ),
-
     "test": BenchmarkConfig(
         num_adapters = [4],
         alpha = [0.8],

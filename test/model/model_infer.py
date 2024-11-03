@@ -33,7 +33,8 @@ def tppart_model_infer(rank_id, world_size, ans_queue, model_dir, model_class, b
                              dist.get_world_size(), 
                              max_total_token_num= batch_size * (input_len + output_len), 
                              weight_dir=model_dir, 
-                             load_way="HF")
+                             load_way="HF"
+                             )
     # warm up
     test_data = np.vstack([np.arange(5, input_len + 5) for _ in range(batch_size)])
     test_data = test_data.reshape(-1)
