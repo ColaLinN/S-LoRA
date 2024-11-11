@@ -66,7 +66,7 @@ def generate_requests(
     shape = 1 / (cv * cv)
     scale = cv * cv / req_rate
     # intervals = np.random.exponential(1.0 / req_rate, tot_req)
-    intervals = np.random.gamma(shape, scale, tot_req) #TODO: understand this gamma distribution
+    intervals = np.random.gamma(shape, scale, tot_req) #TODO: understand this gamma procerss
     for i in range(tot_req):
         tic += intervals[i]
         requests.append(

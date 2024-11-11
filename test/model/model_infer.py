@@ -48,6 +48,7 @@ def tppart_model_infer(rank_id, world_size, ans_queue, model_dir, model_class, b
         b_start_loc[i] = i * input_len
         b_seq_len[i] = input_len
 
+    # prefill stage
     total_token_num = input_len * batch_size
     logics = model_part.forward(batch_size, 
                                 total_token_num, 

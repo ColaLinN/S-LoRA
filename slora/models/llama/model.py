@@ -33,6 +33,7 @@ class LlamaTpPartModel(TpPartBaseModel):
 
     def __init__(self, tp_rank, world_size, weight_dir, 
                  max_total_token_num, mem_adapter_size, load_way="HF", mode=[], dummy=False):
+        # 调用父类TpPartBaseModel的__init__函数
         super().__init__(tp_rank, world_size, weight_dir,
                          max_total_token_num, mem_adapter_size, load_way, mode, dummy=dummy)
         return

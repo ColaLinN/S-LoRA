@@ -25,10 +25,14 @@ class TpPartBaseModel:
 
     # infer state class
     infer_state_class = InferStateInfo
+    mem_manager = None
 
     def __init__(self, tp_rank, world_size, weight_dir,
                  max_total_token_num, mem_adapter_size, load_way="HF", mode=[], dummy=False):
+        # tp_rank is tensor parallel rank, which is the index of the process(device) in the tensor parallel group.
         self.tp_rank_ = tp_rank
+        # world_size 表示要在分布式环境中共同执行推理或训练任务的进程数。
+        # 在 torch.distributed 中，通过 world_size 和 rank_id（进程的唯一标识符）来管理进程组，指定哪些设备或进程负责哪部分计算任务。
         self.world_size_ = world_size
         self.weight_dir_ = weight_dir
         self.max_total_token_num = max_total_token_num
@@ -36,6 +40,7 @@ class TpPartBaseModel:
         self.load_way = load_way
         self.mode = mode
         self.dummy = dummy
+
 
         self._init_config()
         self._verify_must()
@@ -61,6 +66,8 @@ class TpPartBaseModel:
     
     @final
     def _verify_must(self):
+        # ensure the heads can be divided by world_size,
+        # which means the heads are distributed to GPU evenly
         assert self.config["num_attention_heads"] % self.world_size_ == 0
         return
     

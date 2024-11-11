@@ -102,6 +102,8 @@ class RouterManager:
 
         init_model_ret = []
         for rank_id in range(self.world_size):  # async init model process
+            # 每个任务都是对 init_model 方法的调用，该方法会在远程模型进程中初始化模型。
+            # init_model 方法返回一个异步任务对象，表示这个初始化任务将异步运行。每个任务对象被添加到 init_model_ret 列表中。
             init_model_ret.append(
                 self.model_rpcs[rank_id].init_model(
                     rank_id,
@@ -114,7 +116,9 @@ class RouterManager:
                     input_params=self.input_params,
                     prefetch_stream=self.prefetch_stream,
                 ))
-
+        # 如果 world_size == 1，那么 init_model_ret 的 use_rpc 为 false
+        # 如果 use_rpc 为 False，则 init_model 不会返回一个实际的 awaitable 对象，因此 asyncio.gather 会立即视其为完成，不会阻塞。
+        # await asyncio.gather(*init_model_ret)
         await asyncio.gather(*init_model_ret)
         return
     
@@ -172,6 +176,7 @@ class RouterManager:
                 if counter_count % 50 == 0:
                     print("current batch size:", len(self.running_batch.reqs), "token used ratio:", self.running_batch.calcu_used_tokens() / self.input_params.max_total_token_num)
                     pass
+                # end of the running batch
                 self.stats_tool.print_stats()
                 
             if self.running_batch is None:
@@ -359,8 +364,10 @@ class RouterManager:
 
     async def loop_for_netio_req(self):
         while True:
+            # revc from httpserver manager
             recv_req = await self.recv_from_httpserver.recv_pyobj()
             if isinstance(recv_req, tuple) and len(recv_req) == 4:
+                print("recv_req", recv_req)
                 adapter_dir, prompt_ids, sampling_params, request_id = recv_req
                 self.add_req(adapter_dir, prompt_ids, sampling_params, request_id)
             elif isinstance(recv_req, AbortReq):
@@ -442,8 +449,15 @@ def start_router_process(args, router_port, detokenization_port, model_rpc_ports
 
     pipe_writer.send('init ok')
     
+    # asyncio.new_event_loop() 返回一个新的 asyncio 事件循环
     loop = asyncio.new_event_loop()
+    # asyncio.set_event_loop(loop) 将新创建的 loop 设置为当前的默认事件循环。
+    # 设置后，接下来执行的异步任务都会在 loop 中运行。
     asyncio.set_event_loop(loop)
+    # loop.create_task(router.loop_for_fwd()) 在 loop 中创建了一个异步任务 loop_for_fwd。
+    # router.loop_for_fwd() 是一个异步函数（async 函数），使用 create_task 将其转变为一个任务并在事件循环中调度。
     loop.create_task(router.loop_for_fwd())
+    # loop.run_until_complete 会启动事件循环，并运行 router.loop_for_netio_req()，直到该任务完成。
+    # 与 create_task 不同的是，run_until_complete 会阻塞事件循环，直到指定任务 loop_for_netio_req() 完成为止。
     loop.run_until_complete(router.loop_for_netio_req())
     return

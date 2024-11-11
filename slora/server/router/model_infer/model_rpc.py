@@ -31,6 +31,8 @@ from .post_process import sample
 
 class ModelRpcServer(rpyc.Service):
 
+    # exposed_init_model 是 ModelRpcServer 类中的一个方法。
+    # 在 rpyc 中，方法名前缀 exposed_ 表示这个方法可以被远程访问。客户端可以调用这个方法并传递参数，而没有这个前缀的方法是私有的，不能被远程调用。
     def exposed_init_model(self, rank_id, world_size, weight_dir, adapter_dirs,
                            max_total_token_num, load_way, mode, input_params,
 			   prefetch_stream):
@@ -98,6 +100,7 @@ class ModelRpcServer(rpyc.Service):
                                                         head_num,
                                                         self.model.config["hidden_size"] // head_num)
         else:
+            # lora adapter
             self.infer_adapter = InferAdapter.init(self.model.mem_manager,
                                                    prefetch_stream)
         ''' finish init adapters '''
@@ -150,17 +153,17 @@ class ModelRpcServer(rpyc.Service):
         self.cache[batch_id] = batch_data
         return
     
-    # @calculate_time(show=True, min_cost_ms=300)
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=300)
+    @calculate_time(show=True, min_cost_ms=0)
     def exposed_prefill_batch(self, batch_id):
         return self.forward(batch_id, is_prefill=True)
 
-    # @calculate_time(show=True, min_cost_ms=200)
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=200)
+    @calculate_time(show=True, min_cost_ms=0)
     def exposed_decode_batch(self, batch_id):
         return self.forward(batch_id, is_prefill=False)
 
-    # @calculate_time(show=True, min_cost_ms=0.1)
+    @calculate_time(show=True, min_cost_ms=0.1)
     def exposed_filter_batch(self, batch_id, req_id_list):
         if self.world_size != 1:
             batch_id, req_id_list = obtain(batch_id), obtain(req_id_list)
@@ -427,6 +430,7 @@ class ModelRpcClient:
             await ans
             return
         else:
+            # 如果 use_rpc 为 False，则 init_model 不会返回一个实际的 awaitable 对象，因此 asyncio.gather 会立即视其为完成，不会阻塞。
             return
 
 
@@ -499,9 +503,15 @@ class ModelRpcClient:
 
 
 def _init_env(port):
+    # ThreadedServer 会在一个独立的线程中处理每个连接，因此能够支持多客户端并发访问。
+    # ThreadedServer 适合中小规模的并发请求。如果并发请求量特别大，可能需要选择其他并发模型，或将 rpyc 与更强大的服务器框架结合使用。
     from rpyc.utils.server import ThreadedServer
+    # ModelRpcServer 需要是一个继承自 rpyc.Service 的类，其中定义了允许远程调用的功能。
+    # port=port 指定服务器监听的端口号，使客户端知道要连接的地址。
+    # allow_pickle=True 表示允许序列化对象，这可能在复杂的数据传输（例如含有 Python 对象的数据）中会用到，但可能带来一定的安全风险（pickle 数据有可能被恶意篡改）。
     t = ThreadedServer(ModelRpcServer(), port=port, protocol_config={"allow_pickle": True})
     t.start()
+    # 这个函数没有显式返回任何值，直接返回 None。当服务器启动后，它会持续运行，等待并响应客户端请求，直到手动停止。
     return
 
 

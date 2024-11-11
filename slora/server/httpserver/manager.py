@@ -23,6 +23,7 @@ class HttpServerManager:
         dummy=False,
     ):
         context = zmq.asyncio.Context(2)
+        # http server push -> pull router push -> pull detokenization push -> pull http server
         self.send_to_router = context.socket(zmq.PUSH)
         self.send_to_router.connect(f"tcp://127.0.0.1:{router_port}")
 
@@ -42,7 +43,7 @@ class HttpServerManager:
         self.max_req_total_len = max_req_total_len
 
     async def generate(self, adapter_dir, prompt, sampling_params, request_id):
-
+        # 1. tokenization 
         prompt_ids = self.tokenizer.encode(prompt)
         prompt_tokens = len(prompt_ids)
         if prompt_tokens > self.max_req_input_len:

@@ -9,16 +9,18 @@ from slora.utils.infer_utils import  calculate_time
 class ReqQueue:
 
     def __init__(self, max_total_tokens, batch_max_tokens, running_max_req_size) -> None:
-        self.max_total_tokens = max_total_tokens
-        assert batch_max_tokens is not None
-        self.batch_max_tokens = batch_max_tokens
-        self.running_max_req_size = running_max_req_size
-        self.waiting_req_list: List[Req] = []
+        self.max_total_tokens = max_total_tokens #总的 token 限制。
+        assert batch_max_tokens is not None 
+        self.batch_max_tokens = batch_max_tokens #单个批次的最大 token 限制，[must]
+        self.running_max_req_size = running_max_req_size #正在运行的最大请求数限制。
+        self.waiting_req_list: List[Req] = [] #待处理请求的列表。
         
+    # 将新的请求添加到 waiting_req_list 列表中。
     def append(self, req):
         self.waiting_req_list.append(req)
         return
     
+    #初始化cache_list，用于计算批次 token 数量和内存需求。
     def _init_cache_list(self, current_batch:Batch, lora_ranks):
         if current_batch is not None:
             self.cache_len_list = []

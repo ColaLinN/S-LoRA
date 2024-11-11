@@ -173,7 +173,8 @@ async def generate_stream(request: Request) -> Response:
     # Abort the request if the client disconnects.
     background_tasks.add_task(abort_request)
 
-    #TODO: what's this?
+    #服务器使用 流式响应（streaming response） 来生成并返回数据流，符合客户端通过 aiohttp 实现的逐块数据处理的方式
+    #在客户端发送请求后，服务器可以逐步生成并传输数据块给客户端，而不是等待所有数据生成后一次性返回。
     return StreamingResponse(
         stream_results(), media_type="text/event-stream", background=background_tasks
     )
@@ -328,6 +329,7 @@ def main():
 
     parser.add_argument("--model_dir", type=str, default=None,
                         help="the model weight dir path, the app will load config, weights and tokenizer from this dir")
+    # for better performance, use auto mode
     parser.add_argument("--tokenizer_mode", type=str, default="slow",
                         help="""tokenizer load mode, can be slow or auto, slow mode load fast but run slow, slow mode is good for debug and test, 
                         when you want to get best performance, try auto mode""")
@@ -335,16 +337,19 @@ def main():
                         help="the total token nums the gpu and model can support, equals = max_batch * (input_len + output_len)")
     parser.add_argument("--batch_max_tokens", type=int, default=None,
                         help="max tokens num for new cat batch, it control prefill batch size to Preventing OOM")
+    
     parser.add_argument("--eos_id", type=int, default=2,
                         help="eos stop token id")
     parser.add_argument("--running_max_req_size", type=int, default=1000,
                         help="the max size for forward requests in the same time")
     parser.add_argument("--tp", type=int, default=1,
                         help="model tp parral size, the default is 1")
+    
     parser.add_argument("--max_req_input_len", type=int, default=2048,
                         help="the max value for req input tokens num")
     parser.add_argument("--max_req_total_len", type=int, default=2048 + 1024,
                         help="the max value for req_input_len + req_output_len")
+    
     parser.add_argument("--nccl_port", type=int, default=28765,
                         help="the nccl_port to build a distributed environment for PyTorch")
     parser.add_argument("--mode", type=str, default=[], nargs='+',

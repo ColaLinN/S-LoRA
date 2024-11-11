@@ -49,11 +49,11 @@ class ModelConfig:
         elif "llama" in name.lower():
             if "llama-7b" in name.lower():
                 self.max_seq_len=2048
-                self.num_hidden_layers=32
+                self.num_hidden_layers=32 #表示模型中隐藏层（transformer 层）的数量。
                 self.n_head=32
-                self.hidden_size=4096
-                self.ffn_embed_dim=11008
-            elif "llama-13b" in name.lower():
+                self.hidden_size=4096 #表示每一层中的隐藏状态向量的维度（embedding 的维度）。
+                self.ffn_embed_dim=11008 #定义前馈神经网络（FFN）层中隐藏层的维度。
+            elif "llama-13b" in name.lower(): 
                 self.max_seq_len=2048
                 self.num_hidden_layers=40
                 self.n_head=40

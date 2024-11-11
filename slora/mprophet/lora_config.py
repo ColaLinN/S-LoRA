@@ -115,6 +115,7 @@ def get_lora_config_json(name):
                   "merge_weights": False,
                   "modules_to_save": None,
                   "peft_type": "LORA",
+                  # 正则表达式匹配获得adapters名字的rank
                   "r": int(re.search(r'rank-(\d+)', name).group(1)),
                   "target_modules": [
                   "q_proj",
