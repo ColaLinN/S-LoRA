@@ -30,6 +30,7 @@ def dummy_prompt(prompt_len):
     return "Hello " * prompt_len
 
 
+#TODO:
 def generate_requests(num_adapters, alpha, req_rate, cv, duration,
                       input_range, output_range,
                       adapter_dirs, # (base_dir, adapter_dir)
@@ -43,8 +44,13 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
     ind = (probs * num_adapters).astype(int)
 
     # generate input output len
-    input_lens = np.random.randint(input_range[0], input_range[1], tot_req)
-    output_lens = np.random.randint(output_range[0], output_range[1], tot_req)
+    alpha = 10.0  # Power distribution parameter
+    input_lens = 1 - np.random.power(alpha, tot_req)
+    input_lens = np.round(input_lens * (512 / input_lens.max()) + 1).astype(int)
+    output_lens = 1 - np.random.power(alpha, tot_req)
+    output_lens =np.round(output_lens * (512 / output_lens.max()) + 1).astype(int)
+    # input_lens = np.random.randint(input_range[0], input_range[1], tot_req)
+    # output_lens = np.random.randint(output_range[0], output_range[1], tot_req)
 
     # generate timestamp
     requests = []
