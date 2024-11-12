@@ -4,6 +4,7 @@ export PBS_JOBID=
 
 # path
 cd scratch/S-LoRA/benchmarks/
+conda activate slora
 
 # conda
 conda list

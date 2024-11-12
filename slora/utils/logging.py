@@ -4,13 +4,13 @@ import json
 def print_with_timestamp(**kwargs):
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
+    print(f"Logging|INFO|Current Time: {current_time}|", end="")
     for key, value in kwargs.items():
         if isinstance(value, (dict, list)):
-            print(f"{key}: {json.dumps(value, indent=4, ensure_ascii=False)}")
+            print(f"{key}: {json.dumps(value, indent=4, ensure_ascii=False)}", end="")
         else:
-            print(f"{key}: {value}")
-    
-    print(f"Current Time: {current_time}")
+            print(f"{key}: {value}", end="")
+    print("")
 
 # print_with_timestamp(
 #     name="Alice",

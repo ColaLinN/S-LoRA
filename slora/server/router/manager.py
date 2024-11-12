@@ -267,7 +267,7 @@ class RouterManager:
                         inside_func="_step",
                         to_run_func="_merge_batch",
                         running_batch=self.running_batch.__repr__(),
-                        new_mini_batch=self.new_mini_batch.__repr__(),
+                        new_mini_batch=new_mini_batch.__repr__(),
                     )
                     await self._merge_batch(self.running_batch, new_mini_batch)
                     self.running_batch.merge(new_mini_batch)
@@ -395,14 +395,18 @@ class RouterManager:
             if isinstance(recv_req, tuple) and len(recv_req) == 4:
                 adapter_dir, prompt_ids, sampling_params, request_id = recv_req
                 print_with_timestamp(
-                    f"exp_debugging|loop_for_netio_req try to add_req {adapter_dir} len_propmt_ids {len(prompt_ids)} sampling_params {sampling_params} request_id {request_id}"
+                    inside_func="loop_for_netio_req",
+                    to_run_func="add_req",
+                    running_batch=f"{adapter_dir} len_propmt_ids {len(prompt_ids)} sampling_params {sampling_params} request_id {request_id}",
                 )
                 self.add_req(adapter_dir, prompt_ids, sampling_params, request_id)
             elif isinstance(recv_req, AbortReq):
                 abort_req = recv_req
                 request_id = abort_req.req_id
                 print_with_timestamp(
-                    f"exp_debugging|loop_for_netio_req try to abort {request_id}"
+                    inside_func="loop_for_netio_req",
+                    to_run_func="abort",
+                    running_batch=f"exp_debugging|loop_for_netio_req try to abort {request_id}",
                 )
                 await self.abort(request_id)
                 self.send_to_detokenization.send_pyobj(abort_req)
