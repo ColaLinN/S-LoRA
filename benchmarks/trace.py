@@ -108,6 +108,9 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     input_lens = [2040, 1024, 2, 2, 2, 2, 2, 2]
     output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
 
+    # input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
+    # output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
+
     # generate timestamp
     requests = []
     tic = 0

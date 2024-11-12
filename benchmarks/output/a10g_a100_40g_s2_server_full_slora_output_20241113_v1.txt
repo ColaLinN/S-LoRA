@@ -107,3 +107,592 @@ generate_new_batch function waiting_req_list []
 Function generate_new_batch took 0.2143383026123047 ms to run.
 load 0 adapters, 0 in total
 Logging|INFO|Current Time: 2024-11-13 04:20:26|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d'])
+INFO:     127.0.0.1:34766 - "POST /generate_stream HTTP/1.1" 200 OK
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d'])new_mini_batch: batch_id=71c095e10c724a9ab5551f922b5f1a32, req_ids=dict_keys(['9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d', '9ddf901333dc4f2ea372ad52dba4b53b', 'af1c0c4a4833446295893897ab3572af', '0a65a2e7d9094960a3766efd498161ae'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 9ddf901333dc4f2ea372ad52dba4b53b
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort af1c0c4a4833446295893897ab3572af
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys(['394ea391b38e448d89218d160aafdd4d'])
+Logging|INFO|Current Time: 2024-11-13 04:20:27|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 0a65a2e7d9094960a3766efd498161ae
+current batch size: 1 token used ratio: 0.15535714285714286
+current batch size: 1 token used ratio: 0.15892857142857142
+current batch size: 1 token used ratio: 0.1625
+current batch size: 1 token used ratio: 0.16607142857142856
+current batch size: 1 token used ratio: 0.16964285714285715
+Avg tokens(prompt+generate) throughput:  143.724 tokens/s
+Avg prompt tokens throughput:            104.872 tokens/s
+Avg generate tokens throughput:           38.852 tokens/s
+current batch size: 1 token used ratio: 0.1732142857142857
+current batch size: 1 token used ratio: 0.1767857142857143
+current batch size: 1 token used ratio: 0.18035714285714285
+current batch size: 1 token used ratio: 0.18392857142857144
+current batch size: 1 token used ratio: 0.1875
+current batch size: 1 token used ratio: 0.19107142857142856
+current batch size: 1 token used ratio: 0.19464285714285715
+Avg tokens(prompt+generate) throughput:   34.917 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           34.917 tokens/s
+current batch size: 1 token used ratio: 0.1982142857142857
+current batch size: 1 token used ratio: 0.2017857142857143
+current batch size: 1 token used ratio: 0.20535714285714285
+current batch size: 1 token used ratio: 0.20892857142857144
+current batch size: 1 token used ratio: 0.2125
+current batch size: 1 token used ratio: 0.21607142857142858
+Avg tokens(prompt+generate) throughput:   34.021 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           34.021 tokens/s
+current batch size: 1 token used ratio: 0.21964285714285714
+current batch size: 1 token used ratio: 0.22321428571428573
+current batch size: 1 token used ratio: 0.22678571428571428
+current batch size: 1 token used ratio: 0.23035714285714284
+current batch size: 1 token used ratio: 0.23392857142857143
+current batch size: 1 token used ratio: 0.2375
+current batch size: 1 token used ratio: 0.24107142857142858
+Avg tokens(prompt+generate) throughput:   33.418 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           33.418 tokens/s
+current batch size: 1 token used ratio: 0.24464285714285713
+current batch size: 1 token used ratio: 0.24821428571428572
+current batch size: 1 token used ratio: 0.2517857142857143
+current batch size: 1 token used ratio: 0.25535714285714284
+current batch size: 1 token used ratio: 0.25892857142857145
+current batch size: 1 token used ratio: 0.2625
+current batch size: 1 token used ratio: 0.26607142857142857
+Avg tokens(prompt+generate) throughput:   32.803 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           32.803 tokens/s
+current batch size: 1 token used ratio: 0.26964285714285713
+current batch size: 1 token used ratio: 0.2732142857142857
+current batch size: 1 token used ratio: 0.2767857142857143
+current batch size: 1 token used ratio: 0.28035714285714286
+current batch size: 1 token used ratio: 0.2839285714285714
+current batch size: 1 token used ratio: 0.2875
+Avg tokens(prompt+generate) throughput:   32.145 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           32.145 tokens/s
+current batch size: 1 token used ratio: 0.2910714285714286
+offload 0 adapters, 0 remains
+offload 0 adapters, 0 remains
+Logging|INFO|Current Time: 2024-11-13 04:21:24|inside_func: _filter_runing_batchto_run_func: running_batch=nullrunning_batch: batch_id=a9395a1d3fc642cfbdbdaa715e8d9b68, req_ids=dict_keys([])
+Logging|INFO|Current Time: 2024-11-13 04:21:24|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 394ea391b38e448d89218d160aafdd4d
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x14693a062610> request_id 2972ea56b07845b49ee5862e1cb0b96f
+add new req request_id(n=2972ea56b07845b49ee5862e1cb0b96f, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.1468658447265625 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: _prefill_batchINFO:     127.0.0.1:34770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34778 - "POST /generate_stream HTTP/1.1" 200 OK
+running_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Avg tokens(prompt+generate) throughput:    0.197 tokens/s
+Avg prompt tokens throughput:              0.089 tokens/s
+Avg generate tokens throughput:            0.108 tokens/s
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:47|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 1026 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093c40> request_id b1422a7305af4183ba0af03e086ae315
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 2042 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093dc0> request_id c14682c996da4f89807d3475084ba1fb
+add new req request_id(n=b1422a7305af4183ba0af03e086ae315, adapter_dir=None,  rank is 0
+add new req request_id(n=c14682c996da4f89807d3475084ba1fb, adapter_dir=None,  rank is 0
+generate_new_batch function 2
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.17309188842773438 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])new_mini_batch: batch_id=7f05a8d189964a98b8a2330a0dd18b27, req_ids=dict_keys(['b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'b1422a7305af4183ba0af03e086ae315', 'c14682c996da4f89807d3475084ba1fb'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort b1422a7305af4183ba0af03e086ae315
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort c14682c996da4f89807d3475084ba1fb
+Logging|INFO|Current Time: 2024-11-13 04:24:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+current batch size: 1 token used ratio: 0.0037142857142857142
+Logging|INFO|Current Time: 2024-11-13 04:24:49|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1469040935b0> request_id a98cae81b1f34482bcdd8266945191e1
+add new req request_id(n=a98cae81b1f34482bcdd8266945191e1, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.12087821960449219 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:24:49|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:49|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])new_mini_batch: batch_id=4a55278d2c864545b11e3a9c7998c598, req_ids=dict_keys(['a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+INFO:     127.0.0.1:34782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34794 - "POST /generate_stream HTTP/1.1" 200 OK
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', 'a98cae81b1f34482bcdd8266945191e1'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort a98cae81b1f34482bcdd8266945191e1
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+current batch size: 1 token used ratio: 0.007214285714285714
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1475d62f1ca0> request_id 8d997913a8994ebb9f084a6b9b3a8488
+add new req request_id(n=8d997913a8994ebb9f084a6b9b3a8488, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.1304149627685547 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])new_mini_batch: batch_id=83894c19b38c40b7a1d8095b08475ac8, req_ids=dict_keys(['8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1475d63020a0> request_id 02275cb21ab74b08997f0074d7186d26
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:50|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093940> request_id f0826cd453624167ad4dd9496a19cb8f
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '8d997913a8994ebb9f084a6b9b3a8488'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 8d997913a8994ebb9f084a6b9b3a8488
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1468e4025130> request_id ef14e89094024eda9e8974798217a672
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+add new req request_id(n=02275cb21ab74b08997f0074d7186d26, adapter_dir=None,  rank is 0
+add new req request_id(n=f0826cd453624167ad4dd9496a19cb8f, adapter_dir=None,  rank is 0
+add new req request_id(n=ef14e89094024eda9e8974798217a672, adapter_dir=None,  rank is 0
+generate_new_batch function 3
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.19884109497070312 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])new_mini_batch: batch_id=216bfdec2ce048909d2e22fdb7f80cac, req_ids=dict_keys(['02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepINFO:     127.0.0.1:34802 - "POST /generate_stream HTTP/1.1" 200 OK
+to_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f', '02275cb21ab74b08997f0074d7186d26', 'f0826cd453624167ad4dd9496a19cb8f', 'ef14e89094024eda9e8974798217a672'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 02275cb21ab74b08997f0074d7186d26
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort f0826cd453624167ad4dd9496a19cb8f
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys(['2972ea56b07845b49ee5862e1cb0b96f'])
+Logging|INFO|Current Time: 2024-11-13 04:24:51|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort ef14e89094024eda9e8974798217a672
+current batch size: 1 token used ratio: 0.010642857142857143
+current batch size: 1 token used ratio: 0.014214285714285714
+current batch size: 1 token used ratio: 0.017785714285714287
+current batch size: 1 token used ratio: 0.021357142857142856
+current batch size: 1 token used ratio: 0.02492857142857143
+Avg tokens(prompt+generate) throughput:  353.845 tokens/s
+Avg prompt tokens throughput:            315.751 tokens/s
+Avg generate tokens throughput:           38.094 tokens/s
+current batch size: 1 token used ratio: 0.0285
+current batch size: 1 token used ratio: 0.03207142857142857
+current batch size: 1 token used ratio: 0.03564285714285714
+current batch size: 1 token used ratio: 0.039214285714285715
+current batch size: 1 token used ratio: 0.04278571428571429
+current batch size: 1 token used ratio: 0.046357142857142854
+current batch size: 1 token used ratio: 0.049928571428571426
+Avg tokens(prompt+generate) throughput:   35.397 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.397 tokens/s
+current batch size: 1 token used ratio: 0.0535
+current batch size: 1 token used ratio: 0.05707142857142857
+current batch size: 1 token used ratio: 0.060642857142857144
+current batch size: 1 token used ratio: 0.06421428571428571
+current batch size: 1 token used ratio: 0.06778571428571428
+current batch size: 1 token used ratio: 0.07135714285714286
+current batch size: 1 token used ratio: 0.07492857142857143
+Avg tokens(prompt+generate) throughput:   35.282 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.282 tokens/s
+current batch size: 1 token used ratio: 0.0785
+current batch size: 1 token used ratio: 0.08207142857142857
+current batch size: 1 token used ratio: 0.08564285714285715
+current batch size: 1 token used ratio: 0.08921428571428572
+current batch size: 1 token used ratio: 0.09278571428571429
+current batch size: 1 token used ratio: 0.09635714285714286
+current batch size: 1 token used ratio: 0.09992857142857142
+Avg tokens(prompt+generate) throughput:   35.290 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.290 tokens/s
+current batch size: 1 token used ratio: 0.1035
+current batch size: 1 token used ratio: 0.10707142857142857
+current batch size: 1 token used ratio: 0.11064285714285714
+current batch size: 1 token used ratio: 0.11421428571428571
+current batch size: 1 token used ratio: 0.11778571428571429
+current batch size: 1 token used ratio: 0.12135714285714286
+current batch size: 1 token used ratio: 0.12492857142857143
+Avg tokens(prompt+generate) throughput:   35.399 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.399 tokens/s
+current batch size: 1 token used ratio: 0.1285
+current batch size: 1 token used ratio: 0.13207142857142856
+current batch size: 1 token used ratio: 0.13564285714285715
+current batch size: 1 token used ratio: 0.1392142857142857
+current batch size: 1 token used ratio: 0.1427857142857143
+current batch size: 1 token used ratio: 0.14635714285714285
+offload 0 adapters, 0 remains
+offload 0 adapters, 0 remains
+Logging|INFO|Current Time: 2024-11-13 04:25:45|inside_func: _filter_runing_batchto_run_func: running_batch=nullrunning_batch: batch_id=14765ecfffda4da58f0c4e4b1b6e2dbf, req_ids=dict_keys([])
+Logging|INFO|Current Time: 2024-11-13 04:25:45|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 2972ea56b07845b49ee5862e1cb0b96f
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x14693a062610> request_id 2c57a7ab94e94242b7f89938c8ba9c37
+add new req request_id(n=2c57a7ab94e94242b7f89938c8ba9c37, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.1537799835205078 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: _prefill_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Avg tokens(prompt+generate) throughput:    3.911 tokens/s
+Avg prompt tokens throughput:              0.226 tokens/s
+Avg generate tokens throughput:            3.685 tokens/s
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+INFO:     127.0.0.1:34806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34810 - "POST /generate_stream HTTP/1.1" 200 OK
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 1026 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093940> request_id ef802723e3044f08a77f0fcb4d56c9c6
+add new req request_id(n=ef802723e3044f08a77f0fcb4d56c9c6, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.10943412780761719 ms to run.
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 2042 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093fd0> request_id bf632b82cb3142c7ae551312c2ad7705
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])new_mini_batch: batch_id=daa5af2cf3f84d188088dc7273f020ed, req_ids=dict_keys(['ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:57|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'ef802723e3044f08a77f0fcb4d56c9c6'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort ef802723e3044f08a77f0fcb4d56c9c6
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+add new req request_id(n=bf632b82cb3142c7ae551312c2ad7705, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.1163482666015625 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])new_mini_batch: batch_id=d3029101cefc4d2f81fa04b231a52bd6, req_ids=dict_keys(['bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'bf632b82cb3142c7ae551312c2ad7705'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+current batch size: 1 token used ratio: 0.004142857142857143
+Logging|INFO|Current Time: 2024-11-13 04:26:58|INFO:     127.0.0.1:34814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34830 - "POST /generate_stream HTTP/1.1" 200 OK
+inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort bf632b82cb3142c7ae551312c2ad7705
+Logging|INFO|Current Time: 2024-11-13 04:26:58|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1475d62f12b0> request_id 208bb3b47d754d9587827d0cb0473318
+add new req request_id(n=208bb3b47d754d9587827d0cb0473318, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.11491775512695312 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])new_mini_batch: batch_id=0d6c35231471491b87fac35ddfc16468, req_ids=dict_keys(['208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '208bb3b47d754d9587827d0cb0473318'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 208bb3b47d754d9587827d0cb0473318
+Logging|INFO|Current Time: 2024-11-13 04:26:59|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+current batch size: 1 token used ratio: 0.007642857142857143
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093940> request_id 3cae1842010342e99720aad5176f1d8a
+add new req request_id(n=3cae1842010342e99720aad5176f1d8a, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.11968612670898438 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])new_mini_batch: batch_id=b5bedae99be640a9a7c8cd85d038e90e, req_ids=dict_keys(['3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093c40> request_id e0e4b67ff9fa4c04ba38f19df975ca48
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1469040931f0> request_id 0ea0d03717c74128be5451d16cea5e90
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', '3cae1842010342e99720aad5176f1d8a'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 3cae1842010342e99720aad5176f1d8a
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 18 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1468e40258b0> request_id acdfc6c4c0994591ba9dc8460d74079b
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+add new req request_id(n=e0e4b67ff9fa4c04ba38f19df975ca48, adapter_dir=None,  rank is 0
+add new req request_id(n=0ea0d03717c74128be5451d16cea5e90, adapter_dir=None,  rank is 0
+add new req request_id(n=acdfc6c4c0994591ba9dc8460d74079b, adapter_dir=None,  rank is 0
+generate_new_batch function 3
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.19979476928710938 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])new_mini_batch: batch_id=6d36cd6d13ed4dfcb747a9fb963f9a71, req_ids=dict_keys(['e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37', 'e0e4b67ff9fa4c04ba38f19df975ca48', '0ea0d03717c74128be5451d16cea5e90', 'acdfc6c4c0994591ba9dc8460d74079b'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:00|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort e0e4b67ff9fa4c04ba38f19df975ca48
+Logging|INFO|Current Time: 2024-11-13 04:27:01|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 0ea0d03717c74128be5451d16cea5e90
+Logging|INFO|Current Time: 2024-11-13 04:27:01|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys(['2c57a7ab94e94242b7f89938c8ba9c37'])
+Logging|INFO|Current Time: 2024-11-13 04:27:01|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort acdfc6c4c0994591ba9dc8460d74079b
+current batch size: 1 token used ratio: 0.01107142857142857
+current batch size: 1 token used ratio: 0.014642857142857143
+current batch size: 1 token used ratio: 0.018214285714285714
+current batch size: 1 token used ratio: 0.021785714285714287
+Avg tokens(prompt+generate) throughput:  353.841 tokens/s
+Avg prompt tokens throughput:            315.748 tokens/s
+Avg generate tokens throughput:           38.094 tokens/s
+current batch size: 1 token used ratio: 0.025357142857142856
+current batch size: 1 token used ratio: 0.02892857142857143
+current batch size: 1 token used ratio: 0.0325
+current batch size: 1 token used ratio: 0.036071428571428574
+current batch size: 1 token used ratio: 0.03964285714285714
+current batch size: 1 token used ratio: 0.04321428571428571
+current batch size: 1 token used ratio: 0.046785714285714285
+current batch size: 1 token used ratio: 0.05035714285714286
+Avg tokens(prompt+generate) throughput:   35.415 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.415 tokens/s
+current batch size: 1 token used ratio: 0.05392857142857143
+current batch size: 1 token used ratio: 0.0575
+current batch size: 1 token used ratio: 0.06107142857142857
+current batch size: 1 token used ratio: 0.06464285714285714
+current batch size: 1 token used ratio: 0.06821428571428571
+current batch size: 1 token used ratio: 0.07178571428571429
+current batch size: 1 token used ratio: 0.07535714285714286
+Avg tokens(prompt+generate) throughput:   35.330 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.330 tokens/s
+current batch size: 1 token used ratio: 0.07892857142857143
+current batch size: 1 token used ratio: 0.0825
+current batch size: 1 token used ratio: 0.08607142857142858
+current batch size: 1 token used ratio: 0.08964285714285715
+current batch size: 1 token used ratio: 0.09321428571428571
+current batch size: 1 token used ratio: 0.09678571428571428
+current batch size: 1 token used ratio: 0.10035714285714285
+Avg tokens(prompt+generate) throughput:   35.422 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.422 tokens/s
+current batch size: 1 token used ratio: 0.10392857142857143
+current batch size: 1 token used ratio: 0.1075
+current batch size: 1 token used ratio: 0.11107142857142857
+current batch size: 1 token used ratio: 0.11464285714285714
+current batch size: 1 token used ratio: 0.11821428571428572
+current batch size: 1 token used ratio: 0.12178571428571429
+current batch size: 1 token used ratio: 0.12535714285714286
+Avg tokens(prompt+generate) throughput:   35.423 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           35.423 tokens/s
+current batch size: 1 token used ratio: 0.12892857142857142
+current batch size: 1 token used ratio: 0.1325
+current batch size: 1 token used ratio: 0.13607142857142857
+current batch size: 1 token used ratio: 0.13964285714285715
+current batch size: 1 token used ratio: 0.1432142857142857
+current batch size: 1 token used ratio: 0.1467857142857143
+offload 0 adapters, 0 remains
+offload 0 adapters, 0 remains
+INFO:     127.0.0.1:34840 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34844 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34848 - "POST /generate_stream HTTP/1.1" 200 OK
+Logging|INFO|Current Time: 2024-11-13 04:27:55|inside_func: _filter_runing_batchto_run_func: running_batch=nullrunning_batch: batch_id=6c0d3e5b2ab04fbcb29e65121adb6a8b, req_ids=dict_keys([])
+Logging|INFO|Current Time: 2024-11-13 04:27:55|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 2c57a7ab94e94242b7f89938c8ba9c37
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 2042 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1475d63020a0> request_id 0621979c35b144798d4901b162922675
+add new req request_id(n=0621979c35b144798d4901b162922675, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.14781951904296875 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: _prefill_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Avg tokens(prompt+generate) throughput:   39.720 tokens/s
+Avg prompt tokens throughput:             34.811 tokens/s
+Avg generate tokens throughput:            4.910 tokens/s
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:45|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+current batch size: 1 token used ratio: 0.1467857142857143
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 1026 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093580> request_id 06c523cab7fc416aa16fad99524817cc
+add new req request_id(n=06c523cab7fc416aa16fad99524817cc, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.11563301086425781 ms to run.
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1469040935b0> request_id be2103a06464497cab68b3fae51a40cf
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])new_mini_batch: batch_id=540ccb02337346ebb849c5b9e772e7e1, req_ids=dict_keys(['06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '06c523cab7fc416aa16fad99524817cc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 06c523cab7fc416aa16fad99524817cc
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+add new req request_id(n=be2103a06464497cab68b3fae51a40cf, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.10395050048828125 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])new_mini_batch: batch_id=e65505b5bc474304a83de1cf45ac6d66, req_ids=dict_keys(['be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepINFO:     127.0.0.1:34852 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34860 - "POST /generate_stream HTTP/1.1" 200 OK
+to_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'be2103a06464497cab68b3fae51a40cf'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort be2103a06464497cab68b3fae51a40cf
+Logging|INFO|Current Time: 2024-11-13 04:28:46|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+current batch size: 1 token used ratio: 0.15021428571428572
+Logging|INFO|Current Time: 2024-11-13 04:28:47|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x14693a062610> request_id 0a357f3f796344bea34f9de0f12b720e
+add new req request_id(n=0a357f3f796344bea34f9de0f12b720e, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.10633468627929688 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])new_mini_batch: batch_id=65698a7c14a44ecea7dac31a7581de47, req_ids=dict_keys(['0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '0a357f3f796344bea34f9de0f12b720e'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 0a357f3f796344bea34f9de0f12b720e
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093a90> request_id 54285e14ac40467a9c2ec682a41862fc
+add new req request_id(n=54285e14ac40467a9c2ec682a41862fc, adapter_dir=None,  rank is 0
+generate_new_batch function 1
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.11420249938964844 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])new_mini_batch: batch_id=a7765fe564aa47bc98a964753e2373ba, req_ids=dict_keys(['54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:48|inside_func: loop_for_netio_reqto_run_func: add_reqINFO:     127.0.0.1:34864 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34868 - "POST /generate_stream HTTP/1.1" 200 OK
+running_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093cd0> request_id e883f4789e0d4284842a339673a8d1c7
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', '54285e14ac40467a9c2ec682a41862fc'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x1469040935b0> request_id a46fcc5759584340854a3eaea13d17ce
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 54285e14ac40467a9c2ec682a41862fc
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: add_reqrunning_batch: None len_propmt_ids 4 sampling_params <slora.server.sampling_params.SamplingParams object at 0x146904093dc0> request_id 248cc2b62c6645eda3cf44d2cdd855d4
+current batch size: 1 token used ratio: 0.15364285714285714
+add new req request_id(n=e883f4789e0d4284842a339673a8d1c7, adapter_dir=None,  rank is 0
+add new req request_id(n=a46fcc5759584340854a3eaea13d17ce, adapter_dir=None,  rank is 0
+add new req request_id(n=248cc2b62c6645eda3cf44d2cdd855d4, adapter_dir=None,  rank is 0
+generate_new_batch function 3
+generate_new_batch function waiting_req_list []
+Function generate_new_batch took 0.20956993103027344 ms to run.
+load 0 adapters, 0 in total
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: _merge_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])new_mini_batch: batch_id=4774ff7992b64bd9894a14f03699739b, req_ids=dict_keys(['e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675', 'e883f4789e0d4284842a339673a8d1c7', 'a46fcc5759584340854a3eaea13d17ce', '248cc2b62c6645eda3cf44d2cdd855d4'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort e883f4789e0d4284842a339673a8d1c7
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort a46fcc5759584340854a3eaea13d17ce
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: _stepto_run_func: start _decode_batchrunning_batch: batch_id=9e1685ef82154d06a5e848e4d7fbe5d0, req_ids=dict_keys(['0621979c35b144798d4901b162922675'])
+Logging|INFO|Current Time: 2024-11-13 04:28:49|inside_func: loop_for_netio_reqto_run_func: abortrunning_batch: exp_debugging|loop_for_netio_req try to abort 248cc2b62c6645eda3cf44d2cdd855d4
+current batch size: 1 token used ratio: 0.15714285714285714
+current batch size: 1 token used ratio: 0.16071428571428573
+current batch size: 1 token used ratio: 0.16428571428571428
+current batch size: 1 token used ratio: 0.16785714285714284
+Avg tokens(prompt+generate) throughput:  143.899 tokens/s
+Avg prompt tokens throughput:            104.781 tokens/s
+Avg generate tokens throughput:           39.118 tokens/s
+current batch size: 1 token used ratio: 0.17142857142857143
+current batch size: 1 token used ratio: 0.175
+current batch size: 1 token used ratio: 0.17857142857142858
+current batch size: 1 token used ratio: 0.18214285714285713
+current batch size: 1 token used ratio: 0.18571428571428572
+current batch size: 1 token used ratio: 0.18928571428571428
+current batch size: 1 token used ratio: 0.19285714285714287
+Avg tokens(prompt+generate) throughput:   34.902 tokens/s
+Avg prompt tokens throughput:              0.000 tokens/s
+Avg generate tokens throughput:           34.902 tokens/s
+current batch size: 1 token used ratio: 0.19642857142857142
+current batch size: 1 token used ratio: 0.2
+current batch size: 1 token used ratio: 
