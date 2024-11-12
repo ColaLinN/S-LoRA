@@ -105,11 +105,16 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     probs = np.random.power(alpha, tot_req)
     ind = (probs * num_adapters).astype(int)
 
-    input_lens = [2040, 1024, 2, 2, 2, 2, 2, 2]
+    # input_lens = [2040, 1024, 16, 16, 16, 16, 16, 16]
+    # output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
+
+    input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
     output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
+    
+    print(input_lens, output_lens)
 
     # input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
-    # output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
+    # output_lens= [16, 2040, 8, 8, 8, 8, 8, 8]
 
     # generate timestamp
     requests = []
@@ -122,6 +127,8 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
         requests.append(Request(i, adapter_dirs[ind[i]][0], adapter_dirs[ind[i]][1],
                                 dummy_prompt(input_lens[i]), int(input_lens[i]), int(output_lens[i]),
                                 tic))
+    for req in requests:
+        print(req.__repr__)
     return requests
 
 def get_real_requests(trace_file, req_rate, duration, base_model, adapter_dirs, input_range, output_range, seed=42):
