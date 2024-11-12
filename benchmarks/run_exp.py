@@ -19,7 +19,7 @@ from typing import List, Tuple
 import aiohttp
 
 from exp_suite import BenchmarkConfig, get_all_suites, to_dict, BASE_MODEL, LORA_DIR
-from trace import generate_requests, get_real_requests
+from trace import generate_requests_v2, get_real_requests
 sys.path.append("../bench_lora")
 from slora.utils.metric import reward, attainment_func
 
@@ -239,7 +239,7 @@ def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug
         if num_adapters == 0:
             adapter_dirs = [(base_model, None)]
             num_adapters = 1
-        requests = generate_requests(num_adapters, alpha, req_rate, cv, duration,
+        requests = generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
                                  input_range, output_range, adapter_dirs,
                                  seed=seed)
         avg_prompt_len = np.mean([req.prompt_len for req in requests])

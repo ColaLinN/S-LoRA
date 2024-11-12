@@ -88,6 +88,39 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
                                 tic))
     return requests
 
+def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
+                      input_range, output_range,
+                      adapter_dirs, # (base_dir, adapter_dir)
+                      seed=42):
+    print("generating requests v2", num_adapters, alpha, req_rate, cv, duration,
+                      input_range, output_range,
+                      adapter_dirs, 
+                      seed)
+    np.random.seed(seed)
+
+    # tot_req 与 req_rate 和 duration 有关
+    tot_req = int(8)
+
+    # generate adapter id
+    probs = np.random.power(alpha, tot_req)
+    ind = (probs * num_adapters).astype(int)
+
+    input_lens = [2048, 1024, 2, 2, 2, 2, 2, 2]
+    output_lens= [2048, 8, 8, 8, 8, 8, 8, 8]
+
+    # generate timestamp
+    requests = []
+    tic = 0
+    shape = 1 / (cv * cv)
+    scale = cv * cv / req_rate
+    intervals = np.random.gamma(shape, scale, tot_req)
+    for i in range(tot_req):
+        tic += intervals[i]
+        requests.append(Request(i, adapter_dirs[ind[i]][0], adapter_dirs[ind[i]][1],
+                                dummy_prompt(input_lens[i]), int(input_lens[i]), int(output_lens[i]),
+                                tic))
+    return requests
+
 def get_real_requests(trace_file, req_rate, duration, base_model, adapter_dirs, input_range, output_range, seed=42):
     np.random.seed(seed)
     tokenizer = AutoTokenizer.from_pretrained(base_model)
