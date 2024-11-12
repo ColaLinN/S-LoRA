@@ -1,0 +1,35 @@
+[('num_adapters', 0), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [1, 5]), ('output_range', [1, 5])]
+get_adapter_dirs input and output 0 ['dummy-lora-13b-rank-64', 'dummy-lora-13b-rank-32', 'dummy-lora-13b-rank-16'] None ['dummy-lora-13b-rank-64-0', 'dummy-lora-13b-rank-32-0', 'dummy-lora-13b-rank-16-0']
+========
+generating requests v2 1 1 2 1 15 [1, 5] [1, 5] [('huggyllama/llama-13b', None)] 42
+avg_len: 646.5 avg_prompt_len: 384.5 avg_output_len: 262.0
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12240
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 6144
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+req_id 2 prompt_len 2 output_len 8 request_latency 1.09 s, first_token_latency 0.79 s
+req_id 1 prompt_len 1024 output_len 8 request_latency 1.10 s, first_token_latency 0.80 s
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+req_id 3 prompt_len 2 output_len 8 request_latency 0.34 s, first_token_latency 0.08 s
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+req_id 4 prompt_len 2 output_len 8 request_latency 0.31 s, first_token_latency 0.09 s
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 12
+req_id 5 prompt_len 2 output_len 8 request_latency 0.53 s, first_token_latency 0.32 s
+req_id 6 prompt_len 2 output_len 8 request_latency 0.43 s, first_token_latency 0.22 s
+req_id 7 prompt_len 2 output_len 8 request_latency 0.33 s, first_token_latency 0.12 s
+req_id 0 prompt_len 2040 output_len 2040 request_latency 61.95 s, first_token_latency 0.86 s
+Total time: 62.42 s
+Aborted Request: 0
+Throughput: 0.13 requests/s
+Throughput strip: -0.75 requests/s
+Average latency: 8.26 s
+Average latency per token: 0.04 s
+Average latency per output token: 0.07 s
+Average first token latency: 0.41 s
+90 percentile first token latency: < 0.82 s
+50 percentile first token latency: < 0.27 s
+Average satisfaction: 0.99
+90 percentile satisfaction: > 0.98
+50 percentile satisfaction: > 1.00
+Average attainment: 1.00

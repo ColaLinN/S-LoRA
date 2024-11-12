@@ -105,8 +105,8 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     probs = np.random.power(alpha, tot_req)
     ind = (probs * num_adapters).astype(int)
 
-    input_lens = [2048, 1024, 2, 2, 2, 2, 2, 2]
-    output_lens= [2048, 8, 8, 8, 8, 8, 8, 8]
+    input_lens = [2040, 1024, 2, 2, 2, 2, 2, 2]
+    output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
 
     # generate timestamp
     requests = []
