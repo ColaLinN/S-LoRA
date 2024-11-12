@@ -360,6 +360,7 @@ class RouterManager:
             recv_req = await self.recv_from_httpserver.recv_pyobj()
             if isinstance(recv_req, tuple) and len(recv_req) == 4:
                 adapter_dir, prompt_ids, sampling_params, request_id = recv_req
+                print("loop_for_netio_req recv_req", adapter_dir, len(prompt_ids), sampling_params, request_id)
                 self.add_req(adapter_dir, prompt_ids, sampling_params, request_id)
             elif isinstance(recv_req, AbortReq):
                 abort_req = recv_req

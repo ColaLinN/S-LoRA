@@ -342,7 +342,7 @@ def main():
                         help="model tp parral size, the default is 1")
     parser.add_argument("--max_req_input_len", type=int, default=2048,
                         help="the max value for req input tokens num")
-    parser.add_argument("--max_req_total_len", type=int, default=2048 + 1024,
+    parser.add_argument("--max_req_total_len", type=int, default=2048 + 2048,
                         help="the max value for req_input_len + req_output_len")
     parser.add_argument("--nccl_port", type=int, default=28765,
                         help="the nccl_port to build a distributed environment for PyTorch")

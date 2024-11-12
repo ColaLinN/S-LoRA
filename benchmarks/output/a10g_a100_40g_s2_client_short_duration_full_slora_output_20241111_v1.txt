@@ -1,0 +1,84 @@
+[('num_adapters', 0), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [1, 5]), ('output_range', [1, 5])]
+get_adapter_dirs input and output 0 ['dummy-lora-13b-rank-64', 'dummy-lora-13b-rank-32', 'dummy-lora-13b-rank-16'] None ['dummy-lora-13b-rank-64-0', 'dummy-lora-13b-rank-32-0', 'dummy-lora-13b-rank-16-0']
+========
+generating requests 1 1 2 1 15 [1, 5] [1, 5] [('huggyllama/llama-13b', None)] 42
+total req 30
+Input Lens - Top 10 Most Common: [(180, 1), (583, 1), (857, 1), (26, 1), (20, 1), (82, 1), (406, 1), (745, 1), (140, 1), (287, 1)]
+Input Lens - Top 10 Least Common: [(385, 1), (953, 1), (542, 1), (772, 1), (36, 1), (186, 1), (47, 1), (30, 1), (97, 1), (18, 1)]
+Output Lens - Top 10 Most Common: [(186, 1), (586, 1), (858, 1), (33, 1), (27, 1), (89, 1), (410, 1), (747, 1), (146, 1), (292, 1)]
+Output Lens - Top 10 Least Common: [(389, 1), (953, 1), (545, 1), (773, 1), (43, 1), (192, 1), (54, 1), (37, 1), (104, 1), (25, 1)]
+avg_len: 698.0333333333333 avg_prompt_len: 346.6666666666667 avg_output_len: 351.3666666666667
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1080
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 3498
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 5142
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 156
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 120
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 492
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 2436
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 4470
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 840
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1722
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 4086
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1494
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 6144
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 246
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 2742
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 906
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 2388
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1392
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1296
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 3354
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 108
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 582
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 180
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 282
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 1116
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 216
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 4632
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 3252
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 5718
+ready to request generate API http://localhost:8000/generate_stream model_dir huggyllama/llama-13b adapter_dir None len_prompt 2310
+req_id 4 prompt_len 20 output_len 27 request_latency 67.39 s, first_token_latency 65.11 s
+req_id 3 prompt_len 26 output_len 33 request_latency 68.94 s, first_token_latency 65.85 s
+req_id 20 prompt_len 18 output_len 25 request_latency 63.52 s, first_token_latency 61.58 s
+req_id 22 prompt_len 30 output_len 37 request_latency 62.81 s, first_token_latency 60.17 s
+req_id 25 prompt_len 36 output_len 43 request_latency 60.71 s, first_token_latency 57.81 s
+req_id 13 prompt_len 41 output_len 48 request_latency 67.33 s, first_token_latency 64.22 s
+req_id 23 prompt_len 47 output_len 54 request_latency 62.71 s, first_token_latency 59.34 s
+req_id 5 prompt_len 82 output_len 89 request_latency 70.69 s, first_token_latency 64.77 s
+req_id 21 prompt_len 97 output_len 104 request_latency 67.18 s, first_token_latency 61.49 s
+req_id 8 prompt_len 140 output_len 146 request_latency 72.45 s, first_token_latency 64.11 s
+req_id 15 prompt_len 151 output_len 157 request_latency 70.87 s, first_token_latency 62.89 s
+req_id 0 prompt_len 180 output_len 186 request_latency 77.20 s, first_token_latency 65.46 s
+req_id 24 prompt_len 186 output_len 192 request_latency 68.30 s, first_token_latency 58.84 s
+req_id 18 prompt_len 216 output_len 222 request_latency 72.59 s, first_token_latency 61.79 s
+req_id 17 prompt_len 232 output_len 238 request_latency 73.42 s, first_token_latency 61.92 s
+req_id 11 prompt_len 249 output_len 255 request_latency 76.57 s, first_token_latency 63.53 s
+req_id 9 prompt_len 287 output_len 292 request_latency 78.70 s, first_token_latency 64.05 s
+req_id 29 prompt_len 385 output_len 389 request_latency 74.13 s, first_token_latency 56.19 s
+req_id 6 prompt_len 406 output_len 410 request_latency 84.42 s, first_token_latency 64.40 s
+req_id 16 prompt_len 398 output_len 402 request_latency 81.50 s, first_token_latency 62.63 s
+req_id 14 prompt_len 457 output_len 461 request_latency 84.38 s, first_token_latency 63.03 s
+req_id 27 prompt_len 542 output_len 545 request_latency 82.20 s, first_token_latency 57.69 s
+req_id 19 prompt_len 559 output_len 562 request_latency 87.40 s, first_token_latency 61.75 s
+req_id 1 prompt_len 583 output_len 586 request_latency 94.03 s, first_token_latency 64.84 s
+req_id 10 prompt_len 681 output_len 683 request_latency 95.58 s, first_token_latency 64.04 s
+req_id 7 prompt_len 745 output_len 747 request_latency 98.33 s, first_token_latency 64.12 s
+req_id 26 prompt_len 772 output_len 773 request_latency 91.89 s, first_token_latency 57.79 s
+req_id 2 prompt_len 857 output_len 858 request_latency 105.08 s, first_token_latency 66.26 s
+req_id 28 prompt_len 953 output_len 953 request_latency 98.16 s, first_token_latency 56.57 s
+req_id 12 prompt_len 1024 output_len 1024 request_latency 117.53 s, first_token_latency 64.58 s
+Total time: 121.86 s
+Aborted Request: 0
+Throughput: 0.25 requests/s
+Throughput strip: -0.10 requests/s
+Average latency: 79.20 s
+Average latency per token: 0.35 s
+Average latency per output token: 0.64 s
+Average first token latency: 62.23 s
+90 percentile first token latency: < 65.15 s
+50 percentile first token latency: < 62.96 s
+Average satisfaction: 0.00
+90 percentile satisfaction: > 0.00
+50 percentile satisfaction: > 0.00
+Average attainment: 0.00

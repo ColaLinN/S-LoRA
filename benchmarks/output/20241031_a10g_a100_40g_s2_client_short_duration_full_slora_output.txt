@@ -1,276 +1,79 @@
-[('num_adapters', 0), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 1.18 s, first_token_latency 0.51 s
-req_id 2 prompt_len 28 output_len 61 request_latency 2.93 s, first_token_latency 1.22 s
-req_id 3 prompt_len 336 output_len 113 request_latency 4.03 s, first_token_latency 0.83 s
-req_id 10 prompt_len 249 output_len 51 request_latency 1.79 s, first_token_latency 0.30 s
-req_id 4 prompt_len 174 output_len 267 request_latency 8.85 s, first_token_latency 0.75 s
-req_id 7 prompt_len 96 output_len 198 request_latency 6.33 s, first_token_latency 0.08 s
-req_id 11 prompt_len 272 output_len 169 request_latency 5.61 s, first_token_latency 0.11 s
-req_id 5 prompt_len 281 output_len 317 request_latency 10.10 s, first_token_latency 0.32 s
-req_id 9 prompt_len 21 output_len 225 request_latency 7.52 s, first_token_latency 0.31 s
-req_id 12 prompt_len 353 output_len 209 request_latency 6.99 s, first_token_latency 0.11 s
-req_id 1 prompt_len 142 output_len 397 request_latency 13.88 s, first_token_latency 1.39 s
-req_id 23 prompt_len 42 output_len 197 request_latency 6.61 s, first_token_latency 0.30 s
-req_id 21 prompt_len 271 output_len 222 request_latency 7.46 s, first_token_latency 0.32 s
-req_id 15 prompt_len 347 output_len 277 request_latency 9.50 s, first_token_latency 0.47 s
-req_id 6 prompt_len 395 output_len 484 request_latency 15.44 s, first_token_latency 0.28 s
-req_id 8 prompt_len 323 output_len 409 request_latency 13.25 s, first_token_latency 0.09 s
-req_id 18 prompt_len 451 output_len 278 request_latency 9.15 s, first_token_latency 0.10 s
-req_id 17 prompt_len 374 output_len 311 request_latency 10.27 s, first_token_latency 0.19 s
-req_id 25 prompt_len 88 output_len 220 request_latency 7.04 s, first_token_latency 0.06 s
-req_id 22 prompt_len 438 output_len 259 request_latency 8.73 s, first_token_latency 0.50 s
-req_id 26 prompt_len 427 output_len 215 request_latency 6.87 s, first_token_latency 0.12 s
-req_id 16 prompt_len 99 output_len 358 request_latency 11.73 s, first_token_latency 0.25 s
-req_id 24 prompt_len 213 output_len 303 request_latency 9.54 s, first_token_latency 0.08 s
-req_id 27 prompt_len 57 output_len 244 request_latency 7.68 s, first_token_latency 0.17 s
-req_id 13 prompt_len 60 output_len 453 request_latency 14.43 s, first_token_latency 0.08 s
-req_id 14 prompt_len 393 output_len 491 request_latency 15.47 s, first_token_latency 0.11 s
-req_id 28 prompt_len 367 output_len 345 request_latency 10.47 s, first_token_latency 0.11 s
-req_id 19 prompt_len 462 output_len 463 request_latency 14.38 s, first_token_latency 0.15 s
-req_id 20 prompt_len 435 output_len 469 request_latency 14.61 s, first_token_latency 0.35 s
-req_id 29 prompt_len 395 output_len 374 request_latency 11.21 s, first_token_latency 0.10 s
-Total time: 25.35 s
+[('num_adapters', 0), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [1, 5]), ('output_range', [1, 5])]
+get_adapter_dirs input and output 0 ['dummy-lora-13b-rank-64', 'dummy-lora-13b-rank-32', 'dummy-lora-13b-rank-16'] None ['dummy-lora-13b-rank-64-0', 'dummy-lora-13b-rank-32-0', 'dummy-lora-13b-rank-16-0']
+========
+generating requests 1 1 2 1 15 [1, 5] [1, 5] [('huggyllama/llama-13b', None)] 42
+avg_len: 296.2 avg_prompt_len: 171.83333333333334 avg_output_len: 124.36666666666666
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 115}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 155}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 25}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 125}}
+req_id 2 prompt_len 429 output_len 25 request_latency 1.02 s, first_token_latency 0.15 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 152}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 76}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 226}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 29}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 290}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 3}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 33}}
+req_id 9 prompt_len 142 output_len 3 request_latency 0.46 s, first_token_latency 0.40 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 189}}
+req_id 0 prompt_len 88 output_len 115 request_latency 4.15 s, first_token_latency 0.05 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 513}}
+req_id 7 prompt_len 372 output_len 29 request_latency 1.02 s, first_token_latency 0.14 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 27}}
+req_id 10 prompt_len 340 output_len 33 request_latency 1.43 s, first_token_latency 0.38 s
+req_id 5 prompt_len 39 output_len 76 request_latency 2.47 s, first_token_latency 0.09 s
+req_id 13 prompt_len 18 output_len 27 request_latency 1.04 s, first_token_latency 0.32 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 44}}
+req_id 3 prompt_len 10 output_len 125 request_latency 4.09 s, first_token_latency 0.23 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 40}}
+req_id 1 prompt_len 291 output_len 155 request_latency 5.53 s, first_token_latency 0.13 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 33}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 290}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 124}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 246}}
+req_id 14 prompt_len 227 output_len 44 request_latency 1.38 s, first_token_latency 0.09 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 19}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 59}}
+req_id 4 prompt_len 7 output_len 152 request_latency 4.90 s, first_token_latency 0.09 s
+req_id 15 prompt_len 73 output_len 40 request_latency 1.47 s, first_token_latency 0.25 s
+req_id 16 prompt_len 198 output_len 33 request_latency 1.29 s, first_token_latency 0.31 s
+req_id 20 prompt_len 7 output_len 19 request_latency 0.91 s, first_token_latency 0.40 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 133}}
+req_id 21 prompt_len 46 output_len 59 request_latency 1.97 s, first_token_latency 0.31 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 305}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 140}}
+req_id 11 prompt_len 122 output_len 189 request_latency 5.95 s, first_token_latency 0.20 s
+req_id 6 prompt_len 202 output_len 226 request_latency 7.06 s, first_token_latency 0.09 s
+req_id 18 prompt_len 106 output_len 124 request_latency 3.87 s, first_token_latency 0.29 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 135}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 40}}
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 57}}
+req_id 8 prompt_len 68 output_len 290 request_latency 9.08 s, first_token_latency 0.12 s
+req_id 22 prompt_len 12 output_len 133 request_latency 4.10 s, first_token_latency 0.08 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 16}}
+req_id 26 prompt_len 386 output_len 40 request_latency 1.46 s, first_token_latency 0.11 s
+ready to request generate API None http://localhost:8000/generate_stream {'model_dir': 'huggyllama/llama-13b', 'lora_dir': None, 'inputs': 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ', 'parameters': {'do_sample': False, 'ignore_eos': True, 'max_new_tokens': 92}}
+req_id 28 prompt_len 478 output_len 16 request_latency 0.60 s, first_token_latency 0.13 s
+req_id 27 prompt_len 270 output_len 57 request_latency 2.16 s, first_token_latency 0.46 s
+req_id 24 prompt_len 91 output_len 140 request_latency 4.33 s, first_token_latency 0.06 s
+req_id 19 prompt_len 279 output_len 246 request_latency 7.63 s, first_token_latency 0.25 s
+req_id 25 prompt_len 15 output_len 135 request_latency 4.18 s, first_token_latency 0.09 s
+req_id 17 prompt_len 114 output_len 290 request_latency 8.72 s, first_token_latency 0.08 s
+req_id 29 prompt_len 191 output_len 92 request_latency 2.61 s, first_token_latency 0.10 s
+req_id 23 prompt_len 21 output_len 305 request_latency 8.92 s, first_token_latency 0.07 s
+req_id 12 prompt_len 513 output_len 513 request_latency 15.53 s, first_token_latency 0.37 s
+Total time: 19.85 s
 Aborted Request: 0
-Throughput: 1.18 requests/s
-Throughput strip: -1.87 requests/s
-Average latency: 9.10 s
+Throughput: 1.51 requests/s
+Throughput strip: 66.92 requests/s
+Average latency: 3.98 s
 Average latency per token: 0.02 s
 Average latency per output token: 0.04 s
-Average first token latency: 0.33 s
-90 percentile first token latency: < 0.76 s
-50 percentile first token latency: < 0.22 s
-Average satisfaction: 0.99
-90 percentile satisfaction: > 0.98
-50 percentile satisfaction: > 1.00
-Average attainment: 1.00
-[('num_adapters', 1), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 0.33 s, first_token_latency 0.12 s
-req_id 2 prompt_len 28 output_len 61 request_latency 7.47 s, first_token_latency 0.33 s
-req_id 10 prompt_len 249 output_len 51 request_latency 3.59 s, first_token_latency 1.65 s
-req_id 3 prompt_len 336 output_len 113 request_latency 9.67 s, first_token_latency 5.07 s
-req_id 11 prompt_len 272 output_len 169 request_latency 7.46 s, first_token_latency 0.80 s
-req_id 7 prompt_len 96 output_len 198 request_latency 10.31 s, first_token_latency 2.50 s
-req_id 12 prompt_len 353 output_len 209 request_latency 8.76 s, first_token_latency 0.59 s
-req_id 9 prompt_len 21 output_len 225 request_latency 10.44 s, first_token_latency 1.65 s
-req_id 4 prompt_len 174 output_len 267 request_latency 15.46 s, first_token_latency 4.99 s
-req_id 23 prompt_len 42 output_len 197 request_latency 7.80 s, first_token_latency 0.42 s
-req_id 21 prompt_len 271 output_len 222 request_latency 8.72 s, first_token_latency 0.43 s
-req_id 5 prompt_len 281 output_len 317 request_latency 16.81 s, first_token_latency 4.71 s
-req_id 15 prompt_len 347 output_len 277 request_latency 11.08 s, first_token_latency 0.57 s
-req_id 25 prompt_len 88 output_len 220 request_latency 8.23 s, first_token_latency 0.11 s
-req_id 18 prompt_len 451 output_len 278 request_latency 10.67 s, first_token_latency 0.18 s
-req_id 22 prompt_len 438 output_len 259 request_latency 9.83 s, first_token_latency 0.24 s
-req_id 17 prompt_len 374 output_len 311 request_latency 11.98 s, first_token_latency 0.28 s
-req_id 1 prompt_len 142 output_len 397 request_latency 19.99 s, first_token_latency 0.19 s
-req_id 26 prompt_len 427 output_len 215 request_latency 8.00 s, first_token_latency 0.16 s
-req_id 16 prompt_len 99 output_len 358 request_latency 13.61 s, first_token_latency 0.35 s
-req_id 27 prompt_len 57 output_len 244 request_latency 8.97 s, first_token_latency 0.28 s
-req_id 8 prompt_len 323 output_len 409 request_latency 16.99 s, first_token_latency 1.76 s
-req_id 24 prompt_len 213 output_len 303 request_latency 11.12 s, first_token_latency 0.16 s
-req_id 13 prompt_len 60 output_len 453 request_latency 16.78 s, first_token_latency 0.29 s
-req_id 6 prompt_len 395 output_len 484 request_latency 22.25 s, first_token_latency 4.67 s
-req_id 28 prompt_len 367 output_len 345 request_latency 12.07 s, first_token_latency 0.21 s
-req_id 14 prompt_len 393 output_len 491 request_latency 17.70 s, first_token_latency 0.16 s
-req_id 19 prompt_len 462 output_len 463 request_latency 16.39 s, first_token_latency 0.17 s
-req_id 29 prompt_len 395 output_len 374 request_latency 12.69 s, first_token_latency 0.16 s
-req_id 20 prompt_len 435 output_len 469 request_latency 16.65 s, first_token_latency 0.46 s
-Total time: 27.11 s
-Aborted Request: 0
-Throughput: 1.11 requests/s
-Throughput strip: -1.41 requests/s
-Average latency: 11.73 s
-Average latency per token: 0.02 s
-Average latency per output token: 0.05 s
-Average first token latency: 1.12 s
-90 percentile first token latency: < 4.68 s
-50 percentile first token latency: < 0.34 s
-Average satisfaction: 0.90
-90 percentile satisfaction: > 0.39
-50 percentile satisfaction: > 1.00
-Average attainment: 1.00
-[('num_adapters', 20), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 0.31 s, first_token_latency 0.09 s
-req_id 2 prompt_len 28 output_len 61 request_latency 2.31 s, first_token_latency 0.30 s
-req_id 3 prompt_len 336 output_len 113 request_latency 3.84 s, first_token_latency 0.31 s
-req_id 10 prompt_len 249 output_len 51 request_latency 2.08 s, first_token_latency 0.39 s
-req_id 4 prompt_len 174 output_len 267 request_latency 9.71 s, first_token_latency 0.23 s
-req_id 7 prompt_len 96 output_len 198 request_latency 7.55 s, first_token_latency 0.11 s
-req_id 11 prompt_len 272 output_len 169 request_latency 6.55 s, first_token_latency 0.13 s
-req_id 5 prompt_len 281 output_len 317 request_latency 11.86 s, first_token_latency 0.13 s
-req_id 9 prompt_len 21 output_len 225 request_latency 9.09 s, first_token_latency 0.40 s
-req_id 12 prompt_len 353 output_len 209 request_latency 8.31 s, first_token_latency 0.15 s
-req_id 1 prompt_len 142 output_len 397 request_latency 14.65 s, first_token_latency 0.16 s
-req_id 23 prompt_len 42 output_len 197 request_latency 7.78 s, first_token_latency 0.43 s
-req_id 21 prompt_len 271 output_len 222 request_latency 8.69 s, first_token_latency 0.42 s
-req_id 15 prompt_len 347 output_len 277 request_latency 11.05 s, first_token_latency 0.59 s
-req_id 25 prompt_len 88 output_len 220 request_latency 8.18 s, first_token_latency 0.13 s
-req_id 18 prompt_len 451 output_len 278 request_latency 10.63 s, first_token_latency 0.15 s
-req_id 22 prompt_len 438 output_len 259 request_latency 9.83 s, first_token_latency 0.24 s
-req_id 6 prompt_len 395 output_len 484 request_latency 18.09 s, first_token_latency 0.47 s
-req_id 17 prompt_len 374 output_len 311 request_latency 11.97 s, first_token_latency 0.31 s
-req_id 8 prompt_len 323 output_len 409 request_latency 15.36 s, first_token_latency 0.12 s
-req_id 26 prompt_len 427 output_len 215 request_latency 7.95 s, first_token_latency 0.18 s
-req_id 16 prompt_len 99 output_len 358 request_latency 13.57 s, first_token_latency 0.37 s
-req_id 27 prompt_len 57 output_len 244 request_latency 8.90 s, first_token_latency 0.30 s
-req_id 24 prompt_len 213 output_len 303 request_latency 11.07 s, first_token_latency 0.20 s
-req_id 13 prompt_len 60 output_len 453 request_latency 16.52 s, first_token_latency 0.11 s
-req_id 28 prompt_len 367 output_len 345 request_latency 11.95 s, first_token_latency 0.24 s
-req_id 14 prompt_len 393 output_len 491 request_latency 17.61 s, first_token_latency 0.16 s
-req_id 19 prompt_len 462 output_len 463 request_latency 16.31 s, first_token_latency 0.16 s
-req_id 29 prompt_len 395 output_len 374 request_latency 12.58 s, first_token_latency 0.20 s
-req_id 20 prompt_len 435 output_len 469 request_latency 16.56 s, first_token_latency 0.46 s
-Total time: 27.02 s
-Aborted Request: 0
-Throughput: 1.11 requests/s
-Throughput strip: -1.43 requests/s
-Average latency: 10.36 s
-Average latency per token: 0.02 s
-Average latency per output token: 0.04 s
-Average first token latency: 0.25 s
-90 percentile first token latency: < 0.43 s
-50 percentile first token latency: < 0.21 s
+Average first token latency: 0.19 s
+90 percentile first token latency: < 0.39 s
+50 percentile first token latency: < 0.13 s
 Average satisfaction: 1.00
-90 percentile satisfaction: > 0.99
-50 percentile satisfaction: > 1.00
-Average attainment: 1.00
-[('num_adapters', 50), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 0.36 s, first_token_latency 0.15 s
-req_id 2 prompt_len 28 output_len 61 request_latency 2.38 s, first_token_latency 0.36 s
-req_id 3 prompt_len 336 output_len 113 request_latency 3.84 s, first_token_latency 0.36 s
-req_id 10 prompt_len 249 output_len 51 request_latency 2.08 s, first_token_latency 0.38 s
-req_id 4 prompt_len 174 output_len 267 request_latency 9.80 s, first_token_latency 0.28 s
-req_id 7 prompt_len 96 output_len 198 request_latency 7.64 s, first_token_latency 0.11 s
-req_id 11 prompt_len 272 output_len 169 request_latency 6.63 s, first_token_latency 0.14 s
-req_id 5 prompt_len 281 output_len 317 request_latency 11.85 s, first_token_latency 0.12 s
-req_id 9 prompt_len 21 output_len 225 request_latency 9.15 s, first_token_latency 0.38 s
-req_id 12 prompt_len 353 output_len 209 request_latency 8.32 s, first_token_latency 0.12 s
-req_id 1 prompt_len 142 output_len 397 request_latency 14.71 s, first_token_latency 0.20 s
-req_id 23 prompt_len 42 output_len 197 request_latency 7.76 s, first_token_latency 0.46 s
-req_id 21 prompt_len 271 output_len 222 request_latency 8.68 s, first_token_latency 0.44 s
-req_id 15 prompt_len 347 output_len 277 request_latency 11.10 s, first_token_latency 0.61 s
-req_id 25 prompt_len 88 output_len 220 request_latency 8.13 s, first_token_latency 0.11 s
-req_id 18 prompt_len 451 output_len 278 request_latency 10.64 s, first_token_latency 0.18 s
-req_id 22 prompt_len 438 output_len 259 request_latency 9.80 s, first_token_latency 0.25 s
-req_id 6 prompt_len 395 output_len 484 request_latency 18.07 s, first_token_latency 0.45 s
-req_id 17 prompt_len 374 output_len 311 request_latency 12.01 s, first_token_latency 0.33 s
-req_id 8 prompt_len 323 output_len 409 request_latency 15.40 s, first_token_latency 0.12 s
-req_id 26 prompt_len 427 output_len 215 request_latency 7.89 s, first_token_latency 0.17 s
-req_id 27 prompt_len 57 output_len 244 request_latency 8.84 s, first_token_latency 0.30 s
-req_id 16 prompt_len 99 output_len 358 request_latency 13.60 s, first_token_latency 0.39 s
-req_id 24 prompt_len 213 output_len 303 request_latency 11.04 s, first_token_latency 0.21 s
-req_id 13 prompt_len 60 output_len 453 request_latency 16.54 s, first_token_latency 0.11 s
-req_id 28 prompt_len 367 output_len 345 request_latency 11.88 s, first_token_latency 0.23 s
-req_id 14 prompt_len 393 output_len 491 request_latency 17.63 s, first_token_latency 0.18 s
-req_id 19 prompt_len 462 output_len 463 request_latency 16.27 s, first_token_latency 0.16 s
-req_id 29 prompt_len 395 output_len 374 request_latency 12.51 s, first_token_latency 0.15 s
-req_id 20 prompt_len 435 output_len 469 request_latency 16.51 s, first_token_latency 0.47 s
-Total time: 26.97 s
-Aborted Request: 0
-Throughput: 1.11 requests/s
-Throughput strip: -1.43 requests/s
-Average latency: 10.37 s
-Average latency per token: 0.02 s
-Average latency per output token: 0.04 s
-Average first token latency: 0.26 s
-90 percentile first token latency: < 0.45 s
-50 percentile first token latency: < 0.22 s
-Average satisfaction: 1.00
-90 percentile satisfaction: > 0.99
-50 percentile satisfaction: > 1.00
-Average attainment: 1.00
-[('num_adapters', 100), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 0.30 s, first_token_latency 0.09 s
-req_id 2 prompt_len 28 output_len 61 request_latency 2.28 s, first_token_latency 0.29 s
-req_id 3 prompt_len 336 output_len 113 request_latency 3.77 s, first_token_latency 0.29 s
-req_id 10 prompt_len 249 output_len 51 request_latency 2.13 s, first_token_latency 0.43 s
-req_id 4 prompt_len 174 output_len 267 request_latency 9.76 s, first_token_latency 0.21 s
-req_id 7 prompt_len 96 output_len 198 request_latency 7.68 s, first_token_latency 0.09 s
-req_id 11 prompt_len 272 output_len 169 request_latency 6.72 s, first_token_latency 0.16 s
-req_id 5 prompt_len 281 output_len 317 request_latency 11.96 s, first_token_latency 0.14 s
-req_id 9 prompt_len 21 output_len 225 request_latency 9.29 s, first_token_latency 0.43 s
-req_id 12 prompt_len 353 output_len 209 request_latency 8.41 s, first_token_latency 0.11 s
-req_id 1 prompt_len 142 output_len 397 request_latency 14.73 s, first_token_latency 0.14 s
-req_id 23 prompt_len 42 output_len 197 request_latency 7.88 s, first_token_latency 0.48 s
-req_id 21 prompt_len 271 output_len 222 request_latency 8.80 s, first_token_latency 0.46 s
-req_id 15 prompt_len 347 output_len 277 request_latency 11.23 s, first_token_latency 0.62 s
-req_id 25 prompt_len 88 output_len 220 request_latency 8.26 s, first_token_latency 0.15 s
-req_id 18 prompt_len 451 output_len 278 request_latency 10.77 s, first_token_latency 0.16 s
-req_id 22 prompt_len 438 output_len 259 request_latency 9.94 s, first_token_latency 0.28 s
-req_id 6 prompt_len 395 output_len 484 request_latency 18.24 s, first_token_latency 0.46 s
-req_id 17 prompt_len 374 output_len 311 request_latency 12.15 s, first_token_latency 0.34 s
-req_id 8 prompt_len 323 output_len 409 request_latency 15.61 s, first_token_latency 0.17 s
-req_id 26 prompt_len 427 output_len 215 request_latency 7.97 s, first_token_latency 0.14 s
-req_id 27 prompt_len 57 output_len 244 request_latency 8.92 s, first_token_latency 0.27 s
-req_id 16 prompt_len 99 output_len 358 request_latency 13.75 s, first_token_latency 0.40 s
-req_id 24 prompt_len 213 output_len 303 request_latency 11.19 s, first_token_latency 0.25 s
-req_id 13 prompt_len 60 output_len 453 request_latency 16.67 s, first_token_latency 0.08 s
-req_id 28 prompt_len 367 output_len 345 request_latency 11.98 s, first_token_latency 0.21 s
-req_id 14 prompt_len 393 output_len 491 request_latency 17.79 s, first_token_latency 0.18 s
-req_id 19 prompt_len 462 output_len 463 request_latency 16.42 s, first_token_latency 0.14 s
-req_id 29 prompt_len 395 output_len 374 request_latency 12.61 s, first_token_latency 0.15 s
-req_id 20 prompt_len 435 output_len 469 request_latency 16.66 s, first_token_latency 0.49 s
-Total time: 27.12 s
-Aborted Request: 0
-Throughput: 1.11 requests/s
-Throughput strip: -1.40 requests/s
-Average latency: 10.46 s
-Average latency per token: 0.02 s
-Average latency per output token: 0.04 s
-Average first token latency: 0.26 s
-90 percentile first token latency: < 0.47 s
-50 percentile first token latency: < 0.21 s
-Average satisfaction: 1.00
-90 percentile satisfaction: > 0.99
-50 percentile satisfaction: > 1.00
-Average attainment: 1.00
-[('num_adapters', 200), ('alpha', 1), ('req_rate', 2), ('cv', 1), ('duration', 15), ('input_range', [8, 512]), ('output_range', [8, 512])]
-avg_len: 543.0333333333333 avg_prompt_len: 263.43333333333334 avg_output_len: 279.6
-req_id 0 prompt_len 314 output_len 9 request_latency 0.30 s, first_token_latency 0.09 s
-req_id 2 prompt_len 28 output_len 61 request_latency 2.24 s, first_token_latency 0.28 s
-req_id 3 prompt_len 336 output_len 113 request_latency 3.67 s, first_token_latency 0.28 s
-req_id 10 prompt_len 249 output_len 51 request_latency 2.12 s, first_token_latency 0.43 s
-req_id 4 prompt_len 174 output_len 267 request_latency 9.54 s, first_token_latency 0.21 s
-req_id 7 prompt_len 96 output_len 198 request_latency 7.59 s, first_token_latency 0.08 s
-req_id 11 prompt_len 272 output_len 169 request_latency 6.62 s, first_token_latency 0.14 s
-req_id 5 prompt_len 281 output_len 317 request_latency 11.81 s, first_token_latency 0.11 s
-req_id 9 prompt_len 21 output_len 225 request_latency 9.25 s, first_token_latency 0.43 s
-req_id 12 prompt_len 353 output_len 209 request_latency 8.41 s, first_token_latency 0.13 s
-req_id 1 prompt_len 142 output_len 397 request_latency 14.58 s, first_token_latency 0.14 s
-req_id 23 prompt_len 42 output_len 197 request_latency 7.87 s, first_token_latency 0.45 s
-req_id 21 prompt_len 271 output_len 222 request_latency 8.79 s, first_token_latency 0.45 s
-req_id 15 prompt_len 347 output_len 277 request_latency 11.18 s, first_token_latency 0.61 s
-req_id 25 prompt_len 88 output_len 220 request_latency 8.25 s, first_token_latency 0.09 s
-req_id 18 prompt_len 451 output_len 278 request_latency 10.73 s, first_token_latency 0.13 s
-req_id 22 prompt_len 438 output_len 259 request_latency 9.93 s, first_token_latency 0.26 s
-req_id 6 prompt_len 395 output_len 484 request_latency 18.09 s, first_token_latency 0.44 s
-req_id 17 prompt_len 374 output_len 311 request_latency 12.11 s, first_token_latency 0.33 s
-req_id 8 prompt_len 323 output_len 409 request_latency 15.56 s, first_token_latency 0.15 s
-req_id 26 prompt_len 427 output_len 215 request_latency 8.02 s, first_token_latency 0.17 s
-req_id 27 prompt_len 57 output_len 244 request_latency 8.98 s, first_token_latency 0.31 s
-req_id 16 prompt_len 99 output_len 358 request_latency 13.71 s, first_token_latency 0.39 s
-req_id 24 prompt_len 213 output_len 303 request_latency 11.18 s, first_token_latency 0.20 s
-req_id 13 prompt_len 60 output_len 453 request_latency 16.63 s, first_token_latency 0.07 s
-req_id 28 prompt_len 367 output_len 345 request_latency 12.03 s, first_token_latency 0.25 s
-req_id 14 prompt_len 393 output_len 491 request_latency 17.76 s, first_token_latency 0.17 s
-req_id 19 prompt_len 462 output_len 463 request_latency 16.43 s, first_token_latency 0.16 s
-req_id 29 prompt_len 395 output_len 374 request_latency 12.64 s, first_token_latency 0.18 s
-req_id 20 prompt_len 435 output_len 469 request_latency 16.66 s, first_token_latency 0.48 s
-Total time: 27.12 s
-Aborted Request: 0
-Throughput: 1.11 requests/s
-Throughput strip: -1.40 requests/s
-Average latency: 10.42 s
-Average latency per token: 0.02 s
-Average latency per output token: 0.04 s
-Average first token latency: 0.25 s
-90 percentile first token latency: < 0.45 s
-50 percentile first token latency: < 0.20 s
-Average satisfaction: 1.00
-90 percentile satisfaction: > 0.99
+90 percentile satisfaction: > 1.00
 50 percentile satisfaction: > 1.00
 Average attainment: 1.00

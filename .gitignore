@@ -10,3 +10,5 @@ dist
 *.json
 # *.jsonl
 *.pdf
+*.nsys-rep
+*.qdstrm

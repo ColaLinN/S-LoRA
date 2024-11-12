@@ -1,0 +1,3120 @@
+For some LLaMA-based models, initializing the fast tokenizer may take a long time. To eliminate the initialization time, consider using 'hf-internal-testing/llama-tokenizer' instead of the original tokenizer.
+llama-13b: 23.63 GB
+peak working mem for (bs=20, seqlen=512): 0.88 GB
+peak working mem for (bs=100, seqlen=512): 4.39 GB
+all adapters (201) estimated size: 22.90 GB
+avg adapter estimated size: 116.67 MB
+INFO:     127.0.0.1:52782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52936 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52940 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52944 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52948 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52952 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52964 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52968 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52980 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52992 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53000 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53004 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53008 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53012 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53020 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53024 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53028 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53032 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53040 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53048 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53056 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53060 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53068 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53080 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53084 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53118 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53122 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53126 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53130 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53134 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53138 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53142 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53154 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53158 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53162 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53166 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53170 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53182 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53190 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53194 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53252 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53256 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53260 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53264 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53268 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53272 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53276 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53280 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53284 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53288 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53292 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53296 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53300 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53304 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53308 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53312 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53316 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53320 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53324 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53328 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53332 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53336 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53340 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53344 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53348 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53352 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53356 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53360 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53368 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53372 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53376 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53380 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53384 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53392 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53396 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53400 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53404 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53408 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53412 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53416 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53424 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53428 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53432 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53436 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53440 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53444 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53456 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53460 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53464 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53468 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53472 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53508 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53538 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53542 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53546 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53550 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53554 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53558 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53562 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53566 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53570 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53574 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53578 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53582 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53586 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53634 - "POST /generate_stream HTTP/1.1" 200 OK
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:    0.295 tokens/s
+Avg prompt tokens throughput:              0.295 tokens/s
+Avg generate tokens throughput:            0.000 tokens/s
+current batch size: 1 token used ratio: 0.0034285714285714284
+current batch size: 1 token used ratio: 0.007
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 5 token used ratio: 0.06192857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 8 token used ratio: 0.14242857142857143
+load 1 on gpu
+load 1 on gpu
+current batch size: 8 token used ratio: 0.14142857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 11 token used ratio: 0.2045
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.2537142857142857
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  543.605 tokens/s
+Avg prompt tokens throughput:            348.247 tokens/s
+Avg generate tokens throughput:          195.358 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.3344285714285714
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.3459285714285714
+load 1 on gpu
+load 1 on gpu
+current batch size: 14 token used ratio: 0.35878571428571426
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.41035714285714286
+load 1 on gpu
+current batch size: 15 token used ratio: 0.3955
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.40035714285714286
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  775.952 tokens/s
+Avg prompt tokens throughput:            335.016 tokens/s
+Avg generate tokens throughput:          440.937 tokens/s
+load 1 on gpu
+current batch size: 16 token used ratio: 0.37814285714285717
+load 1 on gpu
+load 1 on gpu
+current batch size: 14 token used ratio: 0.3580714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.373
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.45007142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.422
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.4332142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1044.749 tokens/s
+Avg prompt tokens throughput:            570.635 tokens/s
+Avg generate tokens throughput:          474.114 tokens/s
+current batch size: 20 token used ratio: 0.505
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5319285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.5902857142857143
+current batch size: 17 token used ratio: 0.5454285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.6320714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.6230714285714286
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1198.814 tokens/s
+Avg prompt tokens throughput:            642.479 tokens/s
+Avg generate tokens throughput:          556.335 tokens/s
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5550714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.5388571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.5179285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.5204285714285715
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.49078571428571427
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5409285714285714
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5512142857142858
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  962.966 tokens/s
+Avg prompt tokens throughput:            366.607 tokens/s
+Avg generate tokens throughput:          596.360 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5528571428571428
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.4372142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.4775714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.49592857142857144
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.5866428571428571
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.6009285714285715
+Avg tokens(prompt+generate) throughput: 1081.098 tokens/s
+Avg prompt tokens throughput:            534.360 tokens/s
+Avg generate tokens throughput:          546.738 tokens/s
+load 1 on gpu
+current batch size: 15 token used ratio: 0.5204285714285715
+current batch size: 10 token used ratio: 0.4019285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.35464285714285715
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.3052142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.34835714285714287
+load 1 on gpu
+current batch size: 9 token used ratio: 0.2327142857142857
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  802.721 tokens/s
+Avg prompt tokens throughput:            439.247 tokens/s
+Avg generate tokens throughput:          363.474 tokens/s
+current batch size: 9 token used ratio: 0.24935714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.34864285714285714
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.38
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.36792857142857144
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.2875714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.3580714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.365
+Avg tokens(prompt+generate) throughput:  758.680 tokens/s
+Avg prompt tokens throughput:            355.669 tokens/s
+Avg generate tokens throughput:          403.012 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.39964285714285713
+load 1 on gpu
+current batch size: 16 token used ratio: 0.4602142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5378571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 14 token used ratio: 0.45221428571428574
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5018571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5075714285714286
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1015.639 tokens/s
+Avg prompt tokens throughput:            560.556 tokens/s
+Avg generate tokens throughput:          455.083 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5371428571428571
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.40685714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.4328571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 14 token used ratio: 0.338
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.5438571428571428
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.6349285714285714
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1001.486 tokens/s
+Avg prompt tokens throughput:            506.985 tokens/s
+Avg generate tokens throughput:          494.500 tokens/s
+load 1 on gpu
+current batch size: 21 token used ratio: 0.6562142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.6805714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.6304285714285714
+INFO:     127.0.0.1:53638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53660 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53952 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53964 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53968 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53980 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53992 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53996 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54000 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54004 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54008 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54012 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54016 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54020 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54024 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54028 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54032 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54048 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54056 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54060 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54068 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54080 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54084 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54112 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54128 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54138 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54142 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54150 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54154 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54158 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54162 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54166 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54170 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54182 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54190 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54194 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54250 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54262 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54274 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54278 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54282 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54286 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54290 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54298 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54306 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54310 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54318 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54326 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54330 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54334 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54338 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54342 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54346 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54354 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54358 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54362 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54422 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54426 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54430 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54434 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54438 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54442 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54456 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54460 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54464 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54468 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54472 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54508 - "POST /generate_stream HTTP/1.1" 200 OK
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.6330714285714286
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5869285714285715
+load 1 on gpu
+current batch size: 14 token used ratio: 0.4164285714285714
+Avg tokens(prompt+generate) throughput:  990.769 tokens/s
+Avg prompt tokens throughput:            421.704 tokens/s
+Avg generate tokens throughput:          569.065 tokens/s
+load 1 on gpu
+current batch size: 14 token used ratio: 0.47535714285714287
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.5166428571428572
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.5624285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.6495714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.48614285714285715
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5367142857142857
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1117.547 tokens/s
+Avg prompt tokens throughput:            649.711 tokens/s
+Avg generate tokens throughput:          467.836 tokens/s
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5997857142857143
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5512142857142858
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5234285714285715
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5177142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5505714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5144285714285715
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  949.820 tokens/s
+Avg prompt tokens throughput:            454.700 tokens/s
+Avg generate tokens throughput:          495.120 tokens/s
+current batch size: 16 token used ratio: 0.4957857142857143
+current batch size: 16 token used ratio: 0.5529285714285714
+load 1 on gpu
+current batch size: 15 token used ratio: 0.5465714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.5174285714285715
+load 1 on gpu
+current batch size: 12 token used ratio: 0.4305
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 11 token used ratio: 0.35578571428571426
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 11 token used ratio: 0.25485714285714284
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  668.186 tokens/s
+Avg prompt tokens throughput:            250.607 tokens/s
+Avg generate tokens throughput:          417.579 tokens/s
+load 1 on gpu
+current batch size: 9 token used ratio: 0.23757142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 11 token used ratio: 0.32092857142857145
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.3787142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.4462857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.6245714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.7706428571428572
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1157.833 tokens/s
+Avg prompt tokens throughput:            683.665 tokens/s
+Avg generate tokens throughput:          474.168 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 30 token used ratio: 0.9112142857142858
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9333571428571429
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.842
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.927
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9360714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.7015
+Avg tokens(prompt+generate) throughput: 1209.845 tokens/s
+Avg prompt tokens throughput:            502.787 tokens/s
+Avg generate tokens throughput:          707.057 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.8747857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 26 token used ratio: 0.8377142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.8172142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.8235
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9241428571428572
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1440.656 tokens/s
+Avg prompt tokens throughput:            740.613 tokens/s
+Avg generate tokens throughput:          700.043 tokens/s
+load 1 on gpu
+current batch size: 27 token used ratio: 0.8792857142857143
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.8060714285714285
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.7461428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.7994285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.7311428571428571
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.6745714285714286
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1043.615 tokens/s
+Avg prompt tokens throughput:            377.603 tokens/s
+Avg generate tokens throughput:          666.012 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.8184285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 24 token used ratio: 0.7135
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.6448571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.6482857142857142
+current batch size: 22 token used ratio: 0.6945714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5047857142857143
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1204.053 tokens/s
+Avg prompt tokens throughput:            576.490 tokens/s
+Avg generate tokens throughput:          627.563 tokens/s
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5513571428571429
+current batch size: 15 token used ratio: 0.4830714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5531428571428572
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.627
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.6417142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5759285714285715
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1268.333 tokens/s
+Avg prompt tokens throughput:            750.142 tokens/s
+Avg generate tokens throughput:          518.191 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 18 token used ratio: 0.5615
+current batch size: 14 token used ratio: 0.4347142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.3522857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.42757142857142855
+load 1 on gpu
+current batch size: 15 token used ratio: 0.44242857142857145
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.4825714285714286
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  963.605 tokens/s
+Avg prompt tokens throughput:            509.991 tokens/s
+Avg generate tokens throughput:          453.614 tokens/s
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5007142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 INFO:     127.0.0.1:54512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54536 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54540 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54544 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54548 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54552 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54556 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54560 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54564 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54568 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54572 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54576 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54580 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54584 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54588 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54634 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54658 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54946 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54954 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54958 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54962 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54966 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54970 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54974 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54982 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54986 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54990 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54994 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54998 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55002 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55530 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55534 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55538 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55542 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55546 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55554 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55558 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55562 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55566 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55570 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55574 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55578 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55582 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55586 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55634 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55658 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55830 - "POST /generate_stream HTTP/1.1" 200 OK
+token used ratio: 0.4947857142857143
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.47914285714285715
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5437142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.543
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.49607142857142855
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  918.880 tokens/s
+Avg prompt tokens throughput:            468.425 tokens/s
+Avg generate tokens throughput:          450.455 tokens/s
+load 1 on gpu
+current batch size: 14 token used ratio: 0.44785714285714284
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.38642857142857145
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.46735714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.5533571428571429
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5236428571428572
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5051428571428571
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  942.063 tokens/s
+Avg prompt tokens throughput:            461.007 tokens/s
+Avg generate tokens throughput:          481.056 tokens/s
+current batch size: 16 token used ratio: 0.5707142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.6209285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 17 token used ratio: 0.5955
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.5056428571428572
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.4265
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.4607142857142857
+load 1 on gpu
+current batch size: 13 token used ratio: 0.39257142857142857
+Avg tokens(prompt+generate) throughput:  862.186 tokens/s
+Avg prompt tokens throughput:            410.060 tokens/s
+Avg generate tokens throughput:          452.126 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.33371428571428574
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.32371428571428573
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.3693571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 15 token used ratio: 0.4165
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.5795
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.42792857142857144
+Avg tokens(prompt+generate) throughput:  955.934 tokens/s
+Avg prompt tokens throughput:            510.629 tokens/s
+Avg generate tokens throughput:          445.304 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 12 token used ratio: 0.30964285714285716
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.42664285714285716
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 21 token used ratio: 0.5890714285714286
+load 1 on gpu
+current batch size: 16 token used ratio: 0.4735
+load 1 on gpu
+load 1 on gpu
+current batch size: 14 token used ratio: 0.45471428571428574
+load 1 on gpu
+current batch size: 11 token used ratio: 0.38971428571428574
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1054.337 tokens/s
+Avg prompt tokens throughput:            618.488 tokens/s
+Avg generate tokens throughput:          435.850 tokens/s
+load 1 on gpu
+current batch size: 15 token used ratio: 0.414
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.448
+current batch size: 13 token used ratio: 0.4182142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 13 token used ratio: 0.437
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5107857142857143
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.5667142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  963.339 tokens/s
+Avg prompt tokens throughput:            529.442 tokens/s
+Avg generate tokens throughput:          433.897 tokens/s
+current batch size: 15 token used ratio: 0.5395714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.5955714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.6997142857142857
+load 1 on gpu
+current batch size: 21 token used ratio: 0.7015714285714286
+load 1 on gpu
+current batch size: 19 token used ratio: 0.6551428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.6968571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1215.212 tokens/s
+Avg prompt tokens throughput:            665.442 tokens/s
+Avg generate tokens throughput:          549.770 tokens/s
+current batch size: 22 token used ratio: 0.7999285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.8767142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.8155
+load 1 on gpu
+current batch size: 21 token used ratio: 0.7713571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 24 token used ratio: 0.882
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.8247142857142857
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1093.353 tokens/s
+Avg prompt tokens throughput:            486.401 tokens/s
+Avg generate tokens throughput:          606.952 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 19 token used ratio: 0.6137857142857143
+load 1 on gpu
+current batch size: 19 token used ratio: 0.6372857142857142
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 20 token used ratio: 0.6155714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.7239285714285715
+load 1 on gpu
+current batch size: 22 token used ratio: 0.6983571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.6992142857142857
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1255.724 tokens/s
+Avg prompt tokens throughput:            674.215 tokens/s
+Avg generate tokens throughput:          581.509 tokens/s
+load 1 on gpu
+current batch size: 16 token used ratio: 0.505
+current batch size: 13 token used ratio: 0.4355
+current batch size: 11 token used ratio: 0.3812857142857143
+current batch size: 10 token used ratio: 0.35414285714285715
+current batch size: 10 token used ratio: 0.38985714285714285
+current batch size: 8 token used ratio: 0.35164285714285715
+current batch size: 6 token used ratio: 0.2779285714285714
+Avg tokens(prompt+generate) throughput:  397.618 tokens/s
+Avg prompt tokens throughput:             38.914 tokens/s
+Avg generate tokens throughput:          358.705 tokens/s
+current batch size: 4 token used ratio: 0.1777857142857143
+current batch size: 2 token used ratio: 0.10121428571428571
+current batch size: 1 token used ratio: 0.061642857142857145
+load 1 on gpu
+current batch size: 1 token used ratio: 0.004428571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 5 token used ratio: 0.08942857142857143
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  222.334 tokens/s
+Avg prompt tokens throughput:            153.609 tokens/s
+Avg generate tokens throughput:           68.725 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 10 token used ratio: 0.15721428571428572
+load 1 on gpu
+load 1 on gpu
+current batch size: 11 token used ratio: 0.1762857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.3264285714285714
+load 1 on gpu
+load 1 on gpu
+current batch size: 16 token used ratio: 0.36314285714285716
+load 1 on gpu
+load 1 on gpu
+INFO:     127.0.0.1:55834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55848 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55852 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55856 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55860 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55864 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55868 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55876 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55880 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55884 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55888 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55892 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55896 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55900 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55908 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55912 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55920 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55924 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55928 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55946 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55954 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55958 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55962 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55966 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55970 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55974 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55982 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55986 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55990 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55994 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55998 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56002 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56006 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56010 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56014 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56022 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56026 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56034 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56038 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56042 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56046 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56050 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56054 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56058 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56066 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56070 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56074 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56078 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56082 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56086 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56090 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56094 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56098 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56102 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56106 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56110 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56114 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56118 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56122 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56126 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56130 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56134 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56138 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56142 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56150 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56162 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56166 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56170 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56182 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56190 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56194 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56250 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56262 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56266 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56274 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56278 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56282 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56286 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56290 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56298 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56306 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56310 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56318 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56326 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56330 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56334 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56338 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56342 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56346 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56362 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56422 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56426 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56430 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56434 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56438 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56442 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56446 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56450 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56454 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56458 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56462 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56466 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56474 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56478 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56482 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56486 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56490 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56494 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56498 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56502 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56506 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56510 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56514 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56518 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56522 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56526 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56530 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56534 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56538 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56542 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56546 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56550 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56558 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56562 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56566 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56570 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56574 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56578 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56582 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56586 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56658 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56888 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56896 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56900 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56908 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56912 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56916 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56920 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56924 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56928 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56932 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56936 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56944 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56948 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56952 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56964 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56968 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56980 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56992 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56996 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57000 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57004 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57008 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57012 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57016 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57020 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57024 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57028 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57032 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57040 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57048 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57056 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57060 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57068 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57080 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57084 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57108 - "POST /generate_stream HTTP/1.1" 200 OK
+Avg tokens(prompt+generate) throughput:  603.601 tokens/s
+Avg prompt tokens throughput:            371.731 tokens/s
+Avg generate tokens throughput:          231.871 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.4775714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 22 token used ratio: 0.5181428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.5935714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  683.167 tokens/s
+Avg prompt tokens throughput:            295.413 tokens/s
+Avg generate tokens throughput:          387.754 tokens/s
+load 1 on gpu
+current batch size: 27 token used ratio: 0.7072857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 30 token used ratio: 0.7642857142857142
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 32 token used ratio: 0.7508571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 36 token used ratio: 0.9375714285714286
+Avg tokens(prompt+generate) throughput: 1149.759 tokens/s
+Avg prompt tokens throughput:            652.674 tokens/s
+Avg generate tokens throughput:          497.085 tokens/s
+load 1 on gpu
+current batch size: 33 token used ratio: 0.9506428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 36 token used ratio: 0.979
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 36 token used ratio: 0.9400714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1110.722 tokens/s
+Avg prompt tokens throughput:            588.099 tokens/s
+Avg generate tokens throughput:          522.622 tokens/s
+load 1 on gpu
+current batch size: 34 token used ratio: 0.8967857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 34 token used ratio: 0.8466428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 34 token used ratio: 0.9036428571428572
+load 1 on gpu
+load 1 on gpu
+current batch size: 36 token used ratio: 0.9745714285714285
+Avg tokens(prompt+generate) throughput:  913.287 tokens/s
+Avg prompt tokens throughput:            377.667 tokens/s
+Avg generate tokens throughput:          535.619 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 33 token used ratio: 0.9447142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9290714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.8679285714285714
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1023.514 tokens/s
+Avg prompt tokens throughput:            535.285 tokens/s
+Avg generate tokens throughput:          488.230 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9278571428571428
+current batch size: 28 token used ratio: 0.9522857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.8243571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  870.122 tokens/s
+Avg prompt tokens throughput:            384.772 tokens/s
+Avg generate tokens throughput:          485.351 tokens/s
+current batch size: 24 token used ratio: 0.7136428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 23 token used ratio: 0.5882857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 24 token used ratio: 0.5974285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 26 token used ratio: 0.7229285714285715
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  900.401 tokens/s
+Avg prompt tokens throughput:            484.234 tokens/s
+Avg generate tokens throughput:          416.167 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 25 token used ratio: 0.7322857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 26 token used ratio: 0.7185714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 26 token used ratio: 0.7405714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  896.561 tokens/s
+Avg prompt tokens throughput:            481.501 tokens/s
+Avg generate tokens throughput:          415.060 tokens/s
+current batch size: 29 token used ratio: 0.7661428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9010714285714285
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9705714285714285
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9334285714285714
+Avg tokens(prompt+generate) throughput:  878.568 tokens/s
+Avg prompt tokens throughput:            396.631 tokens/s
+Avg generate tokens throughput:          481.937 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.944
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 34 token used ratio: 0.9751428571428571
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9785
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1012.683 tokens/s
+Avg prompt tokens throughput:            534.916 tokens/s
+Avg generate tokens throughput:          477.767 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9265714285714286
+load 1 on gpu
+current batch size: 30 token used ratio: 0.9305714285714286
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9156428571428571
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  884.711 tokens/s
+Avg prompt tokens throughput:            419.959 tokens/s
+Avg generate tokens throughput:          464.752 tokens/s
+current batch size: 25 token used ratio: 0.8733571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9226428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.8895
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9485
+Avg tokens(prompt+generate) throughput:  944.862 tokens/s
+Avg prompt tokens throughput:            498.174 tokens/s
+Avg generate tokens throughput:          446.687 tokens/s
+load 1 on gpu
+current batch size: 30 token used ratio: 0.9586428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 30 token used ratio: 0.8261428571428572
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 26 token used ratio: 0.7542857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  946.658 tokens/s
+Avg prompt tokens throughput:            475.322 tokens/s
+Avg generate tokens throughput:          471.336 tokens/s
+load 1 on gpu
+current batch size: 31 token used ratio: 0.8897857142857143
+load 1 on gpu
+current batch size: 32 token used ratio: 0.9648571428571429
+current batch size: 29 token used ratio: 0.9570714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9502857142857143
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  839.663 tokens/s
+Avg prompt tokens throughput:            310.043 tokens/s
+Avg generate tokens throughput:          529.620 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9052142857142857
+load 1 on gpu
+current batch size: 26 token used ratio: 0.9395
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9362142857142857
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  873.084 tokens/s
+Avg prompt tokens throughput:            439.390 tokens/s
+Avg generate tokens throughput:          433.694 tokens/s
+current batch size: 26 token used ratio: 0.9407142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.8841428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 32 INFO:     127.0.0.1:57112 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57128 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57136 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57144 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57148 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57152 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57156 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57160 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57164 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57168 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57172 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57176 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57180 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57184 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57192 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57196 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57200 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57204 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57208 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57212 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57216 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57220 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57224 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57228 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57232 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57236 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57240 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57244 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57248 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57252 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57256 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57260 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57264 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57268 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57272 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57276 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57280 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57284 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57288 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57292 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57300 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57304 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57308 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57312 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57316 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57320 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57324 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57328 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57332 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57336 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57344 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57348 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57352 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57356 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57360 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57364 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57422 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57426 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57430 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57434 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57438 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57442 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57446 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57450 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57454 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57458 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57462 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57466 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57470 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57474 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57482 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57486 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57490 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57494 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57498 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57502 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57506 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57514 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57518 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57522 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57526 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57530 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57534 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57538 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57542 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57546 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57550 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57554 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57558 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57562 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57566 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57570 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57574 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57578 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57582 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57586 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57634 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57658 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57848 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57852 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57856 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57864 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57868 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57872 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57876 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57880 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57884 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57888 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57892 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57896 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57900 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57908 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57912 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57916 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57920 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57928 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57932 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57936 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57940 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57944 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57948 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57952 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57964 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57968 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57980 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57992 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57996 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58004 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58008 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58012 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58016 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58032 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58040 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58048 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58056 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58060 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58080 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58084 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58112 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58128 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58136 - "POST /generate_stream HTTP/1.1" 200 OK
+token used ratio: 0.9759285714285715
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1026.748 tokens/s
+Avg prompt tokens throughput:            589.370 tokens/s
+Avg generate tokens throughput:          437.378 tokens/s
+current batch size: 30 token used ratio: 0.9546428571428571
+current batch size: 28 token used ratio: 0.9692142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9529285714285715
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 32 token used ratio: 0.9652142857142857
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  867.438 tokens/s
+Avg prompt tokens throughput:            364.077 tokens/s
+Avg generate tokens throughput:          503.361 tokens/s
+current batch size: 30 token used ratio: 0.9236428571428571
+current batch size: 27 token used ratio: 0.9583571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9482142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 37 token used ratio: 0.9209285714285714
+Avg tokens(prompt+generate) throughput: 1039.274 tokens/s
+Avg prompt tokens throughput:            522.431 tokens/s
+Avg generate tokens throughput:          516.843 tokens/s
+load 1 on gpu
+current batch size: 34 token used ratio: 0.9484285714285714
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9145
+load 1 on gpu
+load 1 on gpu
+current batch size: 30 token used ratio: 0.9421428571428572
+Avg tokens(prompt+generate) throughput:  682.621 tokens/s
+Avg prompt tokens throughput:            139.591 tokens/s
+Avg generate tokens throughput:          543.030 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9480714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 33 token used ratio: 0.9757857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9765
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1126.644 tokens/s
+Avg prompt tokens throughput:            690.748 tokens/s
+Avg generate tokens throughput:          435.896 tokens/s
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9292142857142857
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9437857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.8825
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1078.867 tokens/s
+Avg prompt tokens throughput:            624.591 tokens/s
+Avg generate tokens throughput:          454.276 tokens/s
+current batch size: 31 token used ratio: 0.9292142857142857
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9182142857142858
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 34 token used ratio: 0.9663571428571428
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9271428571428572
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1149.624 tokens/s
+Avg prompt tokens throughput:            655.672 tokens/s
+Avg generate tokens throughput:          493.952 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9075714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 32 token used ratio: 0.9252142857142858
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9346428571428571
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  882.929 tokens/s
+Avg prompt tokens throughput:            368.561 tokens/s
+Avg generate tokens throughput:          514.367 tokens/s
+current batch size: 27 token used ratio: 0.9227857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9508571428571428
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9067857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 30 token used ratio: 0.9441428571428572
+Avg tokens(prompt+generate) throughput:  956.095 tokens/s
+Avg prompt tokens throughput:            511.249 tokens/s
+Avg generate tokens throughput:          444.846 tokens/s
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9429285714285714
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9648571428571429
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9708571428571429
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  904.636 tokens/s
+Avg prompt tokens throughput:            435.399 tokens/s
+Avg generate tokens throughput:          469.237 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.8798571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 32 token used ratio: 0.9327857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 34 token used ratio: 0.9597142857142857
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1138.756 tokens/s
+Avg prompt tokens throughput:            642.263 tokens/s
+Avg generate tokens throughput:          496.493 tokens/s
+current batch size: 29 token used ratio: 0.9630714285714286
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 36 token used ratio: 0.9618571428571429
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 33 token used ratio: 0.9760714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 31 token used ratio: 0.9406428571428571
+Avg tokens(prompt+generate) throughput: 1195.258 tokens/s
+Avg prompt tokens throughput:            706.952 tokens/s
+Avg generate tokens throughput:          488.307 tokens/s
+load 1 on gpu
+load 1 on gpu
+current batch size: 29 token used ratio: 0.9616428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9485714285714286
+current batch size: 24 token used ratio: 0.9347142857142857
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  722.932 tokens/s
+Avg prompt tokens throughput:            279.038 tokens/s
+Avg generate tokens throughput:          443.893 tokens/s
+load 1 on gpu
+current batch size: 26 token used ratio: 0.9662857142857143
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9355714285714286
+load 1 on gpu
+current batch size: 25 token used ratio: 0.9455
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1027.623 tokens/s
+Avg prompt tokens throughput:            592.212 tokens/s
+Avg generate tokens throughput:          435.412 tokens/s
+current batch size: 30 token used ratio: 0.9576428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 33 token used ratio: 0.9582857142857143
+current batch size: 28 token used ratio: 0.8878571428571429
+current batch size: 27 token used ratio: 0.9469285714285715
+load 1 on gpu
+Avg tokens(prompt+generate) throughput:  764.730 tokens/s
+Avg prompt tokens throughput:            242.261 tokens/s
+Avg generate tokens throughput:          522.469 tokens/s
+load 1 on gpu
+current batch size: 25 token used ratio: 0.9164285714285715
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+current batch size: 28 token used ratio: 0.9375714285714286
+load 1 on gpu
+load 1 on gpu
+current batch size: 27 token used ratio: 0.9516428571428571
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+load 1 on gpu
+Avg tokens(prompt+generate) throughput: 1020.768 tokens/s
+Avg prompt tokens throughput:            608.382 tokens/s
+Avg generate tokens throughput:          412.386 tokens/s
+current batch size: 29 token used ratio: 0.9606428571428571
+load 1 on gpu
+current batch size: 22 token used ratio: 0.7324285714285714
+current batch size: 15 token used ratio: 0.5482142857142858
+current batch size: 11 token used ratio: 0.3806428571428571
+Avg tokens(prompt+generate) throughput:  385.174 tokens/s
+Avg prompt tokens throughput:             51.097 tokens/s
+Avg generate tokens throughput:          334.077 tokens/s
+current batch size: 10 INFO:     127.0.0.1:58146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58154 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58158 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58162 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58166 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58182 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58190 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58194 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58250 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58262 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58266 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58274 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58278 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58282 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58286 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58290 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58298 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58306 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58310 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58318 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58326 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58330 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58334 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58338 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58342 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58346 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58354 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58358 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58422 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58428 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58432 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58436 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58440 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58444 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58456 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58460 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58464 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58468 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58472 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58508 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58536 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58540 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58544 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58548 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58552 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58556 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58560 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58564 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58568 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58572 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58576 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58584 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58588 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58592 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58596 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58600 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58604 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58608 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58612 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58616 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58620 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58624 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58628 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58632 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58636 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58640 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58644 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58648 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58652 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58656 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58660 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58664 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58668 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58672 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58676 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58680 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58684 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58688 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58692 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58696 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58700 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58946 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58954 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58964 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58968 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58980 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58992 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58996 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59000 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59004 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59008 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59012 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59016 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59020 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59026 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59032 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59040 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59048 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59056 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59060 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59068 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59080 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59084 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59088 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59096 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59100 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59104 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59128 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59136 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59140 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59144 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59148 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59152 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59156 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59160 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59164 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59168 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59172 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59176 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59180 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59184 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59188 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59192 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59196 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59200 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59204 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59208 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59216 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59220 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59224 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59228 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59232 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59236 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59240 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59244 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59248 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59252 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59256 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59260 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59264 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59268 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59272 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59276 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59284 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59288 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59292 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59296 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59300 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59308 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59312 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59316 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59320 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59324 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59328 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59332 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59336 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59340 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59344 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59348 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59352 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59356 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59360 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59364 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59368 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59374 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59386 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59390 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59398 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59410 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59414 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59418 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59422 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59426 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59430 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59434 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59442 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59446 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59454 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59458 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59462 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59466 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59470 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59474 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59478 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59482 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59486 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59494 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59498 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59502 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59506 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59510 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59514 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59518 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59522 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59526 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59530 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59534 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59538 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59542 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59546 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59550 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59554 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59558 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59562 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59566 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59574 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59582 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59586 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59594 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59598 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59606 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59610 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59614 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59622 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59626 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59634 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59638 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59646 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59650 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59658 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59662 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59666 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59670 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59674 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59682 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59686 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59690 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59698 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59702 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59706 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59710 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59714 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59718 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59722 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59726 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59730 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59738 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59750 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59758 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59762 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59774 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59786 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59794 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59806 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59826 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59834 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59838 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59850 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59854 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59862 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59874 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59878 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59882 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59886 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59906 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59918 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59922 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59934 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59938 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59946 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59954 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59958 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59962 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59966 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59970 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59974 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59978 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59982 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59986 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59990 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59994 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59998 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60002 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60006 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60010 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60014 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60018 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60022 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60026 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60030 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60034 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60038 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60042 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60046 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60050 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60054 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60058 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60062 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60066 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60070 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60074 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60078 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60082 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60086 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60090 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60094 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60098 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60102 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60106 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60110 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60114 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60118 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60122 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60126 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60130 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60134 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60138 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60142 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60150 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60154 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60158 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60162 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60166 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60170 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60182 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60190 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60218 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60226 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60230 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60234 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60242 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60246 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60250 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60262 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60266 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60274 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60278 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60282 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60286 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60290 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60298 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60306 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60310 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60318 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60326 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60330 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60334 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60338 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60342 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60348 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60352 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60356 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60360 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60364 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60368 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60372 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60376 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60380 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60384 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60388 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60392 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60396 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60400 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60404 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60408 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60412 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60416 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60420 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60424 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60428 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60432 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60436 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60440 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60444 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60456 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60460 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60464 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60468 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60472 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60476 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60480 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60488 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60492 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60496 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60500 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60504 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60508 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60512 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60516 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60520 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60524 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60528 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60532 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60536 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60540 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60544 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60548 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60556 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60560 - "POST /generate_stream HTTP/1.1" 200 OK

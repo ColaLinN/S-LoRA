@@ -96,13 +96,13 @@ paper_suite = {
         output_range = [[8, 512]],
     ),
     "a100-40-num-adapter-short": BenchmarkConfig(
-        num_adapters = [0, 1, 20, 50, 100, 200],
+        num_adapters = [0],
         alpha = [1],
         req_rate = [2],
         cv = [1],
         duration = [15],
-        input_range = [[8, 512]],
-        output_range = [[8, 512]],
+        input_range = [[1, 5]],
+        output_range = [[1, 5]],
     ),
     "a100-40-num-adapter": BenchmarkConfig(
         num_adapters = [0, 1, 20, 50, 100, 200],
@@ -110,8 +110,8 @@ paper_suite = {
         req_rate = [2],
         cv = [1],
         duration = [60 * 5],
-        input_range = [[8, 512]],
-        output_range = [[8, 512]],
+        input_range = [[8, 1024]],
+        output_range = [[8, 1024]],
     ),
     "a10g-req-rate-real-short": BenchmarkConfig(
         num_adapters = [200],

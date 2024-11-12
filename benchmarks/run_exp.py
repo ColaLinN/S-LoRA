@@ -87,6 +87,9 @@ async def send_request(
 
     first_token_latency = None
     timeout = aiohttp.ClientTimeout(total=3 * 3600)
+    print("ready to request generate API", url, 
+          "model_dir", model_dir, "adapter_dir", adapter_dir, "len_prompt",len(prompt))
+    # aggr_output = ""
     async with aiohttp.ClientSession(timeout=timeout, trust_env=True) as session:
         while True:
             async with session.post(url, headers=headers, json=data) as response:
@@ -98,14 +101,15 @@ async def send_request(
             output = b"".join(chunks).decode("utf-8")
             # output = json.loads(output)
             # print(output)
+            # aggr_output = output
             
             if '\"finished\": -1' not in output:
                 break
             else:
                 first_token_latency = None
                 break
-            # #     print(output)
-            # #     print(json.loads(output))
+                # print(output)
+                # print(json.loads(output))
             # break
 
     request_end_time = time.time()
@@ -148,6 +152,8 @@ def get_adapter_dirs(num_adapters, adapter_dirs, backend=None):
     for i in range(num_iter):
         for adapter_dir in adapter_dirs:
             ret.append(adapter_dir + f"-{i}")
+    print("get_adapter_dirs input and output", num_adapters, adapter_dirs, backend, ret)
+    print("========")
     return ret
 
 def get_res_stats(per_req_latency, benchmark_time, backend, warmup_time=0, warmup_num=0):
