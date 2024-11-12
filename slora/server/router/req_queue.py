@@ -35,7 +35,7 @@ class ReqQueue:
             self.adapters = set()
             self.adapter_size = 0
     
-    # @calculate_time(show=True, min_cost_ms=0.1)
+    @calculate_time(show=True, min_cost_ms=0.1)
     def _can_add_new_req(self, req, lora_ranks):
         # lora_ranks is a dict: {'dummy-lora-13b-rank-64-0': 64, 'dummy-lora-13b-rank-32-0': 32}
         print("add new req", req, "rank is", lora_ranks[req.adapter_dir])
@@ -61,6 +61,7 @@ class ReqQueue:
     def update_counter(self, req):
         pass 
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     def generate_new_batch(self, current_batch:Batch, lora_ranks: dict[str, int]):
         if current_batch is not None and len(current_batch.reqs) >= self.running_max_req_size:
             return None
@@ -83,8 +84,8 @@ class ReqQueue:
         if len(can_run_list) != 0:
             new_batch = Batch(uuid.uuid4().hex, can_run_list)
             self.waiting_req_list = self.waiting_req_list[len(can_run_list) + aborted_count:]
-            print("generate_new_batch", new_batch)
-            print("generate_new_batch waiting_req_list", self.waiting_req_list)
+            print("generate_new_batch function", len(new_batch.reqs))
+            print("generate_new_batch function waiting_req_list", self.waiting_req_list)
             return new_batch
         else:
             return None
@@ -103,8 +104,8 @@ class ReqQueue:
                 break
         if len(next_batch) > 0:
             next_batch = Batch(uuid.uuid4().hex, next_batch)
-            print("next_batch", next_batch)
-            print("next_batch waiting_req_list", self.waiting_req_list)
+            print("next_batch function", len(next_batch.reqs))
+            print("next_batch function waiting_req_list", self.waiting_req_list)
             return next_batch
         else:
             return None

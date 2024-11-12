@@ -26,6 +26,8 @@ from slora.server.router.cluster_req_queue import ClusterReqQueue
 from slora.server.router.vtc_req_queue import VTCReqQueue
 from slora.server.router.pets_req_queue import PETSReqQueue
 from slora.server.router.peft_req_queue import PEFTReqQueue
+from slora.utils.logging import print_with_timestamp
+
 
 
 def get_scheduler(input_params, adapter_dirs):
@@ -205,7 +207,13 @@ class RouterManager:
                         ret.append(self.model_rpcs[tp_rank].merge_adapter())
                     await asyncio.gather(*ret)
             
+                # TODO: needs to be optimized
                 torch.cuda.synchronize()
+                print_with_timestamp(
+                    inside_func="_step",
+                    to_run_func="_prefill_batch",
+                    running_batch=self.running_batch.__repr__(),
+                )
                 await self._prefill_batch(self.running_batch)
                 await self._filter_runing_batch()
                 self.has_wait_tokens = 0
@@ -224,6 +232,11 @@ class RouterManager:
                         ret.append(self.model_rpcs[tp_rank].load_adapters(
                             next_batch.adapter_dirs, prefetch=True))
                     await asyncio.gather(*ret)
+            print_with_timestamp(
+                inside_func="_step",
+                to_run_func="start _decode_batch",
+                running_batch=self.running_batch.__repr__(),
+            )
             await self._decode_batch(self.running_batch)
             await self._filter_runing_batch()
 
@@ -243,8 +256,19 @@ class RouterManager:
                         ret.append(self.model_rpcs[tp_rank].load_adapters(new_mini_batch.adapter_dirs))
                     await asyncio.gather(*ret)
 
+                print_with_timestamp(
+                    inside_func="_step",
+                    to_run_func="_decode_batch",
+                    running_batch=self.running_batch.__repr__(),
+                )
                 await self._prefill_batch(new_mini_batch, minibatch=True)
                 if not new_mini_batch.is_clear():
+                    print_with_timestamp(
+                        inside_func="_step",
+                        to_run_func="_merge_batch",
+                        running_batch=self.running_batch.__repr__(),
+                        new_mini_batch=self.new_mini_batch.__repr__(),
+                    )
                     await self._merge_batch(self.running_batch, new_mini_batch)
                     self.running_batch.merge(new_mini_batch)
                 self.has_wait_tokens = 0
@@ -254,12 +278,14 @@ class RouterManager:
                 await self._filter_runing_batch()
         
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _init_batch(self, batch: Batch):
         reqs = [r.to_rpc_obj() for r in batch.reqs]
         rets = [self.model_rpcs[tp_rank].init_batch(batch.batch_id, reqs) for tp_rank in range(self.world_size)]
         await asyncio.gather(*rets)
         return
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _prefill_batch(self, batch, minibatch=True):
         await self._init_batch(batch)
         rets = [self.model_rpcs[tp_rank].prefill_batch(batch.batch_id) for tp_rank in range(self.world_size)]
@@ -274,6 +300,7 @@ class RouterManager:
         await self._handle_finish_req(batch, has_new_finished_req, minibatch=True)
         return
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _decode_batch(self, batch:Batch):
         self.req_queue.update_counter(batch)
         rets = [self.model_rpcs[tp_rank].decode_batch(batch.batch_id) for tp_rank in range(self.world_size)]
@@ -288,17 +315,20 @@ class RouterManager:
         await self._handle_finish_req(batch, has_new_finished_req)
         return
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _filter_batch(self, batch: Batch):
         req_id_list = [r.request_id for r in batch.reqs]
         rets = [self.model_rpcs[tp_rank].filter_batch(batch.batch_id, req_id_list) for tp_rank in range(self.world_size)]
         await asyncio.gather(*rets)
         return
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _merge_batch(self, batch1, batch2):
         rets = [self.model_rpcs[tp_rank].merge_batch(batch1.batch_id, batch2.batch_id) for tp_rank in range(self.world_size)]
         await asyncio.gather(*rets)
         return
 
+    @calculate_time(show=True, min_cost_ms=0.1)
     async def _remove_batch(self, batch):
         rets = [self.model_rpcs[tp_rank].remove_batch(batch.batch_id) for tp_rank in range(self.world_size)]
         await asyncio.gather(*rets)
@@ -335,7 +365,11 @@ class RouterManager:
                 for tp_rank in range(self.world_size):
                     ret.append(self.model_rpcs[tp_rank].offload_adapters())
                 await asyncio.gather(*ret)
-
+            print_with_timestamp(
+                inside_func="_filter_runing_batch",
+                to_run_func="running_batch=null",
+                running_batch=self.running_batch.__repr__(),
+            )
             self.running_batch = None
             return
     
@@ -360,11 +394,16 @@ class RouterManager:
             recv_req = await self.recv_from_httpserver.recv_pyobj()
             if isinstance(recv_req, tuple) and len(recv_req) == 4:
                 adapter_dir, prompt_ids, sampling_params, request_id = recv_req
-                print("loop_for_netio_req recv_req", adapter_dir, len(prompt_ids), sampling_params, request_id)
+                print_with_timestamp(
+                    f"exp_debugging|loop_for_netio_req try to add_req {adapter_dir} len_propmt_ids {len(prompt_ids)} sampling_params {sampling_params} request_id {request_id}"
+                )
                 self.add_req(adapter_dir, prompt_ids, sampling_params, request_id)
             elif isinstance(recv_req, AbortReq):
                 abort_req = recv_req
                 request_id = abort_req.req_id
+                print_with_timestamp(
+                    f"exp_debugging|loop_for_netio_req try to abort {request_id}"
+                )
                 await self.abort(request_id)
                 self.send_to_detokenization.send_pyobj(abort_req)
             else:
