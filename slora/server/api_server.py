@@ -472,3 +472,5 @@ if __name__ == "__main__":
     torch.cuda.cudart().cudaProfilerStart()
     torch.multiprocessing.set_start_method('spawn'), # this code will not be ok for settings to fork to subprocess
     main()
+    torch.cuda.cudart().cudaProfilerStop()
+
