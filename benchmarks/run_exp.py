@@ -301,7 +301,7 @@ if __name__ == "__main__":
     parser.add_argument("--no-lora-compute", action="store_true")
     parser.add_argument("--no-lora-swap", action="store_true")
     parser.add_argument("--no-lora-copy", action="store_true")
-    parser.add_argument("--mode", default="synthetic", choices=["synthetic", "real"])
+    parser.add_argument("--mode", default="synthetic", choices=["synthetic", "real", "long_tail"])
 
     parser.add_argument("--server", type=str, default="http://localhost:8000")
     parser.add_argument("--seed", type=int, default=42)

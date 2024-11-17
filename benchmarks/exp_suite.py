@@ -28,8 +28,49 @@ BenchmarkConfig = namedtuple(
      "duration", # benchmark serving duration
      "input_range", # input length l.b. and u.b.
      "output_range", # output length l.b. and u.b.
+     "is_longtail_exp",
+     "total_req",
     ]
 )
+
+
+longtail_suite = {
+    "h100": BenchmarkConfig(
+        num_adapters = [1, 20, 50, 100, 200],
+        alpha = [0.8],
+        req_rate = [2],
+        cv = [1],
+        duration = [60],
+        input_range = [
+            [8], 
+            [2046],
+            
+            ],
+        output_range = [
+            [8]
+            [2046],
+            ],
+        is_longtail_exp = [True],
+    ),
+
+    "h100": BenchmarkConfig(
+        num_adapters = [1, 20, 50, 100, 200],
+        alpha = [0.8],
+        req_rate = [2],
+        cv = [1],
+        duration = [60],
+        input_range = [
+            [8], 
+            [2046],
+            
+            ],
+        output_range = [
+            [8]
+            [2046],
+            ],
+        is_longtail_exp = [True],
+    ),
+}
 
 paper_suite = {
     "ablation-no-mem": BenchmarkConfig(
@@ -340,13 +381,15 @@ debug_suite = {
 }
 
 
-def get_all_suites(mode, debug=False, suite=None, breakdown=False):
+def get_all_suites(mode, debug=False, suite=None, breakdown=False, longtail=False):
     assert not (debug and breakdown)
     assert suite is not None
     if debug:
         exps = [{suite: debug_suite[suite]}]
     elif breakdown:
         exps = [{suite: breakdown_suite[suite]}]
+    elif longtail_suite:
+        exps = [{suite: longtail_suite[suite]}]
     else:
         exps = [{suite: paper_suite[suite]}]
 
