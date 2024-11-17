@@ -4,7 +4,7 @@ import numpy as np
 from typing import List
 from ..io_struct import Batch, Req
 from slora.utils.infer_utils import  calculate_time
-
+import torch
 
 class ReqQueue:
 
@@ -54,6 +54,10 @@ class ReqQueue:
         need_max_token_num = (left_out_len_array * size_array + cum_run_len_array).max()
         if (need_max_token_num < self.max_total_tokens - self.adapter_size and
             len(self.cache_len_list) <= self.running_max_req_size):
+            # nsys _can_add_new_req
+            torch.cuda.nvtx.range_push("need_max_token_num_{}".format(need_max_token_num))
+            # nsys _can_add_new_req
+            torch.cuda.nvtx.range_pop()
             return True
         else:
             return False
@@ -86,6 +90,10 @@ class ReqQueue:
             self.waiting_req_list = self.waiting_req_list[len(can_run_list) + aborted_count:]
             print("generate_new_batch function", len(new_batch.reqs))
             print("generate_new_batch function waiting_req_list", self.waiting_req_list)
+            # nsys generate_new_batch
+            torch.cuda.nvtx.range_push("gen_new_batch_{}".format(len(new_batch.reqs)))
+            # nsys generate_new_batch
+            torch.cuda.nvtx.range_pop()
             return new_batch
         else:
             return None
@@ -106,6 +114,10 @@ class ReqQueue:
             next_batch = Batch(uuid.uuid4().hex, next_batch)
             print("next_batch function", len(next_batch.reqs))
             print("next_batch function waiting_req_list", self.waiting_req_list)
+            # nsys next_batch
+            torch.cuda.nvtx.range_push("next_batch{}".format(len(next_batch.reqs)))
+            # nsys next_batch
+            torch.cuda.nvtx.range_pop()
             return next_batch
         else:
             return None
