@@ -35,7 +35,7 @@ class ReqQueue:
             self.adapters = set()
             self.adapter_size = 0
     
-    @calculate_time(show=True, min_cost_ms=0.1)
+    # @calculate_time(show=True, min_cost_ms=0.1)
     def _can_add_new_req(self, req, lora_ranks):
         # lora_ranks is a dict: {'dummy-lora-13b-rank-64-0': 64, 'dummy-lora-13b-rank-32-0': 32}
         print("add new req", req, "rank is", lora_ranks[req.adapter_dir])
@@ -61,7 +61,7 @@ class ReqQueue:
     def update_counter(self, req):
         pass 
 
-    @calculate_time(show=True, min_cost_ms=0.1)
+    # @calculate_time(show=True, min_cost_ms=0.1)
     def generate_new_batch(self, current_batch:Batch, lora_ranks: dict[str, int]):
         if current_batch is not None and len(current_batch.reqs) >= self.running_max_req_size:
             return None
