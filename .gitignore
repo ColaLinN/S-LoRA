@@ -12,3 +12,4 @@ dist
 *.pdf
 *.nsys-rep
 *.qdstrm
+*.sqlite

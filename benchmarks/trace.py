@@ -98,24 +98,62 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
                       seed)
     np.random.seed(seed)
 
-    # tot_req 与 req_rate 和 duration 有关
-    tot_req = int(8)
-
-    # generate adapter id
-    probs = np.random.power(alpha, tot_req)
-    ind = (probs * num_adapters).astype(int)
-
     # input_lens = [2040, 1024, 16, 16, 16, 16, 16, 16]
     # output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
 
-    input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
-    output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
+    # input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
+    # output_lens= [2040, 8, 8, 8, 8, 8, 8, 8]
     
-    print(input_lens, output_lens)
-
     # input_lens = [16, 1024, 2040, 16, 16, 16, 16, 16]
     # output_lens= [16, 2040, 8, 8, 8, 8, 8, 8]
 
+    # input_lens = [16]
+    # output_lens= [2046]
+    
+    # input_lens = [8, 8, 8, 8, 8, 8]
+    # output_lens= [8, 1022, 8, 1022, 8, 2046]
+
+    # start
+    input_lens = [8]
+    output_lens= [8]
+
+    # input_lens = [1022]
+    # output_lens= [1022]
+
+    # input_lens = [8, 8, 8]
+    # output_lens= [8, 8, 8]
+    
+    # input_lens = [8, 8, 8]
+    # output_lens= [8, 1022, 8]
+
+    # input_lens = [8, 8, 8]
+    # output_lens= [1022, 1022, 1022]
+    
+    # input_lens = [8, 8, 8]
+    # output_lens= [8, 1022, 8]
+    
+    # input_lens = [8, 1022, 8]
+    # output_lens= [8, 8, 8]
+    
+    # input_lens = [8, 2046, 8]
+    # output_lens= [8, 8, 8]
+    
+    # input_lens = [8, 8, 8]
+    # output_lens= [8, 2046, 8]
+
+    # input_lens = [8, 8, 8, 8, 8, 8]
+    # output_lens= [8, 1022, 8, 1022, 8, 2046]
+
+    
+    print(input_lens, output_lens)
+
+
+    tot_req = int(len(input_lens))
+    
+    # generate adapter id
+    probs = np.random.power(alpha, tot_req)
+    ind = (probs * num_adapters).astype(int)
+    
     # generate timestamp
     requests = []
     tic = 0

@@ -182,7 +182,11 @@ class RouterManager:
     async def loop_for_fwd(self,):
         counter_count = 0
         while True:
+            # nsys _step
+            # torch.cuda.nvtx.range_push("_step")
             await self._step()
+            # nsys _step
+            # torch.cuda.nvtx.range_pop()
             counter_count += 1
             if self.running_batch is not None:
                 if counter_count % 50 == 0:
@@ -197,8 +201,6 @@ class RouterManager:
         """
         事件处理循环
         """
-        # nsys _step
-        torch.cuda.nvtx.range_push("_step")
         # 删除所有已经 finished 的 req
         if self.running_batch is None:
             # nsys running_batch is None
@@ -314,8 +316,6 @@ class RouterManager:
                 torch.cuda.nvtx.range_pop()
             # nsys has_wait_tokens > max_wait_tokens
             torch.cuda.nvtx.range_pop()
-        # nsys _step
-        torch.cuda.nvtx.range_pop()
 
     # @calculate_time(show=True, min_cost_ms=0.1)
     async def _init_batch(self, batch: Batch):

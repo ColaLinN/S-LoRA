@@ -9,7 +9,7 @@ def print_with_timestamp(**kwargs):
         if isinstance(value, (dict, list)):
             print(f"{key}: {json.dumps(value, indent=None, ensure_ascii=False)}", end="|")
         else:
-            print(f"{key}: {value}", end="")
+            print(f"{key}: {value}", end="|")
     print("")
 
 # print_with_timestamp(

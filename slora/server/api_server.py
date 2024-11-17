@@ -469,8 +469,12 @@ def main():
 
 if __name__ == "__main__":
     # nsys
-    torch.cuda.cudart().cudaProfilerStart()
+    # torch.cuda.cudart().cudaProfilerStart()
+    # try:
     torch.multiprocessing.set_start_method('spawn'), # this code will not be ok for settings to fork to subprocess
     main()
-    torch.cuda.cudart().cudaProfilerStop()
+    # except KeyboardInterrupt:
+    #     torch.cuda.cudart().cudaProfilerStop()
+    #     print("Recv KeyboardInterrupt, exit with cuda stop")
+
 
