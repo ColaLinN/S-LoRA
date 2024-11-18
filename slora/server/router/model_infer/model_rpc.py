@@ -189,6 +189,7 @@ class ModelRpcServer(rpyc.Service):
         # torch.cuda.empty_cache()
         return
     
+    # forward
     def forward(self, batch_id, is_prefill):
         batch: InferBatch = self.cache.pop(batch_id)
         # print(batch.requests)
