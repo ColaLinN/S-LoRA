@@ -13,11 +13,18 @@ nvcc --version
 nvidia-smi
 
 
-# cuda
+#cuda
 module av cuda
 module load cuda/11.8.0
 module load cuda/12.2.2
 module unload cuda
+
+#python
+# set environment variables:
+export TORCH_CUDA_ARCH_LIST="8.0"
+# install dependencies
+pip install torch==2.0.1
+pip install -e .
 
 # # others
 # nsys profile -y 10  -d 600  --gpu-metrics-device=0 --stats=true --force-overwrite true -o a10g_a100_40g_s2_server_full_slora_output_20241111_v1  python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/a10g_a100_40g_s2_server_full_slora_output_20241111_v1.txt
@@ -31,6 +38,10 @@ module unload cuda
 # √, auto terminate longtail after a while
 nsys profile --duration 300 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241118_v1  python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 nsys profile --duration 120 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241118_v2  python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
+
+#server
+python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
+python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 
 #req
 python run_exp.py --backend slora --suite a100-40-num-adapter-short --model-setting S4 --mode synthetic --output 20241118_v1.jsonl | tee output/20241118_v1.txt

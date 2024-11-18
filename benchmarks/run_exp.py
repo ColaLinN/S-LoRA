@@ -87,8 +87,8 @@ async def send_request(
 
     first_token_latency = None
     timeout = aiohttp.ClientTimeout(total=3 * 3600)
-    print("ready to request generate API", url, 
-          "model_dir", model_dir, "adapter_dir", adapter_dir, "len_prompt",len(prompt))
+    # print("ready to request generate API", url, 
+    #       "model_dir", model_dir, "adapter_dir", adapter_dir, "len_prompt",len(prompt))
     # aggr_output = ""
     async with aiohttp.ClientSession(timeout=timeout, trust_env=True) as session:
         while True:
@@ -144,6 +144,7 @@ async def benchmark(
 
 def get_adapter_dirs(num_adapters, adapter_dirs, backend=None):
     ret = []
+    # 确保num_iter*adapter_dirs >=num_adapters
     num_iter = num_adapters // len(adapter_dirs) + 1
 
     if backend == "vllm-packed":
@@ -227,7 +228,7 @@ def get_res_stats(per_req_latency, benchmark_time, backend, warmup_time=0, warmu
 def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug=False):
     if mode == "real":
         print("*** num_adapters, cv and alpha are not used in real mode ***")
-    print([(k, v) for k, v in zip(BenchmarkConfig._fields, config)])
+    # print([(k, v) for k, v in zip(BenchmarkConfig._fields, config)])
 
     num_adapters, alpha, req_rate, cv, duration, input_range, output_range = config
     # assert duration >= 30
@@ -336,6 +337,7 @@ if __name__ == "__main__":
         results = [json.loads(line)["config"] for line in lines]
 
     for config in tqdm(suites, desc="suites"):
+    # for config in suites:
         if to_dict(config) not in results:
             stats = run_exp(args.model_setting, args.backend, args.server, config,
                             args.output, args.mode, args.seed, args.debug)

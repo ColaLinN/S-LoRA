@@ -28,48 +28,47 @@ BenchmarkConfig = namedtuple(
      "duration", # benchmark serving duration
      "input_range", # input length l.b. and u.b.
      "output_range", # output length l.b. and u.b.
-     "is_longtail_exp",
-     "total_req",
+    #  "is_longtail_exp",
+    #  "total_req",
     ]
 )
 
 
 longtail_suite = {
-    "h100": BenchmarkConfig(
-        num_adapters = [1, 20, 50, 100, 200],
-        alpha = [0.8],
-        req_rate = [2],
-        cv = [1],
-        duration = [60],
-        input_range = [
-            [8], 
-            [2046],
+    # "h100": BenchmarkConfig(
+    #     num_adapters = [1, 20, 50, 100, 200],
+    #     alpha = [0.8],
+    #     req_rate = [2],
+    #     cv = [1],
+    #     duration = [60],
+    #     input_range = [
+    #         [8], 
+    #         [2046],
             
-            ],
-        output_range = [
-            [8]
-            [2046],
-            ],
-        is_longtail_exp = [True],
-    ),
+    #         ],
+    #     output_range = [
+    #         [8]
+    #         [2046],
+    #         ],
+    #     is_longtail_exp = [True],
+    # ),
 
-    "h100": BenchmarkConfig(
-        num_adapters = [1, 20, 50, 100, 200],
-        alpha = [0.8],
-        req_rate = [2],
-        cv = [1],
-        duration = [60],
-        input_range = [
-            [8], 
-            [2046],
-            
-            ],
-        output_range = [
-            [8]
-            [2046],
-            ],
-        is_longtail_exp = [True],
-    ),
+    # "h100": BenchmarkConfig(
+    #     num_adapters = [1, 20, 50, 100, 200],
+    #     alpha = [0.8],
+    #     req_rate = [2],
+    #     cv = [1],
+    #     duration = [60],
+    #     input_range = [
+    #         [8], 
+    #         [2046],
+    #         ],
+    #     output_range = [
+    #         [8]
+    #         [2046],
+    #         ],
+    #     is_longtail_exp = [True],
+    # ),
 }
 
 paper_suite = {
@@ -137,13 +136,13 @@ paper_suite = {
         output_range = [[8, 512]],
     ),
     "a100-40-num-adapter-short": BenchmarkConfig(
-        num_adapters = [0],
-        alpha = [1],
-        req_rate = [2],
-        cv = [1],
-        duration = [15],
-        input_range = [[1, 5]],
-        output_range = [[1, 5]],
+        num_adapters = [200],
+        alpha = [1], 
+        req_rate = [2], # not in use
+        cv = [1], 
+        duration = [15], # not in use
+        input_range = [[1, 5]], # not in use
+        output_range = [[1, 5]], # not in use
     ),
     "a100-40-num-adapter": BenchmarkConfig(
         num_adapters = [0, 1, 20, 50, 100, 200],

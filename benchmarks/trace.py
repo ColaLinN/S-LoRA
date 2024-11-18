@@ -92,9 +92,10 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
                       input_range, output_range,
                       adapter_dirs, # (base_dir, adapter_dir)
                       seed=42):
-    print("generating requests v2", num_adapters, alpha, req_rate, cv, duration,
+    print("generating requests v2", 
+                      "num_adapters", num_adapters, alpha, req_rate, cv, duration,
                       input_range, output_range,
-                      adapter_dirs, 
+                      "len_adapters", len(adapter_dirs), 
                       seed)
     np.random.seed(seed)
 
@@ -114,8 +115,8 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     # output_lens= [8, 1022, 8, 1022, 8, 2046]
 
     # start
-    input_lens = [8]
-    output_lens= [8]
+    # input_lens = [8]
+    # output_lens= [8]
 
     # input_lens = [1022]
     # output_lens= [1022]
@@ -129,9 +130,6 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     # input_lens = [8, 8, 8]
     # output_lens= [1022, 1022, 1022]
     
-    # input_lens = [8, 8, 8]
-    # output_lens= [8, 1022, 8]
-    
     # input_lens = [8, 1022, 8]
     # output_lens= [8, 8, 8]
     
@@ -144,15 +142,47 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     # input_lens = [8, 8, 8, 8, 8, 8]
     # output_lens= [8, 1022, 8, 1022, 8, 2046]
 
-    
-    print(input_lens, output_lens)
-
-
-    tot_req = int(len(input_lens))
-    
     # generate adapter id
-    probs = np.random.power(alpha, tot_req)
-    ind = (probs * num_adapters).astype(int)
+    # probs = np.random.power(alpha, tot_req)
+    # ind = (probs * num_adapters).astype(int)
+    # ind = [1]
+
+    
+    # input_lens = [8, 2046, 8, 1022]
+    # output_lens= [8, 2046, 8, 1022]
+    
+    # input_lens = [8, 8, 8, 8]
+    # output_lens= [8, 2046, 8, 1022]
+    
+    # input_lens = [8, 8, 8, 8]
+    # output_lens= [8, 8, 8, 8]
+    
+    # input_lens = [8, 2046, 8, 1022]
+    # output_lens= [2046, 8, 1022, 8]
+    
+    ind = [1, 1, 1, 1, 
+           1, 1, 1, 1, 
+           1, 1, 1]
+    
+    ind = [1, 2, 3, 4, 
+           5, 6, 7, 8, 
+           9, 10, 11]
+
+    input_lens = [8, 8, 8, 8, 
+                  8, 8, 8, 8, 
+                  8, 8, 8]
+    # output_lens= [8, 8, 8, 8, 
+    #               512, 8, 512, 8, 
+    #               8, 8, 8]
+    output_lens= [8, 8, 8, 8, 
+                  8, 8, 8, 8, 
+                  8, 8, 8]
+
+    print(ind)
+    print(input_lens, output_lens)
+    tot_req = int(len(input_lens))
+
+
     
     # generate timestamp
     requests = []
@@ -160,13 +190,25 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     shape = 1 / (cv * cv)
     scale = cv * cv / req_rate
     intervals = np.random.gamma(shape, scale, tot_req)
+    print("construting req")
     for i in range(tot_req):
         tic += intervals[i]
-        requests.append(Request(i, adapter_dirs[ind[i]][0], adapter_dirs[ind[i]][1],
-                                dummy_prompt(input_lens[i]), int(input_lens[i]), int(output_lens[i]),
-                                tic))
-    for req in requests:
-        print(req.__repr__)
+        base_dir = adapter_dirs[ind[i]][0]
+        adapter_dir = adapter_dirs[ind[i]][1]
+        # adapter_dir = None
+        print(adapter_dirs[ind[i]])
+        requests.append(Request(
+                                req_id=i, 
+                                model_dir=base_dir, 
+                                adapter_dir=adapter_dir, 
+                                prompt=dummy_prompt(input_lens[i]), 
+                                prompt_len=int(input_lens[i]), 
+                                output_len=int(output_lens[i]), 
+                                req_time=tic
+                            )
+                        )
+    # for req in requests:
+    #     print(req.__repr__)
     return requests
 
 def get_real_requests(trace_file, req_rate, duration, base_model, adapter_dirs, input_range, output_range, seed=42):
