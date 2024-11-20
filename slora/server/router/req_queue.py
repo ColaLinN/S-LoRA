@@ -5,15 +5,21 @@ from typing import List
 from ..io_struct import Batch, Req
 from slora.utils.infer_utils import  calculate_time
 import torch
+from slora.utils.logging import print_with_timestamp
+
 
 class ReqQueue:
 
     def __init__(self, max_total_tokens, batch_max_tokens, running_max_req_size) -> None:
-        self.max_total_tokens = max_total_tokens
         assert batch_max_tokens is not None
+        
+        self.max_total_tokens = max_total_tokens
         self.batch_max_tokens = batch_max_tokens
         self.running_max_req_size = running_max_req_size
+
         self.waiting_req_list: List[Req] = []
+        # (has_run_len, left_out_len)
+        # self.cache_len_list = []
         
     def append(self, req):
         self.waiting_req_list.append(req)
@@ -38,24 +44,61 @@ class ReqQueue:
     # @calculate_time(show=True, min_cost_ms=0.1)
     def _can_add_new_req(self, req, lora_ranks):
         # lora_ranks is a dict: {'dummy-lora-13b-rank-64-0': 64, 'dummy-lora-13b-rank-32-0': 32}
-        print("add new req", req, "rank is", lora_ranks[req.adapter_dir])
         self.cache_len_list.append((req.input_len + 1, req.max_output_len - 1)) # hard to analysis
+        # sort by has_run_len in descending order
         self.cache_len_list.sort(key=lambda x: -x[1])
         if req.adapter_dir not in self.adapters:
             self.adapter_size += lora_ranks[req.adapter_dir] * 4
             self.adapters.add(req.adapter_dir)
         
+        # [2048, 8, 8, 8]
+        # [2048, 8]
+        has_run_len_array = np.array([e[0] for e in self.cache_len_list])
+        
+        # [2048, 8, 8, 8]
+        # [2048, 8]
         left_out_len_array = np.array([e[1] for e in self.cache_len_list])
         # assert left_out_len_array.min() >= 0
-        has_run_len_array = np.array([e[0] for e in self.cache_len_list])
+
+        # [2048, 2056, 2064, 2072]
+        # [2048, 2056]
         cum_run_len_array = np.cumsum(has_run_len_array)
+        
+        # [1, 2, 3, 4], the priority of the request
         size_array = np.arange(1, len(self.cache_len_list) + 1, 1)
         
-        need_max_token_num = (left_out_len_array * size_array + cum_run_len_array).max()
+        # [2048, 4112, 6192, 8288]
+        # [2048, 4112]
+        need_max_token_num = (left_out_len_array * size_array + cum_run_len_array)
+        
+        # 8288
+        # 4112
+        need_max_token_num = need_max_token_num.max()
+        
+        # assuming max_total_tokens = 8192, adapter_size = 64, running_max_req_size = 8
+        # 8288 < 8192 - 64 and 4 <= 8
+        # 4112 < 4096
+        
+        print_with_timestamp(
+            inside_func="_can_add_new_req",
+            to_check_req=req.__repr__,
+            cache_len_list=self.cache_len_list,
+            has_run_len_array=has_run_len_array,
+            left_out_len_array=left_out_len_array,
+            cum_run_len_array=cum_run_len_array,
+            size_array=size_array,
+            need_max_token_num=need_max_token_num,
+            max_total_tokens=self.max_total_tokens,
+            adapter_size=self.adapter_size,
+            running_max_req_size=self.running_max_req_size,
+        )
+
         if (need_max_token_num < self.max_total_tokens - self.adapter_size and
-            len(self.cache_len_list) <= self.running_max_req_size):
+            len(self.cache_len_list) <= self.running_max_req_size
+        ):
+            print("can add new req", req, "rank is", lora_ranks[req.adapter_dir])
             # nsys _can_add_new_req
-            torch.cuda.nvtx.range_push("need_max_token_num_{}".format(need_max_token_num))
+            torch.cuda.nvtx.range_push("can add new req, need_max_token_num_{}".format(need_max_token_num))
             # nsys _can_add_new_req
             torch.cuda.nvtx.range_pop()
             return True
@@ -78,8 +121,10 @@ class ReqQueue:
             if req.aborted:
                 aborted_count += 1
                 continue
-            if (self._can_add_new_req(req, lora_ranks) and
-                new_batch_total_tokens + req.input_len <= self.batch_max_tokens):
+            if (
+                self._can_add_new_req(req, lora_ranks) and
+                new_batch_total_tokens + req.input_len <= self.batch_max_tokens
+            ):
                 can_run_list.append(req)
                 new_batch_total_tokens += req.input_len
             else:
@@ -121,3 +166,9 @@ class ReqQueue:
             return next_batch
         else:
             return None
+
+
+def main():
+    # test 
+    req_queue = ReqQueue(8192, 4096, 8)
+    #TODO: add test case for the ReqQueue class

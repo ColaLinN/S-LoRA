@@ -92,6 +92,7 @@ class Batch:
             tokens += req.input_len + len(req.output_ids)
         return tokens
 
+    # mark the finished requests
     def mark_finished_req(self, eos_id):
         has_new_finish = False
         for req in self.reqs:
@@ -106,6 +107,7 @@ class Batch:
                 has_new_finish = True
         return has_new_finish
 
+    # remove the finished requests
     def filter_finished(self):
         unfinished_req = []
         for req in self.reqs:

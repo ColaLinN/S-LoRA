@@ -330,7 +330,7 @@ def main():
     parser.add_argument("--tokenizer_mode", type=str, default="slow",
                         help="""tokenizer load mode, can be slow or auto, slow mode load fast but run slow, slow mode is good for debug and test, 
                         when you want to get best performance, try auto mode""")
-    parser.add_argument("--max_total_token_num", type=int, default=6000,
+    parser.add_argument("--max_total_token_num", type=int, default=6000,  # from run_server.py's num_token 14000
                         help="the total token nums the gpu and model can support, equals = max_batch * (input_len + output_len)")
     parser.add_argument("--batch_max_tokens", type=int, default=None,
                         help="max tokens num for new cat batch, it control prefill batch size to Preventing OOM")
@@ -366,7 +366,7 @@ def main():
     parser.add_argument("--prefetch-size", type=int, default=0)
     parser.add_argument("--scheduler", type=str, default="slora")
     parser.add_argument("--profile", action="store_true")
-    parser.add_argument("--batch-num-adapters", type=int, default=None)
+    parser.add_argument("--batch-num-adapters", type=int, default=None) #prefetch_size
     parser.add_argument("--enable-abort", action="store_true")
 
     # debug parameters

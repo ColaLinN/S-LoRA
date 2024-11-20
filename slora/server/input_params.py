@@ -17,6 +17,7 @@ class ServeParams:
         return ret
 
 
+# for router.Manager
 class InputParams:
 
     def __init__(

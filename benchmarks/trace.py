@@ -190,6 +190,9 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     shape = 1 / (cv * cv)
     scale = cv * cv / req_rate
     intervals = np.random.gamma(shape, scale, tot_req)
+    
+    # interval 应该固定，否则这个变量会影响分析 req_time
+    
     print("construting req")
     for i in range(tot_req):
         tic += intervals[i]
