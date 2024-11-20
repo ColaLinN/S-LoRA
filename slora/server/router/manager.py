@@ -233,7 +233,7 @@ class RouterManager:
                 torch.cuda.synchronize()
                 print_with_timestamp(
                     inside_func="_step",
-                    to_run_func="_prefill_batch",
+                    to_run_func="prefill_batch.entry_v1",
                     running_batch=self.running_batch.__repr__(),
                 )
                 await self._prefill_batch(self.running_batch)
@@ -245,12 +245,14 @@ class RouterManager:
 
         if self.has_wait_tokens < self.max_wait_tokens:
             # nsys has_wait_tokens < max_wait_tokens
-            torch.cuda.nvtx.range_push("small_hwt_{},mwt_{}".format(self.has_wait_tokens, self.max_wait_tokens))
+            torch.cuda.nvtx.range_push("small_wt_{},mwt_{}".format(self.has_wait_tokens, self.max_wait_tokens))
             self.stats_tool.count_output_tokens(self.running_batch)
             # prefetch
             if (not self.input_params.no_lora and
-                self.input_params.prefetch and (self.has_wait_tokens == self.max_wait_tokens // 2 or
-                self.has_wait_tokens == self.max_wait_tokens - 3) and self.input_params.scheduler != "peft"):
+                self.input_params.prefetch and 
+                (self.has_wait_tokens == self.max_wait_tokens // 2 or self.has_wait_tokens == self.max_wait_tokens - 3) 
+                and self.input_params.scheduler != "peft"
+            ):
                 next_batch = self.req_queue.next_batch()
                 if next_batch is not None:
                     ret = []
@@ -260,7 +262,7 @@ class RouterManager:
                     await asyncio.gather(*ret)
             print_with_timestamp(
                 inside_func="_step",
-                to_run_func="start _decode_batch",
+                to_run_func="decode_batch.entry_1",
                 running_batch=self.running_batch.__repr__(),
             )
             await self._decode_batch(self.running_batch)
@@ -272,7 +274,7 @@ class RouterManager:
             return
         else:
             # nsys has_wait_tokens > max_wait_tokens
-            torch.cuda.nvtx.range_push("large_hwt_{},mwt_{}".format(self.has_wait_tokens, self.max_wait_tokens))
+            torch.cuda.nvtx.range_push("large_wt_{},mwt_{}".format(self.has_wait_tokens, self.max_wait_tokens))
             new_mini_batch = self.req_queue.generate_new_batch(self.running_batch, self.lora_ranks)
             if self.input_params.enable_abort and len(self.req_queue.abort_req_list) > 0:
                 self.send_to_detokenization.send_pyobj(BatchAbortReq(self.req_queue.abort_req_list))
@@ -290,14 +292,14 @@ class RouterManager:
 
                 print_with_timestamp(
                     inside_func="_step",
-                    to_run_func="_decode_batch",
+                    to_run_func="prefill_batch.entry_v2_mini_batch",
                     running_batch=self.running_batch.__repr__(),
                 )
                 await self._prefill_batch(new_mini_batch, minibatch=True)
                 if not new_mini_batch.is_clear():
                     print_with_timestamp(
                         inside_func="_step",
-                        to_run_func="_merge_batch",
+                        to_run_func="merge_batch.entry_v2_mini_batch",
                         running_batch=self.running_batch.__repr__(),
                         new_mini_batch=new_mini_batch.__repr__(),
                     )
@@ -308,8 +310,13 @@ class RouterManager:
                 torch.cuda.nvtx.range_pop()
             else:
                 # nsys new_mini_batch is None
-                torch.cuda.nvtx.range_push("new_mini_batch_null")
+                torch.cuda.nvtx.range_push("new_mini_batch_is_null")
                 self.stats_tool.count_output_tokens(self.running_batch)
+                print_with_timestamp(
+                    inside_func="_step",
+                    to_run_func="_decode_batch.entry_2",
+                    running_batch=self.running_batch.__repr__(),
+                )
                 await self._decode_batch(self.running_batch)
                 await self._filter_runing_batch()
                 # nsys new_mini_batch is None
@@ -424,8 +431,8 @@ class RouterManager:
 
     async def _filter_runing_batch(self):
         # nsys _filter_runing_batch
-        torch.cuda.nvtx.range_push("_filter_runing_batch")
         if self.running_batch is not None and self.running_batch.is_clear():
+            torch.cuda.nvtx.range_push("_filter_runing_batch runnig_batch is clear")
             if not self.input_params.no_lora:
                 # offload model and adapters
                 ret = []
@@ -434,12 +441,12 @@ class RouterManager:
                 await asyncio.gather(*ret)
             print_with_timestamp(
                 inside_func="_filter_runing_batch",
-                to_run_func="running_batch=null",
+                to_run_func="running_batch is clear",
                 running_batch=self.running_batch.__repr__(),
             )
             self.running_batch = None
-        # nsys _filter_runing_batch
-        torch.cuda.nvtx.range_pop()
+            # nsys _filter_runing_batch
+            torch.cuda.nvtx.range_pop()
         return
     
     def _add_token_id_to_req(self, batch: Batch, req_ans):

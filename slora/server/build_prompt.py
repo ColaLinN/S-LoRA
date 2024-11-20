@@ -1,5 +1,7 @@
 from packaging import version
 
+# for fastchat completion Api
+
 try:
     import fastchat
     from fastchat.conversation import Conversation, SeparatorStyle
