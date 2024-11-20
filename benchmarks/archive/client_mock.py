@@ -8,13 +8,16 @@ headers = {
     "User-Agent": "Benchmark Client"
 }
 data = {
-    "model_dir": "huggyllama/llama-13b",
-    "lora_dir": "dummy-lora-13b-rank-64-49",
-    "inputs": "你好，世界，今天你想听什么？",
+    "model_dir": "huggyllama/llama-7b",
+    "lora_dir": "tloen/alpaca-lora-7b-1",
+    # "lora_dir": "MBZUAI/bactrian-x-llama-7b-lora-1",
+    "inputs": "你好llama，我想请教一下long-tail长度的requests分布对transformer推理有什么影响？",
+    # "inputs": "hello hello hello",
     "parameters": {
-        "do_sample": True,
+        "do_sample": False,
         "ignore_eos": False,
-        "max_new_tokens": 2048
+        "max_new_tokens": 2048,
+        "temperature": 0.4,
     }
 }
 
@@ -40,4 +43,5 @@ for line in response.iter_lines():
 
 # 打印最终生成的完整文本
 # print("\n\n完整生成的文本：")
-print(generated_text)
+print()
+# print(generated_text)
