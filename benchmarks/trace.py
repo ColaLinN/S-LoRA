@@ -92,11 +92,12 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
                       input_range, output_range,
                       adapter_dirs, # (base_dir, adapter_dir)
                       seed=42):
-    print("generating requests v2", 
-                      "num_adapters", num_adapters, alpha, req_rate, cv, duration,
-                      input_range, output_range,
-                      "len_adapters", len(adapter_dirs), 
-                      seed)
+    # print("generating requests v2", 
+    #                   "num_adapters", num_adapters, alpha, req_rate, cv, duration,
+    #                   input_range, output_range,
+    #                   "len_adapters", len(adapter_dirs), 
+    #                   seed)
+    print("construting req")
     np.random.seed(seed)
 
     # input_lens = [2040, 1024, 16, 16, 16, 16, 16, 16]
@@ -160,28 +161,42 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     # input_lens = [8, 2046, 8, 1022]
     # output_lens= [2046, 8, 1022, 8]
     
-    ind = [1, 1, 1, 1, 
-           1, 1, 1, 1, 
-           1, 1, 1]
+    # ind = [1, 1, 1, 1, 
+    #        1, 1, 1, 1, 
+    #        1, 1, 1]
     
-    ind = [1, 2, 3, 4, 
-           5, 6, 7, 8, 
-           9, 10, 11]
+    # ind = [1, 2, 3, 4, 
+    #        5, 6, 7, 8, 
+    #        9, 10, 11]
 
-    input_lens = [8, 8, 8, 8, 
-                  8, 8, 8, 8, 
-                  8, 8, 8]
-    # output_lens= [8, 8, 8, 8, 
-    #               512, 8, 512, 8, 
+    # input_lens = [8, 8, 8, 8, 
+    #               8, 8, 8, 8, 
     #               8, 8, 8]
-    output_lens= [8, 8, 8, 8, 
-                  8, 8, 8, 8, 
-                  8, 8, 8]
+    # # output_lens= [8, 8, 8, 8, 
+    # #               512, 8, 512, 8, 
+    # #               8, 8, 8]
+    # output_lens= [8, 8, 8, 8, 
+    #               8, 8, 8, 8, 
+    #               8, 8, 8]
+
+    # 2024.11.20 evening
+    ind = [1, 1, 1, 1]
+    # input_lens = [2046, 8, 8, 8]
+    # output_lens= [2048, 2048, 8, 8]
+    
+    input_lens = [8, 8, 8, 2046]
+    output_lens= [8, 8, 8, 2048]
+    
+    # 2024.11.22 morning
+    ind = [1, 1, 1, 1, 1, 1]
+    input_lens = [2046, 2046, 2046, 8, 8, 8]
+    # output_lens= [2048, 2048, 2048, 1800, 8, 8]
+    # output_lens= [2048, 2048, 2048, 1500, 8, 8]
+    output_lens= [2048, 2048, 2048, 8, 8, 1800]
 
     print(ind)
     print(input_lens, output_lens)
     tot_req = int(len(input_lens))
-
 
     
     # generate timestamp
@@ -189,11 +204,13 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
     tic = 0
     shape = 1 / (cv * cv)
     scale = cv * cv / req_rate
-    intervals = np.random.gamma(shape, scale, tot_req)
+    # intervals = np.random.gamma(shape, scale, tot_req)
+    # intervals = [0.23463404, 1.50506072, 0.65837285, 0.45647128]
+    intervals = [0.23463404, 1, 1, 1, 1, 1]
     
+    print("the intervals", intervals)
     # interval 应该固定，否则这个变量会影响分析 req_time
     
-    print("construting req")
     for i in range(tot_req):
         tic += intervals[i]
         base_dir = adapter_dirs[ind[i]][0]

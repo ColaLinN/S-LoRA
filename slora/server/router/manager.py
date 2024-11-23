@@ -213,6 +213,7 @@ class RouterManager:
                 self.stats_tool.count_prompt_tokens(new_batch)
                 self.running_batch = new_batch
 
+                #sample: 470ms
                 if not self.input_params.no_lora:
                     # load adapters
                     ret = []
@@ -275,6 +276,7 @@ class RouterManager:
         else:
             # nsys has_wait_tokens > max_wait_tokens
             torch.cuda.nvtx.range_push("large_wt_{},mwt_{}".format(self.has_wait_tokens, self.max_wait_tokens))
+            # sample: 用了17ms去计算是否有新batch？
             new_mini_batch = self.req_queue.generate_new_batch(self.running_batch, self.lora_ranks)
             if self.input_params.enable_abort and len(self.req_queue.abort_req_list) > 0:
                 self.send_to_detokenization.send_pyobj(BatchAbortReq(self.req_queue.abort_req_list))
@@ -339,9 +341,18 @@ class RouterManager:
     async def _prefill_batch(self, batch, minibatch=True):
         # nsys _prefill_batch
         torch.cuda.nvtx.range_push("_prefill_batch")
+
+        # nsys _init_batch,sample: 594us
         await self._init_batch(batch)
+        # nsys _init_batch
+        
+        # nsys model_rpcs.prefill_batch
+        torch.cuda.nvtx.range_push("model_rpcs.prefill_batch")
         rets = [self.model_rpcs[tp_rank].prefill_batch(batch.batch_id) for tp_rank in range(self.world_size)]
         ans = await asyncio.gather(*rets)
+        # nsys model_rpcs.prefill_batch
+        torch.cuda.nvtx.range_pop()
+        
         if self.world_size != 1:
             req_to_out_token_id = obtain(ans[0])
         else:

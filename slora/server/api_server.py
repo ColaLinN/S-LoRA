@@ -365,6 +365,7 @@ def main():
     parser.add_argument("--prefetch", action="store_true")
     parser.add_argument("--prefetch-size", type=int, default=0)
     parser.add_argument("--scheduler", type=str, default="slora")
+    # parser.add_argument("--scheduler", type=str, default="slora")
     parser.add_argument("--profile", action="store_true")
     parser.add_argument("--batch-num-adapters", type=int, default=None) #prefetch_size
     parser.add_argument("--enable-abort", action="store_true")

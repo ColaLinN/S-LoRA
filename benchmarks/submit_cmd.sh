@@ -1,9 +1,10 @@
 #nscc
-qsub -I -l select=1:ngpus=1 -l walltime=03:00:00 -P personal-e1327875 -q normal
+qsub -I -l select=1:ngpus=1 -l walltime=8:00:00 -P personal-e1327875 -q normal
 export PBS_JOBID=
 
-# path
-cd scratch/S-LoRA/benchmarks/ && conda activate slora
+# env
+cd scratch/S-LoRA/benchmarks/ && conda activate slora 
+cd scratch/S-LoRA/benchmarks/ && conda activate slora && module load cuda/11.8.0
 
 # conda
 conda list
@@ -39,9 +40,12 @@ pip install -e .
 nsys profile --duration 300 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241118_v1  python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 nsys profile --duration 120 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241118_v2  python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 
+#nsys head 
+nsys profile --duration 600 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241122_v1
 #server
+nsys profile --duration 600 -w true -t cuda,nvtx,osrt,cudnn,cublas -s cpu --cudabacktrace=true -x true --stats=true --force-overwrite true -o nsys/long_tail_20241122_v1 python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
-python launch_server.py --backend slora --num-adapter 200 --num-token 14000 --model-setting S4 --dummy | tee output/20241118_v1.txt
+python launch_server.py --backend slora --num-adapter 200 --num-token 5000 --model-setting S4 --dummy | tee output/20241118_v1.txt
 
 #req
 python run_exp.py --backend slora --suite a100-40-num-adapter-short --model-setting S4 --mode synthetic --output 20241118_v1.jsonl | tee output/20241118_v1.txt
@@ -49,7 +53,7 @@ python run_exp.py --backend slora --suite a100-40-num-adapter-short --model-sett
 #scp
 # recursively copy from
 scp source target
-scp -v -r e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875/scratch/S-LoRA/benchmarks/my_profile.nsys-rep /Users/fenglyulin/Downloads
+scp -v -r e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875/scratch/S-LoRA/benchmarks/nsys/long_tail_20241122_v1.nsys-rep /Users/fenglyulin/Downloads
 scp -v -r /Users/fenglyulin/guzheng/github/S-LoRA e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875
 
 #git

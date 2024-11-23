@@ -20,6 +20,12 @@ class ReqQueue:
         self.waiting_req_list: List[Req] = []
         # (has_run_len, left_out_len)
         # self.cache_len_list = []
+        print_with_timestamp(
+            inside_func="ReqQueue.__init__",
+            max_total_tokens=self.max_total_tokens,
+            batch_max_tokens=self.batch_max_tokens,
+            running_max_req_size=self.running_max_req_size,
+        )
         
     def append(self, req):
         self.waiting_req_list.append(req)
@@ -69,40 +75,43 @@ class ReqQueue:
         
         # [2048, 4112, 6192, 8288]
         # [2048, 4112]
-        need_max_token_num = (left_out_len_array * size_array + cum_run_len_array)
+        inter_need_max_token_num = (left_out_len_array * size_array + cum_run_len_array)
         
         # 8288
         # 4112
-        need_max_token_num = need_max_token_num.max()
+        need_max_token_num = inter_need_max_token_num.max()
         
         # assuming max_total_tokens = 8192, adapter_size = 64, running_max_req_size = 8
         # 8288 < 8192 - 64 and 4 <= 8
         # 4112 < 4096
         
         print_with_timestamp(
-            inside_func="_can_add_new_req",
+            inside_func="ReqQueue._can_add_new_req",
             to_check_req=req.__repr__,
             cache_len_list=self.cache_len_list,
             has_run_len_array=has_run_len_array,
             left_out_len_array=left_out_len_array,
             cum_run_len_array=cum_run_len_array,
             size_array=size_array,
+            inter_need_max_token_num=inter_need_max_token_num,
             need_max_token_num=need_max_token_num,
             max_total_tokens=self.max_total_tokens,
             adapter_size=self.adapter_size,
+            batch_max_tokens=self.batch_max_tokens,
             running_max_req_size=self.running_max_req_size,
         )
 
         if (need_max_token_num < self.max_total_tokens - self.adapter_size and
             len(self.cache_len_list) <= self.running_max_req_size
         ):
-            print("can add new req", req, "rank is", lora_ranks[req.adapter_dir])
+            print("can add new req", req.__repr__)
             # nsys _can_add_new_req
             torch.cuda.nvtx.range_push("can add new req, need_max_token_num_{}".format(need_max_token_num))
             # nsys _can_add_new_req
             torch.cuda.nvtx.range_pop()
             return True
         else:
+            print("can not add new req!!!!  ", req.__repr__)
             return False
     
     def update_counter(self, req):

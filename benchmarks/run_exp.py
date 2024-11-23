@@ -153,8 +153,8 @@ def get_adapter_dirs(num_adapters, adapter_dirs, backend=None):
     for i in range(num_iter):
         for adapter_dir in adapter_dirs:
             ret.append(adapter_dir + f"-{i}")
-    print("get_adapter_dirs input and output", num_adapters, adapter_dirs, backend, ret)
-    print("========")
+    # print("get_adapter_dirs input and output", num_adapters, adapter_dirs, backend, ret)
+    # print("========")
     return ret
 
 def get_res_stats(per_req_latency, benchmark_time, backend, warmup_time=0, warmup_num=0):
