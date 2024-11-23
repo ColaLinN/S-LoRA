@@ -13,3 +13,4 @@ dist
 *.nsys-rep
 *.qdstrm
 *.sqlite
+/lmsys-chat-1m/*
