@@ -22,53 +22,126 @@ LORA_DIR = {
 BenchmarkConfig = namedtuple(
     "BenchmarkConfig",
     ["num_adapters",
+     # 0.1 - 1.0, the higher the more average, the lower the more longtail
      "alpha", # power law distribution for lambda_i, which are the mean rate for poisson arrival process
      "req_rate", # total request rate per second
+     # cv: the higher it's closer to 1, the more average, the lower the more longtail
      "cv", # coefficient of variation. When cv == 1, the arrival process is Poisson process.
      "duration", # benchmark serving duration
      "input_range", # input length l.b. and u.b.
      "output_range", # output length l.b. and u.b.
-    #  "is_longtail_exp",
-    #  "total_req",
+     "total_req",
+     "hard_code_adapter_id",
     ]
 )
 
 
 longtail_suite = {
-    # "h100": BenchmarkConfig(
-    #     num_adapters = [1, 20, 50, 100, 200],
-    #     alpha = [0.8],
-    #     req_rate = [2],
-    #     cv = [1],
-    #     duration = [60],
-    #     input_range = [
-    #         [8], 
-    #         [2046],
-            
-    #         ],
-    #     output_range = [
-    #         [8]
-    #         [2046],
-    #         ],
-    #     is_longtail_exp = [True],
-    # ),
-
-    # "h100": BenchmarkConfig(
-    #     num_adapters = [1, 20, 50, 100, 200],
-    #     alpha = [0.8],
-    #     req_rate = [2],
-    #     cv = [1],
-    #     duration = [60],
-    #     input_range = [
-    #         [8], 
-    #         [2046],
-    #         ],
-    #     output_range = [
-    #         [8]
-    #         [2046],
-    #         ],
-    #     is_longtail_exp = [True],
-    # ),
+    "req_len_latency_baseline_adapter_1": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [1],
+        req_rate = [1],
+        cv = [1],
+        duration = [0],
+        input_range = [[2, 2],[6, 6],[14, 14],[30, 30]],
+        # input_range = [[2, 2],[6, 6],[14, 14],[2046, 2046]],
+        output_range = [[0]],
+        total_req= [1,2,4,8,32],
+        hard_code_adapter_id=[1], #dummy-lora-13b-rank-32-0
+    ),
+    "req_len_latency_baseline_adapter_2": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [1],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[2, 2],[6, 6],[14, 14],[30, 30]],
+        # input_range = [[2, 2],[6, 6],[14, 14],[2046, 2046]],
+        output_range = [[0]],
+        total_req= [1,2,4,8,32],
+        hard_code_adapter_id=[2],  #dummy-lora-13b-rank-16-0
+    ),
+    "req_len_latency_baseline_adapter_3": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [1],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[2, 2],[6, 6],[14, 14],[30, 30]],
+        # input_range = [[2, 2],[6, 6],[14, 14],[2046, 2046]],
+        output_range = [[0]],
+        total_req= [1,2,4,8,32],
+        hard_code_adapter_id=[3], #dummy-lora-13b-rank-64-0
+    ),
+    
+    "req_avg_len_latency_adapter_1": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.1, 0.3, 0.5, 0.7, 0.8, 0.9],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,16,32],
+        hard_code_adapter_id=[1], #dummy-lora-13b-rank-64-0
+    ),
+    "req_avg_len_latency_adapter_2": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.1, 0.3, 0.5, 0.7, 0.8, 0.9],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,16,32],
+        hard_code_adapter_id=[2], #dummy-lora-13b-rank-64-0
+    ),
+    "req_avg_len_latency_adapter_3": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.1, 0.3, 0.5, 0.7, 0.8, 0.9],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,16,32],
+        hard_code_adapter_id=[3], #dummy-lora-13b-rank-64-0
+    ),
+    
+    
+    "req_long_tail_len_latency_adapter_1": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.8], #0.8 prob 6, and 0.2 prob 2046
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,32],
+        hard_code_adapter_id=[1], #dummy-lora-13b-rank-64-0
+    ),
+    "req_long_tail_len_latency_adapter_2": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.8],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,32],
+        hard_code_adapter_id=[2], #dummy-lora-13b-rank-64-0
+    ),
+    "req_long_tail_len_latency_adapter_3": BenchmarkConfig(
+        num_adapters = [200],
+        alpha = [0.8],
+        req_rate = [2],
+        cv = [1],
+        duration = [0],
+        input_range = [[6, 1022]],
+        output_range = [[8, 2048]],
+        total_req= [4,8,32],
+        hard_code_adapter_id=[3], #dummy-lora-13b-rank-64-0
+    ),
 }
 
 paper_suite = {
@@ -80,6 +153,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "ablation-cluster": BenchmarkConfig(
         num_adapters = [32],
@@ -88,7 +163,9 @@ paper_suite = {
         cv = [1],
         duration = [60 * 2],
         input_range = [[8, 512]],
-        output_range = [[8, 512]]
+        output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "ablation-cluster-cv": BenchmarkConfig(
         num_adapters = [32],
@@ -97,7 +174,9 @@ paper_suite = {
         cv = [8],
         duration = [60 * 2],
         input_range = [[8, 512]],
-        output_range = [[8, 512]]
+        output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-num-adapter": BenchmarkConfig(
         num_adapters = [1, 20, 50, 100, 200],
@@ -107,6 +186,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-alpha": BenchmarkConfig(
         num_adapters = [200],
@@ -116,6 +197,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-cv": BenchmarkConfig(
         num_adapters = [200],
@@ -125,6 +208,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-req-rate": BenchmarkConfig(
         num_adapters = [200],
@@ -134,6 +219,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-40-num-adapter-short": BenchmarkConfig(
         num_adapters = [200],
@@ -143,6 +230,8 @@ paper_suite = {
         duration = [15], # not in use
         input_range = [[1, 5]], # not in use
         output_range = [[1, 5]], # not in use
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-40-num-adapter": BenchmarkConfig(
         num_adapters = [0, 1, 20, 50, 100, 200],
@@ -152,6 +241,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 1024]],
         output_range = [[8, 1024]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-req-rate-real-short": BenchmarkConfig(
         num_adapters = [200],
@@ -161,6 +252,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a10g-req-rate-real": BenchmarkConfig(
         num_adapters = [200],
@@ -170,6 +263,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S2-num-adapter": BenchmarkConfig(
         num_adapters = [1, 20, 50, 100, 200],
@@ -179,6 +274,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S2-num-adapter-bmm": BenchmarkConfig(
         num_adapters = [1, 20, 50, 100, 200],
@@ -188,6 +285,8 @@ paper_suite = {
         duration = [30],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S4-num-adapter": BenchmarkConfig(
         num_adapters = [0, 1, 100, 200, 400],
@@ -197,6 +296,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S4-req-rate": BenchmarkConfig(
         num_adapters = [400],
@@ -206,6 +307,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S4-cv": BenchmarkConfig(
         num_adapters = [400],
@@ -215,6 +318,8 @@ paper_suite = {
         duration = [60 * 5],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S2-num-adapter-vllm": BenchmarkConfig(
         num_adapters = [5],
@@ -224,6 +329,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-S3-num-adapter-vllm": BenchmarkConfig(
         num_adapters = [2],
@@ -233,6 +340,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-table": BenchmarkConfig(
         num_adapters = [2, 5, 100, 1000, 2000],
@@ -242,6 +351,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-num-adapter-s12-peft": BenchmarkConfig(
         num_adapters = [5, 100],
@@ -251,6 +362,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-80-num-adapter-s4-peft": BenchmarkConfig(
         num_adapters = [2, 100],
@@ -260,6 +373,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
     "a100-40-num-adapter-mp-peft": BenchmarkConfig(
         num_adapters = [2, 100],
@@ -269,6 +384,8 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 }
 
@@ -282,6 +399,8 @@ breakdown_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "h100": BenchmarkConfig(
@@ -292,6 +411,8 @@ breakdown_suite = {
         duration = [60 * 1],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 }
 
@@ -305,6 +426,8 @@ debug_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "debug": BenchmarkConfig(
@@ -315,6 +438,8 @@ debug_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "no-swap": BenchmarkConfig(
@@ -325,6 +450,8 @@ debug_suite = {
         duration = [60 * 1],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "swap": BenchmarkConfig(
@@ -335,6 +462,8 @@ debug_suite = {
         duration = [60 * 1],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "a10g-no-swap": BenchmarkConfig(
@@ -345,6 +474,8 @@ debug_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "a10g": BenchmarkConfig(
@@ -355,6 +486,8 @@ debug_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "h100": BenchmarkConfig(
@@ -365,6 +498,8 @@ debug_suite = {
         duration = [60],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 
     "ablation-no-mem": BenchmarkConfig(
@@ -376,6 +511,8 @@ debug_suite = {
         duration = [30],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+        total_req=[0],
+        hard_code_adapter_id=[0],
     ),
 }
 
@@ -387,8 +524,9 @@ def get_all_suites(mode, debug=False, suite=None, breakdown=False, longtail=Fals
         exps = [{suite: debug_suite[suite]}]
     elif breakdown:
         exps = [{suite: breakdown_suite[suite]}]
-    elif longtail_suite:
+    elif longtail:
         exps = [{suite: longtail_suite[suite]}]
+        print("longtail", exps)
     else:
         exps = [{suite: paper_suite[suite]}]
 
@@ -396,14 +534,14 @@ def get_all_suites(mode, debug=False, suite=None, breakdown=False, longtail=Fals
     for exp in exps:
         for workload in exp:
             (num_adapters, alpha, req_rate, cv, duration,
-                    input_range, output_range) = exp[workload]
+                    input_range, output_range, total_req, hard_code_adapter_id) = exp[workload]
             if mode == "real":
                 # These arguments are not used in real trace
                 num_adapters = alpha = cv = [None]
 
             for combination in itertools.product(
                                    num_adapters, alpha, req_rate, cv, duration,
-                                   input_range, output_range):
+                                   input_range, output_range, total_req, hard_code_adapter_id):
                 suites.append(combination)
     return suites
 

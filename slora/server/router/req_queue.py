@@ -104,14 +104,17 @@ class ReqQueue:
         if (need_max_token_num < self.max_total_tokens - self.adapter_size and
             len(self.cache_len_list) <= self.running_max_req_size
         ):
-            print("can add new req", req.__repr__)
+            print_with_timestamp(
+                inside_func="ReqQueue._can_add_new_req",
+                can_add_new_req=req.__repr__,
+            )
             # nsys _can_add_new_req
             torch.cuda.nvtx.range_push("can add new req, need_max_token_num_{}".format(need_max_token_num))
             # nsys _can_add_new_req
             torch.cuda.nvtx.range_pop()
             return True
         else:
-            print("can not add new req!!!!  ", req.__repr__)
+            print("=========> Cannot add new req, req block!!!!  ", req.__repr__)
             return False
     
     def update_counter(self, req):
@@ -142,8 +145,11 @@ class ReqQueue:
         if len(can_run_list) != 0:
             new_batch = Batch(uuid.uuid4().hex, can_run_list)
             self.waiting_req_list = self.waiting_req_list[len(can_run_list) + aborted_count:]
-            print("generate_new_batch function", len(new_batch.reqs))
-            print("generate_new_batch function waiting_req_list", self.waiting_req_list)
+            print_with_timestamp(
+                inside_func="ReqQueue.generate_new_batch",
+                new_batch=new_batch,
+                len_waiting_req_list=len(self.waiting_req_list),
+            )
             # nsys generate_new_batch
             torch.cuda.nvtx.range_push("gen_new_batch_{}".format(len(new_batch.reqs)))
             # nsys generate_new_batch
@@ -166,8 +172,11 @@ class ReqQueue:
                 break
         if len(next_batch) > 0:
             next_batch = Batch(uuid.uuid4().hex, next_batch)
-            print("next_batch function", len(next_batch.reqs))
-            print("next_batch function waiting_req_list", self.waiting_req_list)
+            print_with_timestamp(
+                inside_func="ReqQueue.next_batch",
+                next_batch=next_batch,
+                len_waiting_req_list=len(self.waiting_req_list),
+            )
             # nsys next_batch
             torch.cuda.nvtx.range_push("next_batch{}".format(len(next_batch.reqs)))
             # nsys next_batch

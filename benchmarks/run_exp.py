@@ -19,7 +19,8 @@ from typing import List, Tuple
 import aiohttp
 
 from exp_suite import BenchmarkConfig, get_all_suites, to_dict, BASE_MODEL, LORA_DIR
-from trace import generate_requests_v2, get_real_requests
+from trace import generate_requests, generate_requests_v2, get_real_requests
+from gen_longtail_requsts import generate_long_tail_requests
 sys.path.append("../bench_lora")
 from slora.utils.metric import reward, attainment_func
 
@@ -225,12 +226,12 @@ def get_res_stats(per_req_latency, benchmark_time, backend, warmup_time=0, warmu
     return res
 
 
-def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug=False):
+def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug=False, longtail=False):
     if mode == "real":
         print("*** num_adapters, cv and alpha are not used in real mode ***")
     # print([(k, v) for k, v in zip(BenchmarkConfig._fields, config)])
 
-    num_adapters, alpha, req_rate, cv, duration, input_range, output_range = config
+    num_adapters, alpha, req_rate, cv, duration, input_range, output_range, total_req, hard_code_adapter_id = config
     # assert duration >= 30
     if mode == "synthetic":
         base_model = BASE_MODEL[model_setting]
@@ -240,9 +241,14 @@ def run_exp(model_setting, backend, server, config, output, mode, seed=42, debug
         if num_adapters == 0:
             adapter_dirs = [(base_model, None)]
             num_adapters = 1
-        requests = generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
-                                 input_range, output_range, adapter_dirs,
-                                 seed=seed)
+        if longtail:
+            requests = generate_long_tail_requests(num_adapters, alpha, req_rate, cv, duration,
+                                    input_range, output_range, adapter_dirs,
+                                    seed, total_req, hard_code_adapter_id)
+        else:
+            requests = generate_requests(num_adapters, alpha, req_rate, cv, duration,
+                                    input_range, output_range, adapter_dirs,
+                                    seed=seed)
         avg_prompt_len = np.mean([req.prompt_len for req in requests])
         avg_output_len = np.mean([req.output_len for req in requests])
         avg_len = np.mean([req.prompt_len + req.output_len for req in requests])
@@ -302,7 +308,8 @@ if __name__ == "__main__":
     parser.add_argument("--no-lora-compute", action="store_true")
     parser.add_argument("--no-lora-swap", action="store_true")
     parser.add_argument("--no-lora-copy", action="store_true")
-    parser.add_argument("--mode", default="synthetic", choices=["synthetic", "real", "long_tail"])
+    parser.add_argument("--mode", default="synthetic", choices=["synthetic", "real"])
+    parser.add_argument("--longtail", action="store_true")
 
     parser.add_argument("--server", type=str, default="http://localhost:8000")
     parser.add_argument("--seed", type=int, default=42)
@@ -326,7 +333,7 @@ if __name__ == "__main__":
     if args.debug or args.breakdown:
         args.output = "debug_" + args.output
 
-    suites = get_all_suites(mode=args.mode, debug=args.debug, suite=args.suite, breakdown=args.breakdown)
+    suites = get_all_suites(mode=args.mode, debug=args.debug, suite=args.suite, breakdown=args.breakdown, longtail=args.longtail)
 
     if not args.append:
         os.system(f"rm {args.output}")
@@ -339,5 +346,6 @@ if __name__ == "__main__":
     for config in tqdm(suites, desc="suites"):
     # for config in suites:
         if to_dict(config) not in results:
+            # print("Running", config)
             stats = run_exp(args.model_setting, args.backend, args.server, config,
-                            args.output, args.mode, args.seed, args.debug)
+                            args.output, args.mode, args.seed, args.debug, args.longtail)

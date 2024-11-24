@@ -54,6 +54,7 @@ def get_tokenizer(
         # return tokenizer
 
     try:
+        print(f"Loading tokenizer {tokenizer_name} with fast mode {kwargs.get('use_fast', True)}, trust_remote_code {trust_remote_code}, args {args}, kwargs {kwargs}")
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, trust_remote_code=trust_remote_code, *args,
                                                   **kwargs)
     except TypeError as e:

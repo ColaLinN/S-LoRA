@@ -14,3 +14,8 @@ dist
 *.qdstrm
 *.sqlite
 /lmsys-chat-1m/*
+/lmsys-chat-1m.zip
+benchmarks/trace_exp/BurstGPT_1.csv
+benchmarks/trace_exp/ShareGPT52K/*
+benchmarks/trace_exp/llmsys_df_with_len_one_turn.csv
+benchmarks/trace_exp/llmsys_df_with_len_one_turn.csv

@@ -48,16 +48,14 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
     ind = (probs * num_adapters).astype(int)
 
     # 假设 tot_req 已定义
-    alpha = 10.0  # Power distribution parameter
-    input_lens = 1 - np.random.power(alpha, tot_req)
-    input_lens = np.floor(input_lens * (1016 / input_lens.max()) + 8).astype(int)
-    output_lens = 1 - np.random.power(alpha, tot_req)
-    output_lens = np.floor(input_lens * (1016 / input_lens.max()) + 8).astype(int)
-
-    # 对 input_lens 和 output_lens 进行计数
-    input_counts = Counter(input_lens)
-    output_counts = Counter(output_lens)
-
+    # alpha = 10.0  # Power distribution parameter
+    # input_lens = 1 - np.random.power(alpha, tot_req)
+    # input_lens = np.floor(input_lens * (1016 / input_lens.max()) + 8).astype(int)
+    # output_lens = 1 - np.random.power(alpha, tot_req)
+    # output_lens = np.floor(input_lens * (1016 / input_lens.max()) + 8).astype(int)
+    # # 对 input_lens 和 output_lens 进行计数
+    # input_counts = Counter(input_lens)
+    # output_counts = Counter(output_lens)
     # # 获取 input_lens 和 output_lens 中计数最多的前10个值和最少的后10个值
     # input_most_common = input_counts.most_common(10)  # 前10
     # input_least_common = input_counts.most_common()[:-11:-1]  # 后10
@@ -70,9 +68,8 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
     # print("Output Lens - Top 10 Least Common:", output_least_common)
     
     # original
-    # input_lens = np.random.randint(input_range[0], input_range[1], tot_req)
-    # output_lens = np.random.randint(output_range[0], output_range[1], tot_req)
-    # return 
+    input_lens = np.random.randint(input_range[0], input_range[1], tot_req)
+    output_lens = np.random.randint(output_range[0], output_range[1], tot_req)
 
     # generate timestamp
     requests = []
@@ -229,7 +226,7 @@ def generate_requests_v2(num_adapters, alpha, req_rate, cv, duration,
                         )
     # for req in requests:
     #     print(req.__repr__)
-    return requests
+    return requests 
 
 def get_real_requests(trace_file, req_rate, duration, base_model, adapter_dirs, input_range, output_range, seed=42):
     np.random.seed(seed)

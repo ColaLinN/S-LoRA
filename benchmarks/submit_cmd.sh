@@ -1,6 +1,7 @@
 #nscc
-qsub -I -l select=1:ngpus=1 -l walltime=8:00:00 -P personal-e1327875 -q normal
-export PBS_JOBID=
+qsub -I -l select=1:ngpus=1 -l walltime=4:00:00 -P personal-e1327875 -q normal
+qsub -I -l select=1:ngpus=1:ncpus=8 -l walltime=2:00:00 -P personal-e1327875 -q normal
+export PBS_JOBID=8786534.pbs101
 
 # env
 cd scratch/S-LoRA/benchmarks/ && conda activate slora 
@@ -49,13 +50,34 @@ python launch_server.py --backend slora --num-adapter 200 --num-token 5000 --mod
 
 #req
 python run_exp.py --backend slora --suite a100-40-num-adapter-short --model-setting S4 --mode synthetic --output 20241118_v1.jsonl | tee output/20241118_v1.txt
+python run_exp.py --backend slora --suite req_len_latency_baseline --model-setting S4 --longtail --mode synthetic --output 20241118_v1.jsonl | tee output/20241118_v1.txt
 
 #scp
 # recursively copy from
 scp source target
 scp -v -r e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875/scratch/S-LoRA/benchmarks/nsys/long_tail_20241122_v1.nsys-rep /Users/fenglyulin/Downloads
 scp -v -r /Users/fenglyulin/guzheng/github/S-LoRA e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875
+scp -v -r /Users/fenglyulin/guzheng/github/S-LoRA/benchmarks/trace_exp/lmsys-chat-1m e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875/scratch/S-LoRA/benchmarks/trace_exp
+scp -v -r /Users/fenglyulin/guzheng/github/S-LoRA/benchmarks/trace_exp/ShareGPT52K e1327875@aspire2a.nus.edu.sg:/home/users/nus/e1327875/scratch/S-LoRA/benchmarks/trace_exp
 
 #git
 git remote show origin
 git remote set-url origin git_url
+
+#ssh
+eval "$(ssh-agent -s)"
+ssh-keygen -t ed25519 -C "shenqiaaa@gmail.com"
+ssh-add ~/.ssh/id_ed25519
+ssh -T git@hf.co
+
+#ACL
+chmod 700 ~/.ssh/id_ed25519
+
+#CPU
+lscpu
+cat /proc/cpuinfo
+cat /proc/meminfo
+top
+htop
+free -h
+sar -u 1 5
